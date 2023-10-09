@@ -5,9 +5,19 @@ html {
     max-width: 100%;
 }
 
-.nav-link, .color-1, .color-2, .color-3 {
-    font-size: 2vw;
+.nav-link {
+    font-size: 50px;
     text-decoration: none;
+    margin-left: 1vw;
+    filter:
+    drop-shadow(1px 3px 0px #161616);
+}
+
+ul.nav, a:hover {
+    color:#bdd4ff !important;
+    text-decoration: underline;
+    filter:none;
+    transform: translate(0px, 5px);
 }
 
 .color-1 {
@@ -22,7 +32,7 @@ html {
     color: #FF0055;
 }
 
-p, a, .nav-link, span, h1, h2, h3, h4, h5, h6 {
+p, a, h1, h2, h3, h4, h5, h6 {
     color:rgb(255, 255, 255);
     font-family: 'Odibee Sans', sans-serif;
 }
@@ -44,8 +54,14 @@ body {
     position: sticky;
     top: 0;
 
-    background-color: #161616;
-    opacity: .97;
+    background-color: rgba(255,255,255,.7);
+    backdrop-filter:
+    blur(15px);
+    border: #161616;
+    border-width: 3px;
+    border-bottom-style: solid;
+
+
     width:100%;
     padding: 0%;
     margin: 0%;
@@ -53,10 +69,11 @@ body {
 
 #navbar-logo {
     text-decoration: none;
-}
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 
-.nav-link {
-    padding-left:1vw;
+    /*cancel hover effect*/
+    transform: translate(0px) !important;
 }
 
 .main-visual-card {
@@ -71,6 +88,7 @@ body {
     position: absolute;
     margin-left: 50vw;
     transform: translate(-50%);
+    /*filter: blur(15px);*/
 }
 
 
@@ -155,6 +173,7 @@ body {
 }
 
 .invert-color {
+    filter: none;
     mix-blend-mode: difference;
 }
 
