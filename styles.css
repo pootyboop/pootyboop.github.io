@@ -1,3 +1,8 @@
+:root {
+    --color1:#ffc400;
+    --color2:#6600FF;
+}
+
 html {
     /*scroll-snap-type: y mandatory;*/
     /*scroll-behavior: smooth;*/
@@ -20,35 +25,29 @@ html {
 
 .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
     text-decoration: none;
-    color: #6600FF !important;
+    color: var(--color2) !important;
     background-color: transparent !important;
-    filter:none;
+    filter: none;
     transform: translate(0px, 2px);
 }
 
 #selected-nav-tab {
     text-decoration: underline;
     text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
 }
 
 .color-1 {
-    color: #ffc400;
+    color: var(--color1);;
 }
 
 .color-2 {
-    color: #6600FF;
+    color: var(--color2);;
 }
 
 btn {
-    background-color: #6600FF;
+    background-color:  var(--color2);;
     text-decoration: underline;
-}
-
-.carousel {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
-    /*max-width: 800px;*/
 }
 
 .carousel-btn {
@@ -88,7 +87,18 @@ btn {
 
 .carousel-item>img, .carousel-item>iframe, #yt-video {
     border-radius: 10px;
-    width: 100%;
+    max-width: 100%;
+}
+
+.carousel, #yt-video {
+    margin-left: auto;
+    margin-right: auto;
+    /*max-width: 800px;*/
+}
+
+.project-graphic {
+    height: 98%;
+    margin-bottom: 2%;
 }
 
 .itch-embed {
@@ -163,14 +173,14 @@ p, a, ul {
 }
 
 .badge {
-    background-color: #ffc400;
+    background-color: var(--color1);
     color:rgb(0, 0, 0);
     font-size: 1.2rem;
     font-weight: 400;
 }
 
 a {
-    color: #ffc400;
+    color: var(--color1);;
 }
 
 .image-caption, .carousel-btn {
