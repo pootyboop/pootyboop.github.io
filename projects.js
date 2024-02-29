@@ -70,23 +70,47 @@ const projectsData = {
     "music": [
         {
             "name": "Mind of Glass",
-            "year": "2023"
+            "year": "2023",
+            "length": "29 min",
+            "desc": "Phobia-themed electronic"
         },
         
         {
             "name": "Saliva",
-            "year": "2021"
+            "year": "2021",
+            "length": "30 min",
+            "desc": "Cerebral psychedelic electronic beats"
+        },
+        
+        {
+            "name": "Onion Ecdysis",
+            "year": "2020",
+            "length": "24 min",
+            "desc": "Experimental electronica/beat tape"
         }
     ]
 }
 
-document.getElementById("featured-library-games").innerHTML = `
-${projectsData.games.map(makeCardFromProjectFeatured).join('')}
-`
+var featuredLibraryGames = document.getElementById("featured-library-games");
+if (featuredLibraryGames) {
+    featuredLibraryGames.innerHTML = `
+    ${projectsData.games.map(makeCardFromProjectFeatured).join('')}
+    `
+}
 
-document.getElementById("full-library-games").innerHTML = `
-${projectsData.games.map(makeCardFromProjectFull).join('')}
-`
+var fullLibraryGames = document.getElementById("full-library-games");
+if (fullLibraryGames) {
+    fullLibraryGames.innerHTML = `
+    ${projectsData.games.map(makeCardFromProjectFull).join('')}
+    `
+}
+
+var fullLibraryMusic = document.getElementById("full-library-music");
+if (fullLibraryMusic) {
+    fullLibraryMusic.innerHTML = `
+    ${projectsData.music.map(makeCardFromProjectFull).join('')}
+    `
+}
 
 
 function makeCardFromProjectFeatured(project) {
@@ -111,7 +135,7 @@ function makeCardFromProject(project, onlyIfFeatured) {
     <div class="col-sm-12 col-lg-4">
         <a href="/games/${slug}.html" class="card-link">
             <div class="card">
-                <img class="card-img-top" src="/assets/games/${slug}/preview.png" alt="${name} preview image">
+                <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image">
                 <div class="card-body">
                     <h3 class="card-title">${name.toUpperCase()}</h3>
                     <p class="card-date">${projectExtraInfo(project)}</p>
@@ -128,6 +152,10 @@ function projectExtraInfo(project) {
     var subtitle = project.year;
     if (project.hasOwnProperty('platform')) {
         subtitle += " • " + project.platform;
+    }
+
+    else if (project.hasOwnProperty('length')) {
+        subtitle += " • " + project.length;
     }
 
     return subtitle;
