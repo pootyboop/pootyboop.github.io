@@ -5,7 +5,6 @@ html {
 }
 
 .nav-link {
-    font-size: 50px;
     padding-top: 0;
     padding-bottom: 0;
     margin-left: 1vw;
@@ -13,6 +12,8 @@ html {
     color: #000000;
 
     font-family: 'Smooch Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 350;
     /*filter:
     drop-shadow(1px 3px 0px #161616);*/
 }
@@ -47,7 +48,7 @@ btn {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
-    max-width: 800px;
+    /*max-width: 800px;*/
 }
 
 .carousel-btn {
@@ -85,8 +86,8 @@ btn {
     top: 0;
 }
 
-.carousel-item>img, .carousel-item>iframe {
-    border-radius: 15px;
+.carousel-item>img, .carousel-item>iframe, #yt-video {
+    border-radius: 10px;
     width: 100%;
 }
 
@@ -129,6 +130,13 @@ h1 {
     word-wrap: break-word;
     display: block;
     max-height: 3em;
+}
+
+@media (max-width: 1275px) {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
 }
 
 h2 {
