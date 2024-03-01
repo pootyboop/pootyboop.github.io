@@ -1,210 +1,248 @@
-const projectsData = {
-    "games": [
-        {
-            "name": "Sandboard",
-            "year": "2022",
-            "platform": "PC VR",
-            "desc": "High-speed VR sand surfing and grappling",
-            "featured": "true",
+const projectsData = [
+    {
+        "name": "Sandboard",
+        "category": "games",
+        "year": "2022",
+        "platform": "PC VR",
+        "desc": "High-speed VR sand surfing and grappling",
+        "featured": "true",
 
-            "skills": [
-                "Unreal Engine",
-                "Meta Quest 2",
-                "Blender",
-                "Photoshop",
-                "Logic Pro"
-            ],
+        "skills": [
+            "Unreal Engine",
+            "Meta Quest 2",
+            "Blender",
+            "Photoshop",
+            "Logic Pro"
+        ],
 
-            "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
-            "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-            "carouselScreenshots": [
-                {
-                    "screenshot": "/assets/projects/sandboard/home.png",
-                    "caption": "Home"
-                },
-                {
-                    "screenshot": "/assets/projects/sandboard/preview.png",
-                    "caption": "Sandstream"
-                },
-                {
-                    "screenshot": "/assets/projects/sandboard/Screenshot (323).png",
-                    "caption": "Arches"
-                }
-            ]
-        },
+        "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/sandboard/home.png"
+            },
+            {
+                "screenshot": "/assets/projects/sandboard/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/sandboard/Screenshot (323).png"
+            }
+        ],
 
-        {
-            "name": "Gata Guressi",
-            "year": "2024",
-            "platform": "Windows",
-            "desc": "Sci-fi translation/exploration RPG",
-            "featured": "true",
+        "similarProjects": [
+            "Dynamometer Dash",
+            "Gata Guressi",
+            "Heat of the Moment"
+        ]
+    },
 
-            "skills": [
-                "Unity",
-                "C#",
-                "Blender",
-                "Photoshop",
-                "Logic Pro"
-            ],
+    {
+        "name": "Gata Guressi",
+        "category": "games",
+        "year": "2024",
+        "platform": "Windows",
+        "desc": "Sci-fi translation/exploration RPG",
+        "featured": "true",
 
-            "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
-            "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-            "carouselScreenshots": [
-                {
-                    "screenshot": "/assets/projects/gata-guressi/window.png"
-                },
-                {
-                    "screenshot": "/assets/projects/gata-guressi/preview.png"
-                },
-                {
-                    "screenshot": "/assets/projects/gata-guressi/painting.png"
-                },
-                {
-                    "screenshot": "/assets/projects/gata-guressi/F0bar.png"
-                },
-                {
-                    "screenshot": "/assets/projects/gata-guressi/our-future-is-bright.png"
-                },
-                {
-                    "screenshot": "/assets/projects/gata-guressi/janowin.png"
-                },
-            ]
-        },
+        "skills": [
+            "Unity",
+            "C#",
+            "Blender",
+            "Photoshop",
+            "Logic Pro"
+        ],
 
-        {
-            "name": "Head in the Clouds",
-            "year": "2023",
-            "platform": "Windows",
-            "desc": "Chill airborne book delivery",
-            "featured": "true"
-        },
+        "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/gata-guressi/window.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/painting.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/F0bar.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/our-future-is-bright.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/janowin.png"
+            },
+        ],
 
-        {
-            "name": "PVP Playground",
-            "year": "2021",
-            "platform": "Unreleased",
-            "desc": "Loadout-focused multiplayer movement shooter"
-        },
+        "similarProjects": [
+            "Head in the Clouds",
+            "EM",
+            "Sandboard"
+        ]
+    },
 
-        {
-            "name": "Mutablus",
-            "year": "2023",
-            "platform": "Web",
-            "desc": "Procedurally-generated 2D exploration"
-        },
+    {
+        "name": "Head in the Clouds",
+        "category": "games",
+        "year": "2023",
+        "platform": "Windows",
+        "desc": "Chill airborne book delivery",
+        "featured": "true"
+    },
 
-        {
-            "name": "Dynamometer Dash",
-            "year": "2023",
-            "platform": "PC VR",
-            "desc": "Record-breaking VR train ride"
-        },
+    {
+        "name": "PVP Playground",
+        "category": "games",
+        "year": "2021",
+        "platform": "Unreleased",
+        "desc": "Loadout-focused multiplayer movement shooter"
+    },
 
-        {
-            "name": "Heat of the Moment",
-            "year": "2022",
-            "platform": "Windows, Mac",
-            "desc": "Intense burning house escape"
-        },
+    {
+        "name": "Mutablus",
+        "category": "games",
+        "year": "2023",
+        "platform": "Web",
+        "desc": "Procedurally-generated 2D exploration"
+    },
 
-        {
-            "name": "EM",
-            "year": "2019",
-            "platform": "Unreleased",
-            "desc": "Conceptual 2D exploration game"
-        },
+    {
+        "name": "Dynamometer Dash",
+        "category": "games",
+        "year": "2023",
+        "platform": "PC VR",
+        "desc": "Record-breaking VR train ride"
+    },
 
-        {
-            "name": "Hoop Sports",
-            "year": "2022",
-            "platform": "Windows, Mac",
-            "desc": "Physics-based sports chaos"
-        }
-    ],
+    {
+        "name": "Heat of the Moment",
+        "category": "games",
+        "year": "2022",
+        "platform": "Windows, Mac",
+        "desc": "Intense burning house escape"
+    },
 
-    "music": [
-        {
-            "name": "Mind of Glass",
-            "year": "2023",
-            "length": "29 min",
-            "desc": "Phobia-themed electronic"
-        },
-        
-        {
-            "name": "Saliva",
-            "year": "2021",
-            "length": "30 min",
-            "desc": "Cerebral psychedelic electronic beats"
-        },
-        
-        {
-            "name": "Onion Ecdysis",
-            "year": "2020",
-            "length": "24 min",
-            "desc": "Experimental electronica/beat tape"
-        }
-    ]
-}
+    {
+        "name": "EM",
+        "category": "games",
+        "year": "2019",
+        "platform": "Unreleased",
+        "desc": "Conceptual 2D exploration game"
+    },
 
-var projects = projectsData.games;
-projects.concat(projectsData.music);
+    {
+        "name": "Hoop Sports",
+        "category": "games",
+        "year": "2022",
+        "platform": "Windows, Mac",
+        "desc": "Physics-based sports chaos"
+    },
+
+    {
+        "name": "Mind of Glass",
+        "category": "music",
+        "year": "2023",
+        "length": "29 min",
+        "desc": "Phobia-themed electronic beats"
+    },
+    
+    {
+        "name": "Saliva",
+        "category": "music",
+        "year": "2021",
+        "length": "30 min",
+        "desc": "Concept album surrounding liquid and heat"
+    },
+    
+    {
+        "name": "Onion Ecdysis",
+        "category": "music",
+        "year": "2020",
+        "length": "24 min",
+        "desc": "Experimental electronica/beat tape"
+    }
+];
 
 
 
-
-
-
-
-
-
-
-
-
-
-var featuredLibraryGames = document.getElementById("featured-library-games");
-if (featuredLibraryGames) {
-    featuredLibraryGames.innerHTML = `
-    ${projectsData.games.map(makeCardFromProjectFeatured).join('')}
-    `
+var featuredLibrary = document.getElementById("featured-library");
+if (featuredLibrary) {
+    featuredLibrary.innerHTML = makeFeaturedLibrary();
 }
 
 var fullLibraryGames = document.getElementById("full-library-games");
 if (fullLibraryGames) {
-    fullLibraryGames.innerHTML = `
-    ${projectsData.games.map(makeCardFromProjectFull).join('')}
-    `
+    fullLibraryGames.innerHTML = makeFullLibrary("games");
 }
 
 var fullLibraryMusic = document.getElementById("full-library-music");
 if (fullLibraryMusic) {
-    fullLibraryMusic.innerHTML = `
-    ${projectsData.music.map(makeCardFromProjectFull).join('')}
-    `
+    fullLibraryMusic.innerHTML = makeFullLibrary("music");
 }
 
-
-function makeCardFromProjectFeatured(project) {
-    return makeCardFromProject(project, true);
-}
-
-
-function makeCardFromProjectFull(project) {
-    return makeCardFromProject(project, false);
+var similarLibrary = document.getElementById("similar-library");
+if (similarLibrary) {
+    similarLibrary.innerHTML = makeSimilarLibrary(getCurrProject());
 }
 
 
 
-function makeCardFromProject(project, onlyIfFeatured) {
-    if (onlyIfFeatured && !isProjectFeatured(project)) {
+function makeFullLibrary(category) {
+    var library = "";
+
+    for (var i = 0; i < projectsData.length; i++) {
+        if (projectsData[i].category === category) {
+            library += makeCardFromProject(projectsData[i]);
+        }
+    }
+
+    return library;
+}
+
+function makeFeaturedLibrary() {
+    var library = "";
+
+    for (var i = 0; i < projectsData.length; i++) {
+        if (projectsData[i].featured) {
+            library += makeCardFromProject(projectsData[i]);
+        }
+    }
+
+    return library;
+}
+
+function makeSimilarLibrary(project) {
+    if (!project.similarProjects) {
         return "";
     }
 
+    var library = `
+    <h2>SIMILAR PROJECTS</h2>
+    <hr>
+    <div class="container-fluid project-library">
+        <div class="row" id="similar-library">
+    `;
+
+    for (var i = 0; i < project.similarProjects.length; i++) {
+        library += makeCardFromProject(getProjectByName(project.similarProjects[i]), false)
+    }
+    library += `
+        </div>
+    </div>
+    `;
+
+    return library;
+}
+
+
+
+function makeCardFromProject(project) {
     const name = project.name
     const slug = slugify(project.name)
     return `
     <div class="col-sm-12 col-lg-4">
-        <a href="/games/${slug}.html" class="card-link">
+        <a href="/${project.category}/${slug}.html" class="card-link">
             <div class="card">
                 <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image">
                 <div class="card-body">
@@ -264,7 +302,17 @@ function verifyProjectKey(project, key) {
 
 function getCurrProject() {
     var currLoc = "/" + location.href.split("/").slice(-1);
-    return projects.find(project => currLoc.includes(slugify(project.name))) || false;
+    return projectsData.find(project => currLoc.includes(slugify(project.name))) || false;
+}
+
+function getProjectByName(name) {
+    for (var i = 0; i < projectsData.length; i++){
+        if (projectsData[i].name === name){
+            return projectsData[i];
+        }
+      }
+
+      return "";
 }
 
 

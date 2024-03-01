@@ -10,6 +10,11 @@ const navLinks = [
     },
 
     {
+        "text": "Projects",
+        "link": "/projects.html"
+    },
+
+    {
         "text": "CV",
         "link": "/cv.html"
     },

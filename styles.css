@@ -28,7 +28,8 @@ html {
     color: var(--color2) !important;
     background-color: transparent !important;
     filter: none;
-    transform: translate(0px, 2px);
+    /*transform: translate(0px, 2px);*/
+    transform: scale(1.05);
 }
 
 #selected-nav-tab {
@@ -184,6 +185,13 @@ a {
     color: var(--color1) !important;
 }
 
+.center-link {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .image-caption, .carousel-btn {
     filter: drop-shadow(0px 0px 10px #000000);
     color: #ececec;
@@ -193,17 +201,23 @@ a {
     background-color: #111111;
     height: 95%;
     margin-bottom: 5%;
+
+    transition: all .05s ease-in-out; 
 }
 
 .card:hover {
-    border-color: #fff;
-
+    border-color: #a7a7a7;
+    transform: scale(1.05);
 }
 
 .card:hover .card-title{
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
+}
+
+.fade{
+    opacity: .5;
 }
 
 .card-title {
