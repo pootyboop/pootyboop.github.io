@@ -86,18 +86,18 @@ btn {
     top: 0;
 }
 
-.carousel, .carousel-item>img, .carousel-item>iframe, #yt-video {
+.carousel, .carousel-item>img, .carousel-item>iframe, #yt-video, .standalone-carousel-image {
     max-height: 500px;
 }
 
-.carousel-item>img, .carousel-item>iframe, #yt-video {
+.carousel-item>img, .carousel-item>iframe, #yt-video, .standalone-carousel-image {
     border-radius: 10px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.carousel, #yt-video {
+.carousel, #yt-video, .standalone-carousel-image {
     margin: auto;
     /*max-width: 800px;*/
 }
@@ -232,6 +232,8 @@ a {
     font-weight: 400;
     padding: 5px;
     max-width: 40rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 button {

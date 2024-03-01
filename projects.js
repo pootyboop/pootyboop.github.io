@@ -318,6 +318,44 @@ const projectsData = [
         "libraryTags": [
             "soundtrack",
             "hierre"
+        ],
+
+        "skills": [
+            "Unity 🖳",
+            "C# 🖳",
+            "Godot 🖳",
+            "Aseprite 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/UfE63SiF9uw?si=4DTVmVrEBp3G-iDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/em/redforest1.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/bullaciona1.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/spacewalkway.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/redforest2.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/bullaciona2.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/redforestend.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Gata Guressi",
+            "Head in the Clouds",
+            "Mutablus"
         ]
     },
 
@@ -326,12 +364,47 @@ const projectsData = [
         "category": "games",
         "year": "2022",
         "platform": "Windows, Mac",
-        "desc": "Physics-based sports chaos"
+        "desc": "Physics-based sports chaos",
+
+        "skills": [
+            "Processing 🖳",
+            "Aseprite 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573017?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/DB8v37nHLkw?si=bYrGDzC6Xk6UId6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/hoop-sports/256 players.png"
+            },
+            {
+                "screenshot": "/assets/projects/hoop-sports/bumpers.png"
+            },
+            {
+                "screenshot": "/assets/projects/hoop-sports/football.png"
+            },
+            {
+                "screenshot": "/assets/projects/hoop-sports/dodgeball.png"
+            },
+            {
+                "screenshot": "/assets/projects/hoop-sports/55v53.png"
+            },
+        ],
+
+
+        "similarProjects": [
+            "Heat of the Moment",
+            "Mutablus",
+            "PVP Playground"
+        ]
     },
 
     {
         "name": "Mind of Glass",
         "category": "music",
+        "credit": "ft. Sebastien Alamo-Selis",
         "year": "2023",
         "length": "29 min",
         "desc": "Phobia-themed electronic beats",
@@ -374,12 +447,56 @@ const projectsData = [
     {
         "name": "Saliva",
         "category": "music",
+        "credit": "ft. Sebastien Alamo-Selis",
         "year": "2021",
         "length": "30 min",
         "desc": "Concept album surrounding liquid and heat",
 
         "libraryTags": [
             "hierre"
+        ],
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Photoshop 🖍",
+            "GIMP 🖍"
+        ],
+
+        "ytEmbed": `
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/2SgGRrFa2EcLVbIN2vCS5x?utm_source=generator"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,    
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/saliva/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/1.1.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/4.1.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/6.1.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/5.1 kal.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/1.3 gold.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/3.1.png"
+            },
+            {
+                "screenshot": "/assets/projects/saliva/tracklist.png"
+            },
+        ],
+
+        "similarProjects": [
+            "Mind of Glass",
+            "Onion Ecdysis"
         ]
     },
     
@@ -388,7 +505,27 @@ const projectsData = [
         "category": "music",
         "year": "2020",
         "length": "24 min",
-        "desc": "Experimental electronica/beat tape"
+        "desc": "Experimental electronica/beat tape",
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫"
+        ],
+
+        "ytEmbed": `
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/3uJtP8vLB9e5XUVKO770WD?si=Jj8_w9kC4XkMxQy_?utm_source=generator"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,    
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/onion-ecdysis/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Mind of Glass",
+            "Saliva"
+        ]
     },
 
     {
@@ -417,9 +554,55 @@ const projectsData = [
 
 
         "similarProjects": [
-            "Dynamometer Dash",
+            "XR Stories Internship",
             "Sandboard",
-            "Head in the Clouds"
+            "Dynamometer Dash"
+        ]
+    },
+
+    {
+        "name": "XR Stories Internship",
+        "category": "projects",
+        "credit": "XR Stories, Ziqi Fang",
+        "year": "2022",
+        "desc": "Projects from my internship",
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Unity 🖳",
+            "C# 🖳",
+            "Meta Quest 2 🖳",
+            "Blender 🖍",
+            "Substance Painter 🖍",
+            "Photoshop 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/ID2NUOd2B7w?si=kPC0FHsqw9lo9FWq" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/arguildhall.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/proxandreverie.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/mocap.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/destructiblexr.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "Sandboard",
+            "Dynamometer Dash"
         ]
     },
 
@@ -696,28 +879,40 @@ function makeProjectOverviewGraphics(project) {
 
 
         <div class="col-sm-12 col-lg-6 project-graphic">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    ${makeCarouselButtons(project.carouselScreenshots.length)}
-                </div>
-                <div class="carousel-inner">
-                    ${makeScreenshots(project.carouselScreenshots)}
-                </div>
-                <button id="prev-btn" class="carousel-control-prev btn carousel-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button id="next-btn" class="carousel-control-next btn carousel-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        ${makeCarousel(project)}
         </div>
     </div>
     `
 }
 
+function makeCarousel(project) {
+    return `
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            ${makeCarouselButtons(project.carouselScreenshots.length)}
+        </div>
+        <div class="carousel-inner">
+            ${makeScreenshots(project.carouselScreenshots)}
+        </div>
+        ${project.carouselScreenshots.length > 1 ? `
+        <button id="prev-btn" class="carousel-control-prev btn carousel-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="next-btn" class="carousel-control-next btn carousel-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        `: ""}
+    </div>
+    `;
+}
+
 function makeCarouselButtons(number) {
+    if (number === 1) {
+        return "";
+    }
+
     var carouselButtons = "";
 
     for (let i = 0; i < number; i++) {

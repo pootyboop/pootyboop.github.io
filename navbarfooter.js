@@ -17,11 +17,6 @@ const navLinks = [
     {
         "text": "CV",
         "link": "/cv.html"
-    },
-
-    {
-        "text": "About Me",
-        "link": "/about-me.html"
     }
 ]
 
@@ -79,16 +74,16 @@ document.body.innerHTML += `
 var socialLinks = document.getElementsByClassName("social-links");
 for (var i = 0; i < socialLinks.length; i++){
     socialLinks[i].innerHTML = `
-    <a href="https://www.linkedin.com/in/elliot-mann/" class="social-icon-link">
+    <a href="https://www.linkedin.com/in/elliot-mann/" class="social-icon-link" target="_blank">
         <img src="/assets/icons/linkedin.svg" class="social-icon">
     </a>
-    <a href="https://elliotgmann.itch.io" class="social-icon-link">
+    <a href="https://elliotgmann.itch.io" class="social-icon-link" target="_blank">
         <img src="/assets/icons/itch.svg" class="social-icon">
     </a>
-    <a href="https://open.spotify.com/artist/2VMULBbGuXgT0RTJT2yMyi?si=nqbQfGGXTL6Qr_C7HLPzeg&nd=1&dlsi=4493b3734be84645" class="social-icon-link">
+    <a href="https://open.spotify.com/artist/2VMULBbGuXgT0RTJT2yMyi?si=nqbQfGGXTL6Qr_C7HLPzeg&nd=1&dlsi=4493b3734be84645" class="social-icon-link" target="_blank">
         <img src="/assets/icons/spotify.svg" class="social-icon">
     </a>
-    <a href="https://www.youtube.com/@elliotgmann/featured" class="social-icon-link">
+    <a href="https://www.youtube.com/@elliotgmann/featured" class="social-icon-link" target="_blank">
         <img src="/assets/icons/youtube.svg" class="social-icon">
     </a>
     `
