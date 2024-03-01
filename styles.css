@@ -195,7 +195,7 @@ h3 {
     margin-bottom: 2%;
 }
 
-p, a, ul, button {
+p, a, ul, li, button {
     color:rgb(201, 201, 201);
     font-family: 'Oswald', sans-serif;;
     font-size: 1.8rem;
@@ -216,6 +216,31 @@ p, a, ul, button {
 
 a {
     color: var(--color1) !important;
+}
+
+.link-button:hover, button:hover:not(.carousel-btn) {
+    transform: scale(1.05);
+    border-color: #a7a7a7;
+    border-width: 5px;
+}
+
+.link-button {
+    color: #000000 !important;
+    background-color: var(--color1);
+    border-radius: 5px;
+    text-decoration: none !important;
+    font-weight: 400;
+    padding: 5px;
+    max-width: 40rem;
+}
+
+button {
+    background-color: var(--color1);
+    border-radius: 5px;
+    border-style: none;
+    color:rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .center-link {
@@ -328,6 +353,7 @@ body {
     border: #252525;
     border-width: 2px;
     border-top-style: solid;
+    min-height: 75px;
 }
 
 .footer-row {
@@ -367,15 +393,6 @@ body {
 
 .footer-text {
     font-size: 1.3rem;
-}
-
-button {
-    background-color: var(--color1);
-    border-radius: 5px;
-    border-style: none;
-    color:rgb(0, 0, 0);
-    font-size: 1.5rem;
-    font-weight: 300;
 }
 
 .social-icon-link {

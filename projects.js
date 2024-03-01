@@ -8,7 +8,8 @@ const projectsData = [
 
         "libraryTags": [
             "featured",
-            "soundtrack"
+            "soundtrack",
+            "hierre"
         ],
 
         "skills": [
@@ -36,8 +37,8 @@ const projectsData = [
 
         "similarProjects": [
             "Dynamometer Dash",
-            "Gata Guressi",
-            "Heat of the Moment"
+            "The Chime Hours",
+            "Gata Guressi"
         ]
     },
 
@@ -50,7 +51,8 @@ const projectsData = [
 
         "libraryTags": [
             "featured",
-            "soundtrack"
+            "soundtrack",
+            "hierre"
         ],
 
         "skills": [
@@ -82,13 +84,13 @@ const projectsData = [
             },
             {
                 "screenshot": "/assets/projects/gata-guressi/janowin.png"
-            },
+            }
         ],
 
         "similarProjects": [
+            "Hierre",
             "Head in the Clouds",
-            "EM",
-            "Sandboard"
+            "EM"
         ]
     },
 
@@ -103,6 +105,43 @@ const projectsData = [
             "featured",
             "soundtrack"
         ],
+
+        "skills": [
+            "Unity 🖳",
+            "C# 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Logic Pro ♫",
+            "Final Cut Pro ▷"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1891265?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/SSglkIJXO0A?si=ydBGM-hVEYmilC6F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/head-in-the-clouds/glider.png"
+            },
+            {
+                "screenshot": "/assets/projects/head-in-the-clouds/bog.png"
+            },
+            {
+                "screenshot": "/assets/projects/head-in-the-clouds/charles.png"
+            },
+            {
+                "screenshot": "/assets/projects/head-in-the-clouds/sky.png"
+            },
+            {
+                "screenshot": "/assets/projects/head-in-the-clouds/aircannon.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Gata Guressi",
+            "Mutablus",
+            "PVP Playground"
+        ]
     },
 
     {
@@ -110,7 +149,37 @@ const projectsData = [
         "category": "games",
         "year": "2021",
         "platform": "Unreleased",
-        "desc": "Loadout-focused multiplayer movement shooter"
+        "desc": "Loadout-focused multiplayer movement shooter",
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Blender 🖍",
+            "GIMP 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/pvp-playground/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/weapon-mods.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/siphon.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/wheel.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Head in the Clouds",
+            "Sandboard",
+            "Hoop Sports"
+        ]
     },
 
     {
@@ -118,7 +187,42 @@ const projectsData = [
         "category": "games",
         "year": "2023",
         "platform": "Web",
-        "desc": "Procedurally-generated 2D exploration"
+        "desc": "Procedurally-generated 2D exploration",
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/Zy7v1fg1OZ0?si=HafN4nujdtrBDBlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "skills": [
+            "Javascript 🖳",
+            "p5.js 🖳",
+            "HTML 🖳",
+            "CSS 🖳",
+            "Aseprite 🖍"
+        ],
+
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/mutablus/background.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/snowmen.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/necropolis.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/mtnvillage.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/stonedesert.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "EM",
+            "Heat of the Moment",
+            "Gata Guressi"
+        ]
     },
 
     {
@@ -126,7 +230,42 @@ const projectsData = [
         "category": "games",
         "year": "2023",
         "platform": "PC VR",
-        "desc": "Record-breaking VR train ride"
+        "desc": "Record-breaking VR train ride",
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Meta Quest 2 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2030080?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/pFGeY7rbKKs?si=cCrI0Bh_73xM6upf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/start.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/train.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/speed.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/whee.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/window.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Sandboard",
+            "The Chime Hours",
+            "Head in the Clouds"
+        ]
     },
 
     {
@@ -134,7 +273,39 @@ const projectsData = [
         "category": "games",
         "year": "2022",
         "platform": "Windows, Mac",
-        "desc": "Intense burning house escape"
+        "desc": "Intense burning house escape",
+
+        "skills": [
+            "Processing 🖳",
+            "Blender 🖍",
+            "Aseprite 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573232?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/JQpjnCniBnM?si=H9q86RxnPbV8mJGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/heat-of-the-moment/assassin encounter.png"
+            },
+            {
+                "screenshot": "/assets/projects/heat-of-the-moment/bathroom floor.png"
+            },
+            {
+                "screenshot": "/assets/projects/heat-of-the-moment/bomb in cabinet.png"
+            },
+            {
+                "screenshot": "/assets/projects/heat-of-the-moment/portal.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "EM",
+            "Mutablus",
+            "Hoop Sports"
+        ]
     },
 
     {
@@ -145,7 +316,8 @@ const projectsData = [
         "desc": "Conceptual 2D exploration game",
 
         "libraryTags": [
-            "soundtrack"
+            "soundtrack",
+            "hierre"
         ]
     },
 
@@ -204,7 +376,11 @@ const projectsData = [
         "category": "music",
         "year": "2021",
         "length": "30 min",
-        "desc": "Concept album surrounding liquid and heat"
+        "desc": "Concept album surrounding liquid and heat",
+
+        "libraryTags": [
+            "hierre"
+        ]
     },
     
     {
@@ -213,6 +389,63 @@ const projectsData = [
         "year": "2020",
         "length": "24 min",
         "desc": "Experimental electronica/beat tape"
+    },
+
+    {
+        "name": "The Chime Hours",
+        "category": "projects",
+        "credit": "Lord Whitney, Reflex Arc",
+        "year": "2023",
+        "desc": "Surreal XR forest experience",
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Meta Quest 2 🖳",
+            "Vive XR Elite 🖳",
+            "Vive Focus 3 🖳",
+            "Perforce 🖳",
+            "Blender 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/the-chime-hours/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Dynamometer Dash",
+            "Sandboard",
+            "Head in the Clouds"
+        ]
+    },
+
+    {
+        "name": "Hierre",
+        "category": "projects",
+        "year": "2019",
+        "desc": "Sci-fi universe shared across many projects",
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Unity 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/sandboard/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/preview.png"
+            }
+        ]
     }
 ];
 
@@ -236,6 +469,11 @@ if (soundtrackLibrary) {
     soundtrackLibrary.innerHTML = makeTagLibrary('soundtrack');
 }
 
+var hierreLibrary = document.getElementById("hierre-library");
+if (hierreLibrary) {
+    hierreLibrary.innerHTML = makeTagLibrary('hierre');
+}
+
 var fullLibraryGames = document.getElementById("full-library-games");
 if (fullLibraryGames) {
     fullLibraryGames.innerHTML = makeFullLibrary("games");
@@ -244,6 +482,11 @@ if (fullLibraryGames) {
 var fullLibraryMusic = document.getElementById("full-library-music");
 if (fullLibraryMusic) {
     fullLibraryMusic.innerHTML = makeFullLibrary("music");
+}
+
+var fullLibraryProjects = document.getElementById("full-library-projects");
+if (fullLibraryProjects) {
+    fullLibraryProjects.innerHTML = makeFullLibrary("projects");
 }
 
 var similarLibrary = document.getElementById("similar-library");
@@ -330,6 +573,11 @@ function projectExtraInfo(project) {
 
     else if (project.hasOwnProperty('length')) {
         subtitle += " • " + project.length;
+    }
+
+    
+    if (project.hasOwnProperty('credit')) {
+        subtitle += " • " + project.credit;
     }
 
     return subtitle;
