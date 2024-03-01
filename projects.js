@@ -5,7 +5,11 @@ const projectsData = [
         "year": "2022",
         "platform": "PC VR",
         "desc": "High-speed VR sand surfing and grappling",
-        "featured": "true",
+
+        "libraryTags": [
+            "featured",
+            "soundtrack"
+        ],
 
         "skills": [
             "Unreal Engine 🖳",
@@ -43,7 +47,11 @@ const projectsData = [
         "year": "2024",
         "platform": "Windows",
         "desc": "Sci-fi translation/exploration RPG",
-        "featured": "true",
+
+        "libraryTags": [
+            "featured",
+            "soundtrack"
+        ],
 
         "skills": [
             "Unity 🖳",
@@ -90,7 +98,11 @@ const projectsData = [
         "year": "2023",
         "platform": "Windows",
         "desc": "Chill airborne book delivery",
-        "featured": "true"
+
+        "libraryTags": [
+            "featured",
+            "soundtrack"
+        ],
     },
 
     {
@@ -130,7 +142,11 @@ const projectsData = [
         "category": "games",
         "year": "2019",
         "platform": "Unreleased",
-        "desc": "Conceptual 2D exploration game"
+        "desc": "Conceptual 2D exploration game",
+
+        "libraryTags": [
+            "soundtrack"
+        ]
     },
 
     {
@@ -202,9 +218,22 @@ const projectsData = [
 
 
 
+
+
+
+
+
+
+
+
 var featuredLibrary = document.getElementById("featured-library");
 if (featuredLibrary) {
-    featuredLibrary.innerHTML = makeFeaturedLibrary();
+    featuredLibrary.innerHTML = makeTagLibrary('featured');
+}
+
+var soundtrackLibrary = document.getElementById("soundtrack-library");
+if (soundtrackLibrary) {
+    soundtrackLibrary.innerHTML = makeTagLibrary('soundtrack');
 }
 
 var fullLibraryGames = document.getElementById("full-library-games");
@@ -236,11 +265,11 @@ function makeFullLibrary(category) {
     return library;
 }
 
-function makeFeaturedLibrary() {
+function makeTagLibrary(tag) {
     var library = "";
 
     for (var i = 0; i < projectsData.length; i++) {
-        if (projectsData[i].featured) {
+        if (doesProjectHaveTag(projectsData[i], tag)) {
             library += makeCardFromProject(projectsData[i]);
         }
     }
@@ -308,14 +337,12 @@ function projectExtraInfo(project) {
 
 
 
-function isProjectFeatured(project) {
-    if (project.hasOwnProperty('featured')) {
-        return (project.featured === "true");
+function doesProjectHaveTag(project, tag) {
+    if (project.libraryTags) {
+        return (project.libraryTags.includes(tag))
     }
 
-    else {
-        return false;
-    }
+    return false;
 }
 
 
