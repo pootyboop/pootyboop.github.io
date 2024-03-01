@@ -5,7 +5,32 @@ const projectsData = {
             "year": "2022",
             "platform": "PC VR",
             "desc": "High-speed VR sand surfing and grappling",
-            "featured": "true"
+            "featured": "true",
+
+            "skills": [
+                "Unreal Engine",
+                "Meta Quest 2",
+                "Blender",
+                "Photoshop",
+                "Logic Pro"
+            ],
+
+            "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
+            "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+            "carouselScreenshots": [
+                {
+                    "screenshot": "/assets/projects/sandboard/home.png",
+                    "caption": "Home"
+                },
+                {
+                    "screenshot": "/assets/projects/sandboard/preview.png",
+                    "caption": "Sandstream"
+                },
+                {
+                    "screenshot": "/assets/projects/sandboard/Screenshot (323).png",
+                    "caption": "Arches"
+                }
+            ]
         },
 
         {
@@ -13,7 +38,38 @@ const projectsData = {
             "year": "2024",
             "platform": "Windows",
             "desc": "Sci-fi translation/exploration RPG",
-            "featured": "true"
+            "featured": "true",
+
+            "skills": [
+                "Unity",
+                "C#",
+                "Blender",
+                "Photoshop",
+                "Logic Pro"
+            ],
+
+            "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+            "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+            "carouselScreenshots": [
+                {
+                    "screenshot": "/assets/projects/gata-guressi/window.png"
+                },
+                {
+                    "screenshot": "/assets/projects/gata-guressi/preview.png"
+                },
+                {
+                    "screenshot": "/assets/projects/gata-guressi/painting.png"
+                },
+                {
+                    "screenshot": "/assets/projects/gata-guressi/F0bar.png"
+                },
+                {
+                    "screenshot": "/assets/projects/gata-guressi/our-future-is-bright.png"
+                },
+                {
+                    "screenshot": "/assets/projects/gata-guressi/janowin.png"
+                },
+            ]
         },
 
         {
@@ -90,6 +146,21 @@ const projectsData = {
         }
     ]
 }
+
+var projects = projectsData.games;
+projects.concat(projectsData.music);
+
+
+
+
+
+
+
+
+
+
+
+
 
 var featuredLibraryGames = document.getElementById("featured-library-games");
 if (featuredLibraryGames) {
@@ -185,4 +256,182 @@ function slugify(str) {
       .replace(/[^a-z0-9 -]/g, '') // remove non-alphanumeric characters
       .replace(/\s+/g, '-') // replace spaces with hyphens
       .replace(/-+/g, '-'); // remove consecutive hyphens
-  }
+}
+
+function verifyProjectKey(project, key) {
+    return project.hasOwnProperty(key);
+}
+
+function getCurrProject() {
+    var currLoc = "/" + location.href.split("/").slice(-1);
+    return projects.find(project => currLoc.includes(slugify(project.name))) || false;
+}
+
+
+
+
+var projectHeader = document.getElementById("project-header");
+if (projectHeader) {
+    projectHeader.innerHTML = `
+    ${makeProjectHeader(getCurrProject())}
+    `
+}
+
+function makeProjectHeader(project) {
+    return `
+    <div class="row">
+            <div class="col">
+                <h1>${String(project.name).toUpperCase()}</h1>
+                <p>${projectExtraInfo(project)}</p>
+            </div>
+            <div class="col">
+            ${makeProjectEmbed(project)}
+            </div>
+        </div>
+    `
+}
+
+
+function makeProjectEmbed(project) {
+    if (verifyProjectKey(project, 'projectEmbed')) {
+        return project.projectEmbed;
+    }
+    
+    return "";
+}
+
+
+
+
+var projectOverviewGraphics = document.getElementById("project-overview-graphics");
+if (projectOverviewGraphics) {
+    projectOverviewGraphics.innerHTML = `
+    ${makeProjectOverviewGraphics(getCurrProject())}
+    `
+}
+
+function makeProjectOverviewGraphics(project) {
+    return `
+    <div class="row">
+        ${project.ytEmbed ? 
+            `
+            <div class="col-sm-12 col-lg-6 project-graphic">
+                <div class="embed-responsive embed-responsive-16by9">
+                    ${project.ytEmbed}
+                </div>
+            </div>
+            `
+        :
+        ""}
+
+
+
+        <div class="col-sm-12 col-lg-6 project-graphic">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    ${makeCarouselButtons(project.carouselScreenshots.length)}
+                </div>
+                <div class="carousel-inner">
+                    ${makeScreenshots(project.carouselScreenshots)}
+                </div>
+                <button id="prev-btn" class="carousel-control-prev btn carousel-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="next-btn" class="carousel-control-next btn carousel-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    `
+}
+
+function makeCarouselButtons(number) {
+    var carouselButtons = "";
+
+    for (let i = 0; i < number; i++) {
+        var newButton;
+
+        if (i === 0) {
+            newButton = `<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>`
+        }
+
+        else {
+            newButton = `<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${i}" aria-label="Slide ${i + 1}"></button>`;
+        }
+
+        carouselButtons += newButton;
+    }
+
+    return carouselButtons;
+
+}
+
+function makeScreenshots(inScreenshots) {
+    var screenshots = "";
+
+    for (let i = 0; i < inScreenshots.length; i++) {
+        var newSc;
+
+        if (i === 0) {
+            newSc = `<div class="carousel-item active">`
+        }
+
+        else {
+            newSc = `<div class="carousel-item">`;
+        }
+
+        newSc += `
+            <img class="d-block" src="${inScreenshots[i].screenshot}" alt="First slide">
+        `;
+
+        if (inScreenshots[i].caption) {
+            newSc += `
+            <div class="carousel-caption d-none d-md-block">
+                    <p class="image-caption">${inScreenshots[i].caption}</p>
+                </div>
+            `;
+        }
+                
+
+        newSc += `
+            </div>
+        `
+
+        screenshots += newSc;
+    }
+
+    return screenshots;
+}
+
+
+
+
+
+
+
+
+
+
+var projectSkills = document.getElementById("skills");
+if (projectSkills) {
+    projectSkills.innerHTML = `
+    ${makeSkills(getCurrProject())}
+    `
+}
+
+function makeSkills(project) {
+    if (verifyProjectKey(project, 'skills')) {
+        return project.skills.map(makeSkill).join('');
+    }
+    
+    return "";
+}
+
+
+
+function makeSkill(skill) {
+    return `<p class="badge skill">${skill}</p>`;
+}
