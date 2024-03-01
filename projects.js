@@ -8,14 +8,15 @@ const projectsData = [
         "featured": "true",
 
         "skills": [
-            "Unreal Engine",
-            "Meta Quest 2",
-            "Blender",
-            "Photoshop",
-            "Logic Pro"
+            "Unreal Engine 🖳",
+            "Meta Quest 2 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Logic Pro ♫",
+            "Final Cut Pro ▷"
         ],
 
-        "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         "carouselScreenshots": [
             {
@@ -45,14 +46,15 @@ const projectsData = [
         "featured": "true",
 
         "skills": [
-            "Unity",
-            "C#",
-            "Blender",
-            "Photoshop",
-            "Logic Pro"
+            "Unity 🖳",
+            "C# 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Logic Pro ♫",
+            "Final Cut Pro ▷"
         ],
 
-        "projectEmbed": `<iframe class="itch-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         "carouselScreenshots": [
             {
@@ -144,7 +146,41 @@ const projectsData = [
         "category": "music",
         "year": "2023",
         "length": "29 min",
-        "desc": "Phobia-themed electronic beats"
+        "desc": "Phobia-themed electronic beats",
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Final Cut Pro ▷",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/1fo60ZGGMVg6U0yjzpzM9B?utm_source=generator&theme=0"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,    
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/mind-of-glass/preview.png"
+            },
+
+            {
+                "screenshot": "/assets/projects/mind-of-glass/9minds.png"
+            },
+
+            {
+                "screenshot": "/assets/projects/mind-of-glass/old-cover.png"
+            },
+
+            {
+                "screenshot": "/assets/projects/mind-of-glass/mindofglass alt2.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Saliva",
+            "Onion Ecdysis"
+        ]
     },
     
     {
@@ -218,7 +254,7 @@ function makeSimilarLibrary(project) {
     }
 
     var library = `
-    <h2>SIMILAR PROJECTS</h2>
+    <h2>🏷 SIMILAR PROJECTS</h2>
     <hr>
     <div class="container-fluid project-library">
         <div class="row" id="similar-library">
@@ -326,17 +362,27 @@ if (projectHeader) {
 }
 
 function makeProjectHeader(project) {
-    return `
-    <div class="row">
-            <div class="col">
-                <h1>${String(project.name).toUpperCase()}</h1>
-                <p>${projectExtraInfo(project)}</p>
+
+    if (project.projectEmbed) {
+        return `
+        <div class="row">
+                <div class="col">
+                    <h1>${String(project.name).toUpperCase()}</h1>
+                    <p>${projectExtraInfo(project)}</p>
+                </div>
+                <div class="col">
+                    ${makeProjectEmbed(project)}
+                </div>
             </div>
-            <div class="col">
-            ${makeProjectEmbed(project)}
-            </div>
-        </div>
-    `
+        `
+    }
+
+    else {
+        return `
+            <h1>${String(project.name).toUpperCase()}</h1>
+            <p>${projectExtraInfo(project)}</p>
+        `
+    }
 }
 
 
@@ -364,7 +410,7 @@ function makeProjectOverviewGraphics(project) {
         ${project.ytEmbed ? 
             `
             <div class="col-sm-12 col-lg-6 project-graphic">
-                <div class="embed-responsive embed-responsive-16by9">
+                <div${project.category !== "music" ?  ` class="embed-responsive embed-responsive-16by9"` : ` class="project-graphic-iframe-container"`}>
                     ${project.ytEmbed}
                 </div>
             </div>

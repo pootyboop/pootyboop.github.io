@@ -86,14 +86,19 @@ btn {
     top: 0;
 }
 
+.carousel, .carousel-item>img, .carousel-item>iframe, #yt-video {
+    max-height: 500px;
+}
+
 .carousel-item>img, .carousel-item>iframe, #yt-video {
     border-radius: 10px;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel, #yt-video {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     /*max-width: 800px;*/
 }
 
@@ -101,6 +106,31 @@ btn {
     height: 98%;
     margin-bottom: 2%;
 }
+
+.block-vid {
+    aspect-ratio: 16 / 9;
+    max-width: 800px;
+    margin-bottom: 5%;
+}
+
+.block-vid, .margin-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+.project-graphic-iframe-container {
+    width: 100%;
+    height: 100%;
+}
+
+.project-graphic-iframe-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+*/
 
 .itch-embed {
     display: block;
@@ -140,6 +170,9 @@ h1 {
     word-wrap: break-word;
     display: block;
     max-height: 3em;
+
+    transform:translateX(-5px);
+    
 }
 
 h2 {
@@ -401,9 +434,11 @@ button {
     h1 {
         font-size: 5rem;
         line-height: 4.2rem;
+
+        transform: translateX(-2px);
     }
 
-    .itch-embed {
+    .project-embed {
         margin-right: auto;
         margin-bottom: 5%;
     }
@@ -414,6 +449,10 @@ button {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .project-embed {
+        display: none;
     }
 }
 
