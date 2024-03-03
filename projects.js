@@ -1,5 +1,36 @@
 const projectsData = [
     {
+        "name": "Hierre",
+        "category": "projects",
+        "year": "2019-24",
+        "desc": "Sci-fi universe shared across many projects",
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Unity 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/hierre/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/hierre/ronetto.png"
+            },
+            {
+                "screenshot": "/assets/projects/hierre/voenn.png"
+            },
+            {
+                "screenshot": "/assets/projects/hierre/guressen.png"
+            }
+        ]
+    },
+
+    {
         "name": "Gata Guressi",
         "category": "games",
         "year": "2024",
@@ -589,11 +620,9 @@ const projectsData = [
 
         "skills": [
             "Unreal Engine 🖳",
-            "Meta Quest 2 🖳",
-            "FrameVR 🖳",
-            "Github 🖳",
-            "Perforce 🖳",
-            "Blender 🖍"
+            "UEFN 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍"
         ],
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -606,8 +635,8 @@ const projectsData = [
 
 
         "similarProjects": [
+            "Imminent-XR",
             "The Chime Hours",
-            "216 Below",
             "XR Stories Internship"
         ]
     },
@@ -642,9 +671,9 @@ const projectsData = [
 
 
         "similarProjects": [
-            "XR Stories Internship",
+            "Imminent-XR",
             "216 Below",
-            "Sandboard"
+            "XR Stories Internship"
         ]
     },
 
@@ -676,9 +705,9 @@ const projectsData = [
 
 
         "similarProjects": [
+            "Imminent-XR",
             "The Chime Hours",
-            "XR Stories Internship",
-            "Dynamometer Dash"
+            "XR Stories Internship"
         ]
     },
 
@@ -730,31 +759,6 @@ const projectsData = [
             "Sandboard",
             "The Chime Hours",
             "216 Below"
-        ]
-    },
-
-    {
-        "name": "Hierre",
-        "category": "projects",
-        "year": "2019-24",
-        "desc": "Sci-fi universe shared across many projects",
-
-        "skills": [
-            "Unreal Engine 🖳",
-            "Unity 🖳",
-            "Blender 🖍",
-            "Photoshop 🖍"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/sandboard/preview.png"
-            },
-            {
-                "screenshot": "/assets/projects/gata-guressi/preview.png"
-            }
         ]
     }
 ];

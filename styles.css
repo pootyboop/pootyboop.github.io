@@ -1,6 +1,7 @@
 :root {
-    --color1:#ffc400;
+    --color1:#ffc400; /*a76dff*/
     --color2:#6600FF;
+    --color1hov:#ffd856;
 }
 
 html {
@@ -30,6 +31,10 @@ html {
     filter: none;
     /*transform: translate(0px, 2px);*/
     transform: scale(1.05);
+}
+
+a:hover:not(.link-button) {
+    color: var(--color1hov) !important;
 }
 
 #selected-nav-tab {
@@ -340,7 +345,7 @@ body {
     top: 0;
 
     /*background-color: rgba(255,255,255,.7);*/
-    background-image: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255,.8));
+    background-image: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255,.85));
     backdrop-filter:
     blur(5px);
     border: #161616;
@@ -485,6 +490,12 @@ body {
 
     .project-embed {
         display: none;
+    }
+
+    .social-links {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
