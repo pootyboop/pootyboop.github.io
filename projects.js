@@ -1,48 +1,5 @@
 const projectsData = [
     {
-        "name": "Sandboard",
-        "category": "games",
-        "year": "2022",
-        "platform": "PC VR",
-        "desc": "High-speed VR sand surfing and grappling",
-
-        "libraryTags": [
-            "featured",
-            "soundtrack",
-            "hierre"
-        ],
-
-        "skills": [
-            "Unreal Engine 🖳",
-            "Meta Quest 2 🖳",
-            "Blender 🖍",
-            "Photoshop 🖍",
-            "Logic Pro ♫",
-            "Final Cut Pro ▷"
-        ],
-
-        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/sandboard/home.png"
-            },
-            {
-                "screenshot": "/assets/projects/sandboard/preview.png"
-            },
-            {
-                "screenshot": "/assets/projects/sandboard/Screenshot (323).png"
-            }
-        ],
-
-        "similarProjects": [
-            "Dynamometer Dash",
-            "The Chime Hours",
-            "Gata Guressi"
-        ]
-    },
-
-    {
         "name": "Gata Guressi",
         "category": "games",
         "year": "2024",
@@ -91,6 +48,92 @@ const projectsData = [
             "Hierre",
             "Head in the Clouds",
             "EM"
+        ]
+    },
+
+    {
+        "name": "Dynamometer Dash",
+        "category": "games",
+        "year": "2023",
+        "platform": "PC VR",
+        "desc": "Record-breaking VR train ride",
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Meta Quest 2 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2030080?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/pFGeY7rbKKs?si=cCrI0Bh_73xM6upf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/start.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/train.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/speed.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/whee.png"
+            },
+            {
+                "screenshot": "/assets/projects/dynamometer-dash/window.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Sandboard",
+            "The Chime Hours",
+            "Head in the Clouds"
+        ]
+    },
+
+    {
+        "name": "Mutablus",
+        "category": "games",
+        "year": "2023",
+        "platform": "Web",
+        "desc": "Procedurally-generated 2D exploration",
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/Zy7v1fg1OZ0?si=HafN4nujdtrBDBlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "skills": [
+            "Javascript 🖳",
+            "p5.js 🖳",
+            "HTML 🖳",
+            "CSS 🖳",
+            "Aseprite 🖍"
+        ],
+
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/mutablus/background.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/snowmen.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/necropolis.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/mtnvillage.png"
+            },
+            {
+                "screenshot": "/assets/projects/mutablus/stonedesert.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "EM",
+            "Heat of the Moment",
+            "Gata Guressi"
         ]
     },
 
@@ -145,126 +188,57 @@ const projectsData = [
     },
 
     {
-        "name": "PVP Playground",
+        "name": "Sandboard",
         "category": "games",
-        "year": "2021",
-        "platform": "Unreleased",
-        "desc": "Loadout-focused multiplayer movement shooter",
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-
-
-        "skills": [
-            "Unreal Engine 🖳",
-            "Blender 🖍",
-            "GIMP 🖍"
-        ],
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/pvp-playground/preview.png"
-            },
-            {
-                "screenshot": "/assets/projects/pvp-playground/weapon-mods.png"
-            },
-            {
-                "screenshot": "/assets/projects/pvp-playground/siphon.png"
-            },
-            {
-                "screenshot": "/assets/projects/pvp-playground/wheel.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Head in the Clouds",
-            "Sandboard",
-            "Hoop Sports"
-        ]
-    },
-
-    {
-        "name": "Mutablus",
-        "category": "games",
-        "year": "2023",
-        "platform": "Web",
-        "desc": "Procedurally-generated 2D exploration",
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/Zy7v1fg1OZ0?si=HafN4nujdtrBDBlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "skills": [
-            "Javascript 🖳",
-            "p5.js 🖳",
-            "HTML 🖳",
-            "CSS 🖳",
-            "Aseprite 🖍"
-        ],
-
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/mutablus/background.png"
-            },
-            {
-                "screenshot": "/assets/projects/mutablus/snowmen.png"
-            },
-            {
-                "screenshot": "/assets/projects/mutablus/necropolis.png"
-            },
-            {
-                "screenshot": "/assets/projects/mutablus/mtnvillage.png"
-            },
-            {
-                "screenshot": "/assets/projects/mutablus/stonedesert.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "EM",
-            "Heat of the Moment",
-            "Gata Guressi"
-        ]
-    },
-
-    {
-        "name": "Dynamometer Dash",
-        "category": "games",
-        "year": "2023",
+        "year": "2022",
         "platform": "PC VR",
-        "desc": "Record-breaking VR train ride",
+        "desc": "High-speed VR sand surfing and grappling",
+
+        "libraryTags": [
+            "featured",
+            "soundtrack",
+            "hierre"
+        ],
 
         "skills": [
             "Unreal Engine 🖳",
             "Meta Quest 2 🖳",
             "Blender 🖍",
-            "Photoshop 🖍"
+            "GIMP 🖍",
+            "Logic Pro ♫",
+            "Final Cut Pro ▷"
         ],
 
-        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2030080?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/pFGeY7rbKKs?si=cCrI0Bh_73xM6upf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/dynamometer-dash/start.png"
+                "screenshot": "/assets/projects/sandboard/tephrenne1.png"
             },
             {
-                "screenshot": "/assets/projects/dynamometer-dash/train.png"
+            "screenshot": "/assets/projects/sandboard/preview.png"
             },
             {
-                "screenshot": "/assets/projects/dynamometer-dash/speed.png"
+                "screenshot": "/assets/projects/sandboard/arches4.png"
             },
             {
-                "screenshot": "/assets/projects/dynamometer-dash/whee.png"
+                "screenshot": "/assets/projects/sandboard/arches2.png"
             },
             {
-                "screenshot": "/assets/projects/dynamometer-dash/window.png"
+                "screenshot": "/assets/projects/sandboard/sandstream2.png"
+            },
+            {
+                "screenshot": "/assets/projects/sandboard/tephrenne2.png"
+            },
+            {
+                "screenshot": "/assets/projects/sandboard/arches1.png"
             }
         ],
 
-
         "similarProjects": [
-            "Sandboard",
+            "Dynamometer Dash",
             "The Chime Hours",
-            "Head in the Clouds"
+            "Gata Guressi"
         ]
     },
 
@@ -309,57 +283,6 @@ const projectsData = [
     },
 
     {
-        "name": "EM",
-        "category": "games",
-        "year": "2019",
-        "platform": "Unreleased",
-        "desc": "Conceptual 2D exploration game",
-
-        "libraryTags": [
-            "soundtrack",
-            "hierre"
-        ],
-
-        "skills": [
-            "Unity 🖳",
-            "C# 🖳",
-            "Godot 🖳",
-            "Aseprite 🖍",
-            "Logic Pro ♫"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/UfE63SiF9uw?si=4DTVmVrEBp3G-iDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/em/redforest1.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/bullaciona1.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/spacewalkway.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/redforest2.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/bullaciona2.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/redforestend.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Gata Guressi",
-            "Head in the Clouds",
-            "Mutablus"
-        ]
-    },
-
-    {
         "name": "Hoop Sports",
         "category": "games",
         "year": "2022",
@@ -398,6 +321,95 @@ const projectsData = [
             "Heat of the Moment",
             "Mutablus",
             "PVP Playground"
+        ]
+    },
+
+    {
+        "name": "PVP Playground",
+        "category": "games",
+        "year": "2021",
+        "platform": "Unreleased",
+        "desc": "Loadout-focused multiplayer movement shooter",
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Blender 🖍",
+            "GIMP 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/pvp-playground/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/weapon-mods.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/siphon.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/wheel.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Head in the Clouds",
+            "Sandboard",
+            "Hoop Sports"
+        ]
+    },
+
+    {
+        "name": "EM",
+        "category": "games",
+        "year": "2019",
+        "platform": "Unreleased",
+        "desc": "Conceptual 2D exploration game",
+
+        "libraryTags": [
+            "soundtrack",
+            "hierre"
+        ],
+
+        "skills": [
+            "Unity 🖳",
+            "C# 🖳",
+            "Godot 🖳",
+            "Aseprite 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/UfE63SiF9uw?si=4DTVmVrEBp3G-iDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/em/redforestend.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/bullaciona1.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/redforest1.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/spacewalkway.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/redforest2.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/bullaciona2.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Gata Guressi",
+            "Head in the Clouds",
+            "Mutablus"
         ]
     },
 
@@ -529,11 +541,51 @@ const projectsData = [
     },
 
     {
+        "name": "Imminent-XR",
+        "category": "projects",
+        "credit": "Imminent-XR",
+        "year": "2023-24",
+        "desc": "VR meets virtual production and musical theater",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Meta Quest 2 🖳",
+            "FrameVR 🖳",
+            "Github 🖳",
+            "Perforce 🖳",
+            "Blender 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/the-chime-hours/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "XR Stories Internship",
+            "216 Below",
+            "Sandboard"
+        ]
+    },
+
+    {
         "name": "The Chime Hours",
         "category": "projects",
         "credit": "Lord Whitney, Reflex Arc",
         "year": "2023",
         "desc": "Surreal XR forest experience",
+
+        "libraryTags": [
+            "work"
+        ],
 
         "skills": [
             "Unreal Engine 🖳",
@@ -555,7 +607,41 @@ const projectsData = [
 
         "similarProjects": [
             "XR Stories Internship",
-            "Sandboard",
+            "216 Below",
+            "Sandboard"
+        ]
+    },
+
+    {
+        "name": "216 Below",
+        "category": "projects",
+        "credit": "Overcliff Media, David Gochfeld",
+        "year": "2022",
+        "desc": "VR submarine experience",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unity 🖳",
+            "Meta Quest 2 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/5ABJRQ2bVAM?si=GZIcQlu-TxFefSGl" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/216-below/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "XR Stories Internship",
             "Dynamometer Dash"
         ]
     },
@@ -563,15 +649,20 @@ const projectsData = [
     {
         "name": "XR Stories Internship",
         "category": "projects",
-        "credit": "XR Stories, Ziqi Fang",
+        "credit": "XR Stories",
         "year": "2022",
-        "desc": "Projects from my internship",
+        "desc": "AR, VR, and virtual production projects",
+
+        "libraryTags": [
+            "work"
+        ],
 
         "skills": [
             "Unreal Engine 🖳",
             "Unity 🖳",
             "C# 🖳",
             "Meta Quest 2 🖳",
+            "AR 🖳",
             "Blender 🖍",
             "Substance Painter 🖍",
             "Photoshop 🖍",
@@ -600,9 +691,9 @@ const projectsData = [
 
 
         "similarProjects": [
-            "The Chime Hours",
             "Sandboard",
-            "Dynamometer Dash"
+            "The Chime Hours",
+            "216 Below"
         ]
     },
 
@@ -634,6 +725,12 @@ const projectsData = [
 
 
 
+var featuredProjects = [
+    "Sandboard",
+    "Gata Guressi",
+    "Head in the Clouds"
+]
+
 
 
 
@@ -655,6 +752,11 @@ if (soundtrackLibrary) {
 var hierreLibrary = document.getElementById("hierre-library");
 if (hierreLibrary) {
     hierreLibrary.innerHTML = makeTagLibrary('hierre');
+}
+
+var workLibrary = document.getElementById("work-library");
+if (workLibrary) {
+    workLibrary.innerHTML = makeTagLibrary('work');
 }
 
 var fullLibraryGames = document.getElementById("full-library-games");
@@ -694,9 +796,22 @@ function makeFullLibrary(category) {
 function makeTagLibrary(tag) {
     var library = "";
 
-    for (var i = 0; i < projectsData.length; i++) {
-        if (doesProjectHaveTag(projectsData[i], tag)) {
-            library += makeCardFromProject(projectsData[i]);
+    if (tag === 'featured') {
+        
+
+        for (var i = 0; i < featuredProjects.length; i++) {
+            var featuredProject = getProjectByName(featuredProjects[i]);
+            if (doesProjectHaveTag(featuredProject, tag)) {
+                library += makeCardFromProject(featuredProject);
+            }
+        }
+    }
+
+    else {
+        for (var i = 0; i < projectsData.length; i++) {
+            if (doesProjectHaveTag(projectsData[i], tag)) {
+                library += makeCardFromProject(projectsData[i]);
+            }
         }
     }
 

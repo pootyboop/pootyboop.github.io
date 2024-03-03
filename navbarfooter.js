@@ -56,9 +56,7 @@ document.body.innerHTML += `
                         Contact
                     </p>
                     -->
-                    <a class="footer-text" href="mailto:elliotgmann@gmail.com">
-                        elliotgmann@gmail.com
-                    </a>
+                    <a class="footer-text" href="mailto:elliotgmann@gmail.com">elliotgmann@gmail.com</a>
                 </div>
                 <div class="col footer-col footer-col-center">
                     <button onclick="topFunction()" id="backToTopBtn" title="Back to Top">Back to Top</button>
