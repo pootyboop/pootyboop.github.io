@@ -190,7 +190,7 @@ const projectsData = [
     {
         "name": "Sandboard",
         "category": "games",
-        "year": "2022",
+        "year": "2022-23",
         "platform": "PC VR",
         "desc": "High-speed VR sand surfing and grappling",
 
@@ -327,7 +327,7 @@ const projectsData = [
     {
         "name": "PVP Playground",
         "category": "games",
-        "year": "2021",
+        "year": "2020-21",
         "platform": "Unreleased",
         "desc": "Loadout-focused multiplayer movement shooter",
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -564,15 +564,51 @@ const projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/the-chime-hours/preview.png"
+                "screenshot": "/assets/projects/imminent-xr/preview.png"
             }
         ],
 
 
         "similarProjects": [
-            "XR Stories Internship",
+            "The Chime Hours",
             "216 Below",
-            "Sandboard"
+            "XR Stories Internship"
+        ]
+    },
+
+    {
+        "name": "York Maze",
+        "category": "projects",
+        "credit": "Pop Up VR",
+        "year": "2023",
+        "desc": "Virtual York Maze in UEFN",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Meta Quest 2 🖳",
+            "FrameVR 🖳",
+            "Github 🖳",
+            "Perforce 🖳",
+            "Blender 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/imminent-xr/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "216 Below",
+            "XR Stories Internship"
         ]
     },
 
@@ -700,7 +736,7 @@ const projectsData = [
     {
         "name": "Hierre",
         "category": "projects",
-        "year": "2019",
+        "year": "2019-24",
         "desc": "Sci-fi universe shared across many projects",
 
         "skills": [
