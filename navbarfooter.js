@@ -49,22 +49,22 @@ document.getElementById("navbar").innerHTML = `
 document.body.innerHTML += `
 
 <footer class="footer">
-            <div class="row footer-row justify-content-between">
-                <div class="col footer-col footer-col-left">
-                    <!--
-                    <p class="footer-header">
-                        Contact
-                    </p>
-                    -->
-                    <a class="footer-text" href="mailto:elliotgmann@gmail.com">elliotgmann@gmail.com</a>
-                </div>
-                <div class="col footer-col footer-col-center">
-                    <button onclick="topFunction()" id="backToTopBtn" title="Back to Top">Back to Top</button>
-                </div>
-                    <div class="col footer-col footer-col-right social-links">
-                </div>
-            </div>
-        </footer>
+    <div class="row footer-row justify-content-between">
+        <div class="col footer-col footer-col-left">
+            <!--
+            <p class="footer-header">
+                Contact
+            </p>
+            -->
+            <a class="footer-text" href="mailto:elliotgmann@gmail.com">elliotgmann@gmail.com</a>
+        </div>
+        <div class="col footer-col footer-col-center">
+            <button onclick="topFunction()" id="backToTopBtn" title="Back to Top">Back to Top</button>
+        </div>
+            <div class="col footer-col footer-col-right social-links">
+        </div>
+    </div>
+</footer>
 
 `
 
