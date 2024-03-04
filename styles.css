@@ -33,6 +33,14 @@ html {
     transform: scale(1.05);
 }
 
+audio {
+    color: #000000;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 a:hover:not(.link-button) {
     color: var(--color1hov) !important;
 }
@@ -124,10 +132,20 @@ btn {
     max-width: 800px;
 }
 
-.block-vid, .block-img, .margin-center {
+.block-vid, .block-img, .web-playable, .margin-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.square {
+    aspect-ratio: 1 / 1;
+}
+
+.web-playable {
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /*
@@ -264,8 +282,12 @@ button {
 }
 
 .image-caption, .carousel-btn {
-    filter: drop-shadow(0px 0px 10px #000000);
+    filter: drop-shadow(0px 0px 5px #000000);
     color: #ececec;
+}
+
+.image-caption {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .card {
@@ -488,7 +510,7 @@ body {
         text-align: center;
     }
 
-    .project-embed {
+    .project-embed, .web-playable {
         display: none;
     }
 
@@ -498,36 +520,3 @@ body {
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-/* This used to work for the parent element of button divs */
-/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
-
-*::-webkit-media-controls-panel {
-    display: none!important;
-    -webkit-appearance: none;
-  }
-  
-  /* Old shadow dom for play button */
-  
-  *::-webkit-media-controls-play-button {
-    display: none!important;
-    -webkit-appearance: none;
-  }
-  
-  /* New shadow dom for play button */
-  
-  /* This one works! */
-  
-  *::-webkit-media-controls-start-playback-button {
-    display: none!important;
-    -webkit-appearance: none;
-  }

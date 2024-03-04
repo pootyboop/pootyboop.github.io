@@ -5,6 +5,10 @@ const projectsData = [
         "year": "2019-24",
         "desc": "Sci-fi universe shared across many projects",
 
+        "libraryTags": [
+            "misc"
+        ],
+
         "skills": [
             "Unreal Engine 🖳",
             "Unity 🖳",
@@ -25,7 +29,7 @@ const projectsData = [
                 "screenshot": "/assets/projects/hierre/voenn.png"
             },
             {
-                "screenshot": "/assets/projects/hierre/guressen.png"
+                "screenshot": "/assets/projects/revolver/preview.png"
             }
         ]
     },
@@ -79,6 +83,72 @@ const projectsData = [
             "Hierre",
             "Head in the Clouds",
             "EM"
+        ]
+    },
+
+    {
+        "name": "The Hitz Hotel",
+        "category": "games",
+        "year": "2024",
+        "platform": "Web",
+        "credit": "Elliot Mann, Joe Hutchinson",
+        "desc": "Hitman-style puzzle/stealth game",
+
+        "skills": [
+            "Unity 🖳",
+            "C# 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2535087?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+
+        "similarProjects": [
+            "Heat of the Moment",
+            "Mutablus",
+            "EM"
+        ]
+    },
+    
+    {
+        "name": "Revolver",
+        "category": "games",
+        "year": "2023",
+        "platform": "Unreleased",
+        "desc": "CS:GO surf-style shooter",
+
+        "libraryTags": [
+            "soundtrack",
+            "hierre"
+        ],
+
+        "skills": [
+            "Unreal Engine 🖳",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Aseprite 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/rdonKQ-DXFw?si=91JKqLjaHM_qUBLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/revolver/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/revolver/slide.png",
+                "caption": "Sliding"
+            },
+            {
+                "screenshot": "/assets/projects/revolver/boom.png",
+                "caption": "Explosive barrels"
+            }
+        ],
+
+        "similarProjects": [
+            "Sandboard",
+            "Hierre",
+            "PVP Playground"
         ]
     },
 
@@ -445,6 +515,36 @@ const projectsData = [
     },
 
     {
+        "name": "Lazarus",
+        "category": "music",
+        "year": "2024",
+        "length": "Unreleased",
+        "desc": "Industrial heaven/hell-themed LP",
+
+        "libraryTags": [
+            "wip"
+        ],
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Photoshop 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/lazarus/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Mind of Glass",
+            "Saliva",
+            "Onion Ecdysis"
+        ]
+    },
+
+    {
         "name": "Mind of Glass",
         "category": "music",
         "credit": "ft. Sebastien Alamo-Selis",
@@ -591,7 +691,7 @@ const projectsData = [
             "Blender 🖍"
         ],
 
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/VCAOUixtBes?si=Beijs9j8takfkcKE" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         
         "carouselScreenshots": [
             {
@@ -680,7 +780,7 @@ const projectsData = [
     {
         "name": "216 Below",
         "category": "projects",
-        "credit": "Overcliff Media, David Gochfeld",
+        "credit": "Guy Schofield, David Gochfeld",
         "year": "2022",
         "desc": "VR submarine experience",
 
@@ -699,8 +799,15 @@ const projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/216-below/preview.png"
-            }
+                "screenshot": "/assets/projects/216-below/models.png",
+                "caption": "A bunch of my models"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/mocap.png"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/mocap2.jpg"
+            },
         ],
 
 
@@ -794,6 +901,16 @@ if (hierreLibrary) {
     hierreLibrary.innerHTML = makeTagLibrary('hierre');
 }
 
+var wipLibrary = document.getElementById("wip-library");
+if (wipLibrary) {
+    wipLibrary.innerHTML = makeTagLibrary('wip');
+}
+
+var miscLibrary = document.getElementById("misc-library");
+if (miscLibrary) {
+    miscLibrary.innerHTML = makeTagLibrary('misc');
+}
+
 var workLibrary = document.getElementById("work-library");
 if (workLibrary) {
     workLibrary.innerHTML = makeTagLibrary('work');
@@ -809,11 +926,6 @@ if (fullLibraryMusic) {
     fullLibraryMusic.innerHTML = makeFullLibrary("music");
 }
 
-var fullLibraryProjects = document.getElementById("full-library-projects");
-if (fullLibraryProjects) {
-    fullLibraryProjects.innerHTML = makeFullLibrary("projects");
-}
-
 var similarLibrary = document.getElementById("similar-library");
 if (similarLibrary) {
     similarLibrary.innerHTML = makeSimilarLibrary(getCurrProject());
@@ -825,7 +937,7 @@ function makeFullLibrary(category) {
     var library = "";
 
     for (var i = 0; i < projectsData.length; i++) {
-        if (projectsData[i].category === category) {
+        if (projectsData[i].category === category && !isProjectWIP(projectsData[i])) {
             library += makeCardFromProject(projectsData[i]);
         }
     }
@@ -926,6 +1038,18 @@ function projectExtraInfo(project) {
 function doesProjectHaveTag(project, tag) {
     if (project.libraryTags) {
         return (project.libraryTags.includes(tag))
+    }
+
+    return false;
+}
+
+
+
+function isProjectWIP(project) {
+    if (project.libraryTags) {
+        if (project.libraryTags.includes('wip')) {
+            return true;
+        }
     }
 
     return false;
@@ -1041,6 +1165,10 @@ function makeProjectOverviewGraphics(project) {
 }
 
 function makeCarousel(project) {
+    if (!project.carouselScreenshots) {
+        return "";
+    }
+
     return `
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
