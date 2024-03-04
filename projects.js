@@ -107,7 +107,7 @@ const projectsData = [
         "similarProjects": [
             "Heat of the Moment",
             "Mutablus",
-            "EM"
+            "Hoop Sports"
         ]
     },
     
@@ -234,7 +234,7 @@ const projectsData = [
         "similarProjects": [
             "EM",
             "Heat of the Moment",
-            "Gata Guressi"
+            "The Hitz Hotel"
         ]
     },
 
@@ -377,7 +377,7 @@ const projectsData = [
 
 
         "similarProjects": [
-            "EM",
+            "The Hitz Hotel",
             "Mutablus",
             "Hoop Sports"
         ]
@@ -778,6 +778,45 @@ const projectsData = [
     },
 
     {
+        "name": "XR Hackathon 2023",
+        "category": "projects",
+        "credit": "Rob Eagle, Emi Richardson, Mara Solomon",
+        "year": "2023",
+        "desc": "VR kicking and stomping game",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unity 🖳",
+            "C# 🖳",
+            "Meta Quest 2 🖳"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/osoQaLtTzOY?si=830NFoo84uAm4ec2" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/xr-hackathon-2023/team.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-hackathon-2023/table.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-hackathon-2023/stage.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "Imminent-XR",
+            "216 Below"
+        ]
+    },
+
+    {
         "name": "216 Below",
         "category": "projects",
         "credit": "Guy Schofield, David Gochfeld",
@@ -808,6 +847,12 @@ const projectsData = [
             {
                 "screenshot": "/assets/projects/216-below/mocap2.jpg"
             },
+            {
+                "screenshot": "/assets/projects/216-below/216.jpg"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/216_2.jpg"
+            }
         ],
 
 
