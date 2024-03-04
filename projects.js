@@ -1,4 +1,4 @@
-const projectsData = [
+var projectsData = [
     {
         "name": "Hierre",
         "category": "projects",
@@ -10,8 +10,8 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
-            "Unity 🖳",
+            "Unreal Engine ⌨",
+            "Unity ⌨",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -48,8 +48,8 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unity 🖳",
-            "C# 🖳",
+            "Unity ⌨",
+            "C# ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
             "Logic Pro ♫",
@@ -95,8 +95,8 @@ const projectsData = [
         "desc": "Hitman-style puzzle/stealth game",
 
         "skills": [
-            "Unity 🖳",
-            "C# 🖳",
+            "Unity ⌨",
+            "C# ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
             "Logic Pro ♫"
@@ -124,7 +124,7 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
+            "Unreal Engine ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
             "Aseprite 🖍"
@@ -151,6 +151,40 @@ const projectsData = [
             "PVP Playground"
         ]
     },
+    
+    {
+        "name": "DOBIO",
+        "category": "games",
+        "year": "2023",
+        "platform": "Windows",
+        "credit": "Elliot Mann, Quinn McMahon, Joshua Tunstall, Marco Ng",
+        "desc": "Tile-based procedural dungeon strategy",
+
+        "libraryTags": [
+            "soundtrack"
+        ],
+
+        "skills": [
+            "Unity ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2161336?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/dobio/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "The Hitz Hotel",
+            "Heat of the Moment",
+            "Mutablus"
+        ]
+    },
 
     {
         "name": "Dynamometer Dash",
@@ -160,8 +194,8 @@ const projectsData = [
         "desc": "Record-breaking VR train ride",
 
         "skills": [
-            "Unreal Engine 🖳",
-            "Meta Quest 2 🖳",
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -191,7 +225,7 @@ const projectsData = [
         "similarProjects": [
             "Sandboard",
             "The Chime Hours",
-            "Head in the Clouds"
+            "Imminent-XR"
         ]
     },
 
@@ -205,10 +239,10 @@ const projectsData = [
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/Zy7v1fg1OZ0?si=HafN4nujdtrBDBlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         
         "skills": [
-            "Javascript 🖳",
-            "p5.js 🖳",
-            "HTML 🖳",
-            "CSS 🖳",
+            "Javascript ⌨",
+            "p5.js ⌨",
+            "HTML ⌨",
+            "CSS ⌨",
             "Aseprite 🖍"
         ],
 
@@ -251,8 +285,8 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unity 🖳",
-            "C# 🖳",
+            "Unity ⌨",
+            "C# ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
             "Logic Pro ♫",
@@ -302,8 +336,8 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
-            "Meta Quest 2 🖳",
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
             "Blender 🖍",
             "GIMP 🖍",
             "Logic Pro ♫",
@@ -351,7 +385,7 @@ const projectsData = [
         "desc": "Intense burning house escape",
 
         "skills": [
-            "Processing 🖳",
+            "Processing ⌨",
             "Blender 🖍",
             "Aseprite 🖍",
             "Logic Pro ♫"
@@ -391,7 +425,7 @@ const projectsData = [
         "desc": "Physics-based sports chaos",
 
         "skills": [
-            "Processing 🖳",
+            "Processing ⌨",
             "Aseprite 🖍",
             "Logic Pro ♫"
         ],
@@ -435,7 +469,7 @@ const projectsData = [
 
 
         "skills": [
-            "Unreal Engine 🖳",
+            "Unreal Engine ⌨",
             "Blender 🖍",
             "GIMP 🖍"
         ],
@@ -476,9 +510,9 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unity 🖳",
-            "C# 🖳",
-            "Godot 🖳",
+            "Unity ⌨",
+            "C# ⌨",
+            "Godot ⌨",
             "Aseprite 🖍",
             "Logic Pro ♫"
         ],
@@ -683,11 +717,11 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
-            "Meta Quest 2 🖳",
-            "FrameVR 🖳",
-            "Github 🖳",
-            "Perforce 🖳",
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "FrameVR ⌨",
+            "Github ⌨",
+            "Perforce ⌨",
             "Blender 🖍"
         ],
 
@@ -719,8 +753,8 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
-            "UEFN 🖳",
+            "Unreal Engine ⌨",
+            "UEFN ⌨",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -753,11 +787,11 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
-            "Meta Quest 2 🖳",
-            "Vive XR Elite 🖳",
-            "Vive Focus 3 🖳",
-            "Perforce 🖳",
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "Vive XR Elite ⌨",
+            "Vive Focus 3 ⌨",
+            "Perforce ⌨",
             "Blender 🖍"
         ],
 
@@ -780,7 +814,7 @@ const projectsData = [
     {
         "name": "XR Hackathon 2023",
         "category": "projects",
-        "credit": "Rob Eagle, Emi Richardson, Mara Solomon",
+        "credit": "Emi Richardson, Mara Solomon, Ziqi Fang, Elliot Mann",
         "year": "2023",
         "desc": "VR kicking and stomping game",
 
@@ -789,9 +823,9 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unity 🖳",
-            "C# 🖳",
-            "Meta Quest 2 🖳"
+            "Unity ⌨",
+            "C# ⌨",
+            "Meta Quest 2 ⌨"
         ],
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/osoQaLtTzOY?si=830NFoo84uAm4ec2" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -828,8 +862,9 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unity 🖳",
-            "Meta Quest 2 🖳",
+            "Unity ⌨",
+            "Meta Quest 2 ⌨",
+            "Plastic SCM ⌨",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -875,11 +910,11 @@ const projectsData = [
         ],
 
         "skills": [
-            "Unreal Engine 🖳",
-            "Unity 🖳",
-            "C# 🖳",
-            "Meta Quest 2 🖳",
-            "AR 🖳",
+            "Unreal Engine ⌨",
+            "Unity ⌨",
+            "C# ⌨",
+            "Meta Quest 2 ⌨",
+            "AR ⌨",
             "Blender 🖍",
             "Substance Painter 🖍",
             "Photoshop 🖍",
@@ -922,10 +957,6 @@ var featuredProjects = [
     "Gata Guressi",
     "Head in the Clouds"
 ]
-
-
-
-
 
 
 
@@ -1052,6 +1083,7 @@ function makeCardFromProject(project) {
                     <h3 class="card-title">${name.toUpperCase()}</h3>
                     <p class="card-date">${projectExtraInfo(project)}</p>
                     <p class="card-text">${project.desc}</p>
+                    <section class="mb-2">${makeSkills(project)}</section>
                 </div>
             </div>
         </a>
@@ -1152,7 +1184,7 @@ function makeProjectHeader(project) {
                     <h1>${String(project.name).toUpperCase()}</h1>
                     <p>${projectExtraInfo(project)}</p>
                 </div>
-                <div class="col">
+                <div class="col project-embed-col">
                     ${makeProjectEmbed(project)}
                 </div>
             </div>
@@ -1315,8 +1347,16 @@ if (projectSkills) {
 }
 
 function makeSkills(project) {
+    var isProject = getCurrProject();
+
     if (verifyProjectKey(project, 'skills')) {
-        return project.skills.map(makeSkill).join('');
+        var str = "";
+
+        for (var i = 0; i < project.skills.length; i++) {
+            str += makeSkill(project.skills[i], isProject);
+        }
+
+        return str;
     }
     
     return "";
@@ -1324,6 +1364,6 @@ function makeSkills(project) {
 
 
 
-function makeSkill(skill) {
-    return `<p class="badge skill">${skill}</p>`;
+function makeSkill(skill, isProject) {
+    return `<p class="badge ${isProject ? 'skill' : 'skillcard'}">${skill}</p>`;
 }

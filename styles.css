@@ -2,6 +2,9 @@
     --color1:#ffc400; /*a76dff*/
     --color2:#6600FF;
     --color1hov:#ffd856;
+
+    --colorskillcard: #2b2b2b;
+    --colorskillcardtext: #8b8b8b;
 }
 
 html {
@@ -13,21 +16,27 @@ html {
 .nav-link {
     padding-top: 0;
     padding-bottom: 0;
-    margin-left: 1vw;
+    padding-left: 1vw;
     text-decoration: none;
     color: #000000 !important;
 
     font-family: 'Smooch Sans', sans-serif;
     font-size: 50px;
     font-weight: 350;
+
+    border-radius: 5px;
     /*filter:
     drop-shadow(1px 3px 0px #161616);*/
 }
 
 .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
-    text-decoration: none;
-    color: var(--color2) !important;
-    background-color: transparent !important;
+    /*text-decoration: none;*/
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+
+    color: #000 !important;
     filter: none;
     /*transform: translate(0px, 2px);*/
     transform: scale(1.05);
@@ -41,11 +50,13 @@ audio {
     margin-bottom: 5%;
 }
 
-a:hover:not(.link-button) {
+a:hover:not(.link-button, .social-icon-link) {
     color: var(--color1hov) !important;
 }
 
 #selected-nav-tab {
+    font-weight: 500;
+    text-transform: uppercase;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
@@ -238,12 +249,22 @@ p, a, ul, li, button {
     margin-bottom: 1%;
 }
 
-.skill {
-    background-color: var(--color1);
-    color:rgb(0, 0, 0);
+.skill, .skillcard {
     font-size: 1.2rem;
     font-weight: 400;
     margin-right: 5px;
+}
+
+.skill {
+    background-color: var(--color1);
+    color:rgb(0, 0, 0);
+}
+
+.skillcard {
+    background-color: var(--colorskillcard);
+    color: var(--colorskillcardtext);
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
 a {
@@ -441,7 +462,12 @@ body {
 }
 
 .social-icon-link {
+    display: block;
     text-decoration: none;
+}
+
+.social-icon-link:hover {
+    transform: scale(1.1) !important;
 }
 
 .social-icon {
@@ -513,7 +539,7 @@ body {
         text-align: center;
     }
 
-    .project-embed, .web-playable {
+    .project-embed, .web-playable, .project-embed-col {
         display: none;
     }
 
@@ -521,5 +547,20 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 424px) {
+    h3 {
+        font-size: 2.5rem !important;
+        line-height: 2rem !important;
+    }
+
+    p {
+        line-height: 2rem !important;
+    }
+
+    .skill, .skillcard {
+        font-size: 1rem;
     }
 }

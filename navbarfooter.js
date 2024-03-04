@@ -101,8 +101,8 @@ function makeNavLink(link) {
 
 
 function isSelected(link) {
-    var currLoc = "/" + location.href.split("/").slice(-1);
-    if (currLoc.includes(link.link)) {
+    var currLoc = location.href;
+    if (currLoc.includes(link.text.toLowerCase())) {
         return ` id="selected-nav-tab"`;
     } else {
         return "";
