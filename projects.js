@@ -1231,19 +1231,25 @@ function makeSimilarLibrary(project) {
 
 function makeSearchLibrary(searchTerm) {
     var library = "";
+    var results = [];
 
     for (var i = 0; i < projectsData.length; i++) {
         if (isSearchResult(projectsData[i], searchTerm)) {
+            results.push(projectsData[i]);
             library += makeCardFromProject(projectsData[i]);
         }
     }
 
-    if (library === "") {
+    if (results.length === 0) {
         library += `
         <p>
             No results found 😿 want a <a href="${getRandomProjectHREF()}">random project</a> instead?
         </p>
         `;
+    }
+
+    else if (results.length === 1) {
+        window.open(`/${results[0].category}/${slugify(results[0].name)}.html`,"_self");
     }
 
     else {
@@ -1383,8 +1389,10 @@ function getCurrProject() {
         return false;
     }
 
-    var currLoc = "/" + location.href.split("/").slice(-1);
-    return projectsData.find(project => currLoc.includes(slugify(project.name))) || false;
+    var currLoc = "/" + location.href.split("/").slice(-1).toString();
+    currLoc = currLoc.replace('.html', '').replace('/', '');
+    console.log(currLoc);
+    return projectsData.find(project => currLoc === slugify(project.name)) || false;
 }
 
 function getProjectByName(name) {
