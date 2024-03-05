@@ -1249,7 +1249,7 @@ function makeSearchLibrary(searchTerm) {
     }
 
     else if (results.length === 1) {
-        window.open(`/${results[0].category}/${slugify(results[0].name)}.html`,"_self");
+        window.open(`/${results[0].category}/${slugify(results[0].name)}`,"_self");
     }
 
     else {
@@ -1310,7 +1310,7 @@ function makeCardFromProject(project) {
     const slug = slugify(project.name)
     return `
     <div class="col-sm-12 col-lg-4">
-        <a href="/${project.category}/${slug}.html" class="card-link">
+        <a href="/${project.category}/${slug}" class="card-link">
             <div class="card">
                 <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image">
                 <div class="card-body">
@@ -1407,7 +1407,7 @@ function getProjectByName(name) {
 
 function getRandomProjectHREF() {
     var randomProject = projectsData[Math.floor(Math.random()*projectsData.length)];
-    return `/${randomProject.category}/${slugify(randomProject.name)}.html`;
+    return `/${randomProject.category}/${slugify(randomProject.name)}`;
 }
 
 
