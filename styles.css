@@ -498,7 +498,6 @@ body {
 }
 
 .searchbar>input {
-    margin-left: 2rem;
     margin-top: auto;
     margin-bottom: auto;
     padding: 5px;
@@ -609,5 +608,17 @@ body {
 
     .skill, .skillcard {
         font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .searchbar>input {
+        margin-left: 2rem;
     }
 }

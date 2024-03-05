@@ -1,22 +1,22 @@
 const navLinks = [
     {
         "text": "Games",
-        "link": "/games.html"
+        "link": "/games"
     },
 
     {
         "text": "Music",
-        "link": "/music.html"
+        "link": "/music"
     },
 
     {
         "text": "Projects",
-        "link": "/projects.html"
+        "link": "/projects"
     },
 
     {
         "text": "CV",
-        "link": "/cv.html"
+        "link": "/cv"
     }
 ]
 
@@ -40,7 +40,7 @@ document.getElementById("navbar").innerHTML = `
     <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
             ${navLinks.map(makeNavLink).join('')}
-            <form action="/search.html" class="searchbar d-flex" onsubmit="return search();"></form>
+            <form action="/search" class="searchbar d-flex" onsubmit="return search();"></form>
         </ul>
     </div>
 </div>

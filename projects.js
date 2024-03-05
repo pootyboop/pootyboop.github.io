@@ -16,7 +16,8 @@ var projectsData = [
             "Photoshop 🖍",
             "GIMP 🖍",
             "Illustrator 🖍",
-            "Aseprite 🖍"
+            "Aseprite 🖍",
+            "Logic Pro ♫"
         ],
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -38,6 +39,41 @@ var projectsData = [
     },
 
     {
+        "name": "CAUTERIZER",
+        "category": "games",
+        "platform": "In Development",
+        "year": "2024",
+        "desc": "Electric VR rhythm game",
+
+        "libraryTags": [
+            "hierre",
+            "wip"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
+            "Logic Pro ♫",
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/cauterizer/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Lazarus",
+            "Sandboard",
+            "Gata Guressi"
+        ]
+    },
+
+    {
         "name": "Lazarus",
         "category": "music",
         "year": "2024",
@@ -45,6 +81,7 @@ var projectsData = [
         "desc": "Industrial heaven/hell-themed LP",
 
         "libraryTags": [
+            "hierre",
             "wip"
         ],
 
@@ -62,9 +99,9 @@ var projectsData = [
         ],
 
         "similarProjects": [
+            "CAUTERIZER",
             "Mind of Glass",
-            "Saliva",
-            "Onion Ecdysis"
+            "Saliva"
         ]
     },
 
@@ -129,7 +166,7 @@ var projectsData = [
         "category": "games",
         "year": "2024",
         "platform": "Web",
-        "credit": "Elliot Mann, Joe Hutchinson",
+        "credit": "Joe Hutchinson, Elliot Mann",
         "desc": "Hitman-style puzzle/stealth game",
 
         "skills": [
@@ -147,6 +184,29 @@ var projectsData = [
             "Heat of the Moment",
             "Mutablus",
             "Hoop Sports"
+        ]
+    },
+
+    {
+        "name": "SpeedStocks",
+        "category": "games",
+        "year": "2024",
+        "platform": "Android",
+        "desc": "Casual stock-trading card/Android game",
+
+        "skills": [
+            "Android Studio ⌨",
+            "Kotlin ⌨",
+            "Github ⌨",
+            "Illustrator 🖍"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2487900?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+
+        "similarProjects": [
+            "Dynamometer Dash",
+            "Mutablus",
+            "The Hitz Hotel"
         ]
     },
 
@@ -235,6 +295,48 @@ var projectsData = [
             "PVP Playground"
         ]
     },
+    
+    {
+        "name": "Hierre Card Game",
+        "category": "games",
+        "year": "2023-24",
+        "platform": "Card Game",
+        "desc": "Grid-based strategy card game",
+
+        "libraryTags": [
+            "hierre",
+            "wip"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Unity ⌨",
+            "Github ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/rdonKQ-DXFw?si=91JKqLjaHM_qUBLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/revolver/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/revolver/slide.png",
+                "caption": "Sliding"
+            },
+            {
+                "screenshot": "/assets/projects/revolver/boom.png",
+                "caption": "Explosive barrels"
+            }
+        ],
+
+        "similarProjects": [
+            "Hierre",
+            "SpeedStocks",
+            "The Hitz Hotel"
+        ]
+    },
 
     {
         "name": "York Maze",
@@ -275,7 +377,7 @@ var projectsData = [
         "category": "games",
         "year": "2023",
         "platform": "Windows",
-        "credit": "Elliot Mann, Quinn McMahon, Joshua Tunstall, Marco Ng",
+        "credit": "Joshua Tunstall, Elliot Mann, Quinn McMahon, Marco Ng",
         "desc": "Tile-based procedural dungeon strategy",
 
         "libraryTags": [
@@ -338,6 +440,39 @@ var projectsData = [
             "The Chime Hours",
             "216 Below",
             "XR Stories Internship"
+        ]
+    },
+
+    {
+        "name": "Vitrified",
+        "category": "games",
+        "year": "2023",
+        "platform": "Windows",
+        "credit": "Elliot Mann, Nathan Warnes, Taylor Angel, Shijie Hu, Roah Min Hyeon Yaakov Ji",
+        "desc": "First person brewer",
+
+        "skills": [
+            "Unity ⌨",
+            "C# ⌨",
+            "Github ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2097956?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/7xyyt2UYbsc?si=K-q-W-W_BitJ9oEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/vitrified/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "DOBIO",
+            "The Hitz Hotel",
+            "Heat of the Moment"
         ]
     },
 
@@ -1096,19 +1231,25 @@ function makeSimilarLibrary(project) {
 
 function makeSearchLibrary(searchTerm) {
     var library = "";
+    var results = [];
 
     for (var i = 0; i < projectsData.length; i++) {
         if (isSearchResult(projectsData[i], searchTerm)) {
+            results.push(projectsData[i]);
             library += makeCardFromProject(projectsData[i]);
         }
     }
 
-    if (library === "") {
+    if (results.length === 0) {
         library += `
         <p>
             No results found 😿 want a <a href="${getRandomProjectHREF()}">random project</a> instead?
         </p>
         `;
+    }
+
+    else if (results.length === 1) {
+        window.open(`/${results[0].category}/${slugify(results[0].name)}`,"_self");
     }
 
     else {
@@ -1169,7 +1310,7 @@ function makeCardFromProject(project) {
     const slug = slugify(project.name)
     return `
     <div class="col-sm-12 col-lg-4">
-        <a href="/${project.category}/${slug}.html" class="card-link">
+        <a href="/${project.category}/${slug}" class="card-link">
             <div class="card">
                 <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image">
                 <div class="card-body">
@@ -1248,8 +1389,10 @@ function getCurrProject() {
         return false;
     }
 
-    var currLoc = "/" + location.href.split("/").slice(-1);
-    return projectsData.find(project => currLoc.includes(slugify(project.name))) || false;
+    var currLoc = "/" + location.href.split("/").slice(-1).toString();
+    currLoc = currLoc.replace('.html', '').replace('/', '');
+    console.log(currLoc);
+    return projectsData.find(project => currLoc === slugify(project.name)) || false;
 }
 
 function getProjectByName(name) {
@@ -1264,7 +1407,7 @@ function getProjectByName(name) {
 
 function getRandomProjectHREF() {
     var randomProject = projectsData[Math.floor(Math.random()*projectsData.length)];
-    return `/${randomProject.category}/${slugify(randomProject.name)}.html`;
+    return `/${randomProject.category}/${slugify(randomProject.name)}`;
 }
 
 
