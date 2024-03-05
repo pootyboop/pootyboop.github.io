@@ -40,6 +40,7 @@ document.getElementById("navbar").innerHTML = `
     <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
             ${navLinks.map(makeNavLink).join('')}
+            <form action="/search.html" class="searchbar d-flex" onsubmit="return search();"></form>
         </ul>
     </div>
 </div>
@@ -69,6 +70,35 @@ document.body.innerHTML += `
 `
 
 
+var searchTitle = document.getElementById("search-term");
+
+if (searchTitle) {
+    var searchTerm = getSearchTerm();
+    htmlSearchTerm = `"${searchTerm.toUpperCase()}"`;
+    if (htmlSearchTerm === `""`) {
+        htmlSearchTerm = "UNFILTERED";
+    }
+    searchTitle.innerHTML = htmlSearchTerm;
+    document.getElementById("search-library").innerHTML = makeSearchLibrary(searchTerm);
+}
+
+function getSearchTerm() {
+    return document.location.href
+    .split('=')[1]
+    .replaceAll("+", " ");
+}
+
+function search() {
+
+}
+
+
+
+
+
+
+
+
 var socialLinks = document.getElementsByClassName("social-links");
 for (var i = 0; i < socialLinks.length; i++){
     socialLinks[i].innerHTML = `
@@ -87,6 +117,14 @@ for (var i = 0; i < socialLinks.length; i++){
     `
 };
 
+var searchBars = document.getElementsByClassName("searchbar");
+for (var i = 0; i < searchBars.length; i++) {
+    searchBars[i].innerHTML = `
+    <input type="text" placeholder="Search..." name="search" ${searchTitle ? autofocus="autofocus" : ""}>
+    <button type="submit" onsubmit="return doSomething();" class="search-button"><img src="/assets/icons/search.svg"></button>
+    `
+}
+
 
 function makeNavLink(link) {
     return `
@@ -102,6 +140,10 @@ function makeNavLink(link) {
 
 function isSelected(link) {
     var currLoc = location.href;
+
+    if (currLoc.includes("?search")) {
+        return false;
+    }
     if (currLoc.includes(link.text.toLowerCase())) {
         return ` id="selected-nav-tab"`;
     } else {
@@ -115,4 +157,4 @@ function isSelected(link) {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+}

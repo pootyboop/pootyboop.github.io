@@ -13,7 +13,10 @@ var projectsData = [
             "Unreal Engine ⌨",
             "Unity ⌨",
             "Blender 🖍",
-            "Photoshop 🖍"
+            "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
+            "Aseprite 🖍"
         ],
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -35,6 +38,37 @@ var projectsData = [
     },
 
     {
+        "name": "Lazarus",
+        "category": "music",
+        "year": "2024",
+        "length": "In Production",
+        "desc": "Industrial heaven/hell-themed LP",
+
+        "libraryTags": [
+            "wip"
+        ],
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Photoshop 🖍",
+            "Illustrator 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/lazarus/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Mind of Glass",
+            "Saliva",
+            "Onion Ecdysis"
+        ]
+    },
+
+    {
         "name": "Gata Guressi",
         "category": "games",
         "year": "2024",
@@ -50,10 +84,14 @@ var projectsData = [
         "skills": [
             "Unity ⌨",
             "C# ⌨",
+            "Github ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
+            "Aseprite 🖍",
             "Logic Pro ♫",
-            "Final Cut Pro ▷"
+            "Premiere ▷"
         ],
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
@@ -97,6 +135,7 @@ var projectsData = [
         "skills": [
             "Unity ⌨",
             "C# ⌨",
+            "Github ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
             "Logic Pro ♫"
@@ -110,13 +149,56 @@ var projectsData = [
             "Hoop Sports"
         ]
     },
+
+    {
+        "name": "Mind of Glass",
+        "category": "music",
+        "credit": "ft. Sebastien Alamo-Selis",
+        "year": "2023",
+        "length": "29 min",
+        "desc": "Phobia-themed electronic beats",
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Photoshop 🖍",
+            "Premiere ▷"
+        ],
+
+        "ytEmbed": `
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/1fo60ZGGMVg6U0yjzpzM9B?utm_source=generator&theme=0"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,    
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/mind-of-glass/preview.png"
+            },
+
+            {
+                "screenshot": "/assets/projects/mind-of-glass/9minds.png"
+            },
+
+            {
+                "screenshot": "/assets/projects/mind-of-glass/old-cover.png"
+            },
+
+            {
+                "screenshot": "/assets/projects/mind-of-glass/mindofglass alt2.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Saliva",
+            "Onion Ecdysis"
+        ]
+    },
     
     {
         "name": "Revolver",
         "category": "games",
         "year": "2023",
         "platform": "Unreleased",
-        "desc": "CS:GO surf-style shooter",
+        "desc": "CS:GO surf-style shooter demo",
 
         "libraryTags": [
             "soundtrack",
@@ -125,9 +207,11 @@ var projectsData = [
 
         "skills": [
             "Unreal Engine ⌨",
+            "Github ⌨",
             "Blender 🖍",
-            "Photoshop 🖍",
-            "Aseprite 🖍"
+            "GIMP 🖍",
+            "Logic Pro ♫",
+            "Premiere ▷"
         ],
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/rdonKQ-DXFw?si=91JKqLjaHM_qUBLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -151,6 +235,40 @@ var projectsData = [
             "PVP Playground"
         ]
     },
+
+    {
+        "name": "York Maze",
+        "category": "projects",
+        "credit": "Pop Up VR",
+        "year": "2023",
+        "desc": "Virtual York Maze in UEFN",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "UEFN ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/imminent-xr/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Imminent-XR",
+            "The Chime Hours",
+            "XR Stories Internship"
+        ]
+    },
     
     {
         "name": "DOBIO",
@@ -166,6 +284,7 @@ var projectsData = [
 
         "skills": [
             "Unity ⌨",
+            "Github ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
             "Logic Pro ♫"
@@ -187,6 +306,42 @@ var projectsData = [
     },
 
     {
+        "name": "Imminent-XR",
+        "category": "projects",
+        "credit": "Imminent-XR",
+        "year": "2023-24",
+        "desc": "VR meets virtual production and musical theater",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "FrameVR ⌨",
+            "Github ⌨",
+            "Perforce ⌨",
+            "Blender 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/VCAOUixtBes?si=Beijs9j8takfkcKE" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/imminent-xr/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "216 Below",
+            "XR Stories Internship"
+        ]
+    },
+
+    {
         "name": "Dynamometer Dash",
         "category": "games",
         "year": "2023",
@@ -196,6 +351,7 @@ var projectsData = [
         "skills": [
             "Unreal Engine ⌨",
             "Meta Quest 2 ⌨",
+            "Github ⌨",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -243,6 +399,7 @@ var projectsData = [
             "p5.js ⌨",
             "HTML ⌨",
             "CSS ⌨",
+            "Github ⌨",
             "Aseprite 🖍"
         ],
 
@@ -273,6 +430,81 @@ var projectsData = [
     },
 
     {
+        "name": "The Chime Hours",
+        "category": "projects",
+        "credit": "Lord Whitney, Reflex Arc",
+        "year": "2023",
+        "desc": "Surreal XR forest experience",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "Vive XR Elite ⌨",
+            "Vive Focus 3 ⌨",
+            "Perforce ⌨",
+            "Blender 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/the-chime-hours/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Imminent-XR",
+            "216 Below",
+            "XR Stories Internship"
+        ]
+    },
+
+    {
+        "name": "XR Hackathon 2023",
+        "category": "projects",
+        "credit": "Emi Richardson, Mara Solomon, Ziqi Fang, Elliot Mann",
+        "year": "2023",
+        "desc": "VR kicking and stomping game",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unity ⌨",
+            "C# ⌨",
+            "Meta Quest 2 ⌨"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/osoQaLtTzOY?si=830NFoo84uAm4ec2" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/xr-hackathon-2023/team.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-hackathon-2023/table.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-hackathon-2023/stage.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "Imminent-XR",
+            "216 Below"
+        ]
+    },
+
+    {
         "name": "Head in the Clouds",
         "category": "games",
         "year": "2023",
@@ -287,10 +519,13 @@ var projectsData = [
         "skills": [
             "Unity ⌨",
             "C# ⌨",
+            "Github ⌨",
             "Blender 🖍",
             "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
             "Logic Pro ♫",
-            "Final Cut Pro ▷"
+            "Premiere ▷"
         ],
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1891265?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
@@ -323,6 +558,107 @@ var projectsData = [
     },
 
     {
+        "name": "216 Below",
+        "category": "projects",
+        "credit": "Guy Schofield, David Gochfeld",
+        "year": "2022",
+        "desc": "VR submarine experience",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unity ⌨",
+            "Meta Quest 2 ⌨",
+            "Plastic SCM ⌨",
+            "Blender 🖍",
+            "GIMP 🖍",
+            "Photoshop 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/5ABJRQ2bVAM?si=GZIcQlu-TxFefSGl" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/216-below/models.png",
+                "caption": "A bunch of my models"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/mocap.png"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/mocap2.jpg"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/216.jpg"
+            },
+            {
+                "screenshot": "/assets/projects/216-below/216_2.jpg"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Imminent-XR",
+            "The Chime Hours",
+            "XR Stories Internship"
+        ]
+    },
+
+    {
+        "name": "XR Stories Internship",
+        "category": "projects",
+        "credit": "XR Stories",
+        "year": "2022",
+        "desc": "AR, VR, and virtual production projects",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Unity ⌨",
+            "C# ⌨",
+            "Meta Quest 2 ⌨",
+            "AR ⌨",
+            "Blender 🖍",
+            "Substance Painter 🖍",
+            "Photoshop 🖍",
+            "Illustrator 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/ID2NUOd2B7w?si=kPC0FHsqw9lo9FWq" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/arguildhall.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/proxandreverie.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/mocap.png"
+            },
+            {
+                "screenshot": "/assets/projects/xr-stories-internship/destructiblexr.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Sandboard",
+            "The Chime Hours",
+            "216 Below"
+        ]
+    },
+
+    {
         "name": "Sandboard",
         "category": "games",
         "year": "2022-23",
@@ -338,10 +674,13 @@ var projectsData = [
         "skills": [
             "Unreal Engine ⌨",
             "Meta Quest 2 ⌨",
+            "Github ⌨",
             "Blender 🖍",
+            "Photoshop 🖍",
             "GIMP 🖍",
+            "Illustrator 🖍",
             "Logic Pro ♫",
-            "Final Cut Pro ▷"
+            "Premiere ▷"
         ],
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
@@ -458,168 +797,6 @@ var projectsData = [
             "PVP Playground"
         ]
     },
-
-    {
-        "name": "PVP Playground",
-        "category": "games",
-        "year": "2020-21",
-        "platform": "Unreleased",
-        "desc": "Loadout-focused multiplayer movement shooter",
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Blender 🖍",
-            "GIMP 🖍"
-        ],
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/pvp-playground/preview.png"
-            },
-            {
-                "screenshot": "/assets/projects/pvp-playground/weapon-mods.png"
-            },
-            {
-                "screenshot": "/assets/projects/pvp-playground/siphon.png"
-            },
-            {
-                "screenshot": "/assets/projects/pvp-playground/wheel.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Head in the Clouds",
-            "Sandboard",
-            "Hoop Sports"
-        ]
-    },
-
-    {
-        "name": "EM",
-        "category": "games",
-        "year": "2019",
-        "platform": "Unreleased",
-        "desc": "Conceptual 2D exploration game",
-
-        "libraryTags": [
-            "soundtrack",
-            "hierre"
-        ],
-
-        "skills": [
-            "Unity ⌨",
-            "C# ⌨",
-            "Godot ⌨",
-            "Aseprite 🖍",
-            "Logic Pro ♫"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/UfE63SiF9uw?si=4DTVmVrEBp3G-iDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/em/redforestend.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/bullaciona1.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/redforest1.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/spacewalkway.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/redforest2.png"
-            },
-            {
-                "screenshot": "/assets/projects/em/bullaciona2.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Gata Guressi",
-            "Head in the Clouds",
-            "Mutablus"
-        ]
-    },
-
-    {
-        "name": "Lazarus",
-        "category": "music",
-        "year": "2024",
-        "length": "Unreleased",
-        "desc": "Industrial heaven/hell-themed LP",
-
-        "libraryTags": [
-            "wip"
-        ],
-
-        "skills": [
-            "Logic Pro ♫",
-            "Massive ♫",
-            "Photoshop 🖍"
-        ],
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/lazarus/preview.png"
-            }
-        ],
-
-        "similarProjects": [
-            "Mind of Glass",
-            "Saliva",
-            "Onion Ecdysis"
-        ]
-    },
-
-    {
-        "name": "Mind of Glass",
-        "category": "music",
-        "credit": "ft. Sebastien Alamo-Selis",
-        "year": "2023",
-        "length": "29 min",
-        "desc": "Phobia-themed electronic beats",
-
-        "skills": [
-            "Logic Pro ♫",
-            "Massive ♫",
-            "Final Cut Pro ▷",
-            "Photoshop 🖍"
-        ],
-
-        "ytEmbed": `
-            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/1fo60ZGGMVg6U0yjzpzM9B?utm_source=generator&theme=0"
-            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,    
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/mind-of-glass/preview.png"
-            },
-
-            {
-                "screenshot": "/assets/projects/mind-of-glass/9minds.png"
-            },
-
-            {
-                "screenshot": "/assets/projects/mind-of-glass/old-cover.png"
-            },
-
-            {
-                "screenshot": "/assets/projects/mind-of-glass/mindofglass alt2.png"
-            }
-        ],
-
-        "similarProjects": [
-            "Saliva",
-            "Onion Ecdysis"
-        ]
-    },
     
     {
         "name": "Saliva",
@@ -676,6 +853,44 @@ var projectsData = [
             "Onion Ecdysis"
         ]
     },
+
+    {
+        "name": "PVP Playground",
+        "category": "games",
+        "year": "2020-21",
+        "platform": "Unreleased",
+        "desc": "Loadout-focused multiplayer movement shooter",
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Blender 🖍",
+            "GIMP 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/pvp-playground/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/weapon-mods.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/siphon.png"
+            },
+            {
+                "screenshot": "/assets/projects/pvp-playground/wheel.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Head in the Clouds",
+            "Sandboard",
+            "Hoop Sports"
+        ]
+    },
     
     {
         "name": "Onion Ecdysis",
@@ -706,246 +921,53 @@ var projectsData = [
     },
 
     {
-        "name": "Imminent-XR",
-        "category": "projects",
-        "credit": "Imminent-XR",
-        "year": "2023-24",
-        "desc": "VR meets virtual production and musical theater",
+        "name": "EM",
+        "category": "games",
+        "year": "2019",
+        "platform": "Unreleased",
+        "desc": "Conceptual 2D exploration game",
 
         "libraryTags": [
-            "work"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Meta Quest 2 ⌨",
-            "FrameVR ⌨",
-            "Github ⌨",
-            "Perforce ⌨",
-            "Blender 🖍"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/VCAOUixtBes?si=Beijs9j8takfkcKE" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/imminent-xr/preview.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "The Chime Hours",
-            "216 Below",
-            "XR Stories Internship"
-        ]
-    },
-
-    {
-        "name": "York Maze",
-        "category": "projects",
-        "credit": "Pop Up VR",
-        "year": "2023",
-        "desc": "Virtual York Maze in UEFN",
-
-        "libraryTags": [
-            "work"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "UEFN ⌨",
-            "Blender 🖍",
-            "Photoshop 🖍"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/imminent-xr/preview.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Imminent-XR",
-            "The Chime Hours",
-            "XR Stories Internship"
-        ]
-    },
-
-    {
-        "name": "The Chime Hours",
-        "category": "projects",
-        "credit": "Lord Whitney, Reflex Arc",
-        "year": "2023",
-        "desc": "Surreal XR forest experience",
-
-        "libraryTags": [
-            "work"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Meta Quest 2 ⌨",
-            "Vive XR Elite ⌨",
-            "Vive Focus 3 ⌨",
-            "Perforce ⌨",
-            "Blender 🖍"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/the-chime-hours/preview.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Imminent-XR",
-            "216 Below",
-            "XR Stories Internship"
-        ]
-    },
-
-    {
-        "name": "XR Hackathon 2023",
-        "category": "projects",
-        "credit": "Emi Richardson, Mara Solomon, Ziqi Fang, Elliot Mann",
-        "year": "2023",
-        "desc": "VR kicking and stomping game",
-
-        "libraryTags": [
-            "work"
+            "soundtrack",
+            "hierre"
         ],
 
         "skills": [
             "Unity ⌨",
             "C# ⌨",
-            "Meta Quest 2 ⌨"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/osoQaLtTzOY?si=830NFoo84uAm4ec2" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/xr-hackathon-2023/team.png"
-            },
-            {
-                "screenshot": "/assets/projects/xr-hackathon-2023/table.png"
-            },
-            {
-                "screenshot": "/assets/projects/xr-hackathon-2023/stage.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "The Chime Hours",
-            "Imminent-XR",
-            "216 Below"
-        ]
-    },
-
-    {
-        "name": "216 Below",
-        "category": "projects",
-        "credit": "Guy Schofield, David Gochfeld",
-        "year": "2022",
-        "desc": "VR submarine experience",
-
-        "libraryTags": [
-            "work"
-        ],
-
-        "skills": [
-            "Unity ⌨",
-            "Meta Quest 2 ⌨",
-            "Plastic SCM ⌨",
-            "Blender 🖍",
-            "Photoshop 🖍"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/5ABJRQ2bVAM?si=GZIcQlu-TxFefSGl" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/216-below/models.png",
-                "caption": "A bunch of my models"
-            },
-            {
-                "screenshot": "/assets/projects/216-below/mocap.png"
-            },
-            {
-                "screenshot": "/assets/projects/216-below/mocap2.jpg"
-            },
-            {
-                "screenshot": "/assets/projects/216-below/216.jpg"
-            },
-            {
-                "screenshot": "/assets/projects/216-below/216_2.jpg"
-            }
-        ],
-
-
-        "similarProjects": [
-            "Imminent-XR",
-            "The Chime Hours",
-            "XR Stories Internship"
-        ]
-    },
-
-    {
-        "name": "XR Stories Internship",
-        "category": "projects",
-        "credit": "XR Stories",
-        "year": "2022",
-        "desc": "AR, VR, and virtual production projects",
-
-        "libraryTags": [
-            "work"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Unity ⌨",
-            "C# ⌨",
-            "Meta Quest 2 ⌨",
-            "AR ⌨",
-            "Blender 🖍",
-            "Substance Painter 🖍",
-            "Photoshop 🖍",
+            "Godot ⌨",
+            "Aseprite 🖍",
             "Logic Pro ♫"
         ],
 
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/ID2NUOd2B7w?si=kPC0FHsqw9lo9FWq" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/UfE63SiF9uw?si=4DTVmVrEBp3G-iDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/xr-stories-internship/preview.png"
+                "screenshot": "/assets/projects/em/redforestend.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/arguildhall.png"
+                "screenshot": "/assets/projects/em/bullaciona1.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/proxandreverie.png"
+                "screenshot": "/assets/projects/em/redforest1.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/mocap.png"
+                "screenshot": "/assets/projects/em/spacewalkway.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/destructiblexr.png"
+                "screenshot": "/assets/projects/em/redforest2.png"
+            },
+            {
+                "screenshot": "/assets/projects/em/bullaciona2.png"
             }
         ],
 
 
         "similarProjects": [
-            "Sandboard",
-            "The Chime Hours",
-            "216 Below"
+            "Gata Guressi",
+            "Head in the Clouds",
+            "Mutablus"
         ]
     }
 ];
@@ -1051,6 +1073,7 @@ function makeSimilarLibrary(project) {
         return "";
     }
 
+//<p>Shared skills are highlighted in gold.</p>
     var library = `
     <h2>🏷 SIMILAR PROJECTS</h2>
     <hr>
@@ -1067,6 +1090,76 @@ function makeSimilarLibrary(project) {
     `;
 
     return library;
+}
+
+
+
+function makeSearchLibrary(searchTerm) {
+    var library = "";
+
+    for (var i = 0; i < projectsData.length; i++) {
+        if (isSearchResult(projectsData[i], searchTerm)) {
+            library += makeCardFromProject(projectsData[i]);
+        }
+    }
+
+    if (library === "") {
+        library += `
+        <p>
+            No results found 😿 want a <a href="${getRandomProjectHREF()}">random project</a> instead?
+        </p>
+        `;
+    }
+
+    else {
+        library += `
+            <p class="center-link">End of results</p>
+        `;
+    }
+
+    return library;
+}
+
+
+
+function isSearchResult(project, searchTerm) {
+    if (project.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return true;
+    }
+
+    else if (hasSkillContains(project, searchTerm)) {
+        return true;
+    }
+
+    else if (hasCategoryContains(project, searchTerm)) {
+        return true;
+    }
+
+    return false;
+}
+
+
+function hasSkillContains(project, searchTerm) {
+    if (!project.skills) {
+        return false;
+    }
+
+    for (var i = 0; i < project.skills.length; i++) {
+        if (project.skills[i].toLowerCase().includes(searchTerm.toLowerCase())) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
+function hasCategoryContains(project, searchTerm) {
+    if (project.category.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return true;
+    }
+
+    return false;
 }
 
 
@@ -1151,6 +1244,10 @@ function verifyProjectKey(project, key) {
 }
 
 function getCurrProject() {
+    if (location.href.includes("?search")) {
+        return false;
+    }
+
     var currLoc = "/" + location.href.split("/").slice(-1);
     return projectsData.find(project => currLoc.includes(slugify(project.name))) || false;
 }
@@ -1163,6 +1260,11 @@ function getProjectByName(name) {
       }
 
       return "";
+}
+
+function getRandomProjectHREF() {
+    var randomProject = projectsData[Math.floor(Math.random()*projectsData.length)];
+    return `/${randomProject.category}/${slugify(randomProject.name)}.html`;
 }
 
 
@@ -1348,12 +1450,17 @@ if (projectSkills) {
 
 function makeSkills(project) {
     var isProject = getCurrProject();
+    var originalProject = isProject;
+
+    if (isProject) {
+        isProject = (project === isProject);
+    }
 
     if (verifyProjectKey(project, 'skills')) {
         var str = "";
 
         for (var i = 0; i < project.skills.length; i++) {
-            str += makeSkill(project.skills[i], isProject);
+            str += makeSkill(project.skills[i], isProject, originalProject);
         }
 
         return str;
@@ -1364,6 +1471,16 @@ function makeSkills(project) {
 
 
 
-function makeSkill(skill, isProject) {
-    return `<p class="badge ${isProject ? 'skill' : 'skillcard'}">${skill}</p>`;
+function makeSkill(skill, isProject, originalProject) {
+    var highlight = false;
+    /*
+    if (originalProject) {
+        if (originalProject.skills.includes(skill)) {
+            highlight = true;
+        }
+    }
+    */
+
+
+    return `<p class="badge ${isProject ? 'skill' : 'skillcard'}${highlight ? ` skillcard-highlight` : ""}">${skill}</p>`;
 }
