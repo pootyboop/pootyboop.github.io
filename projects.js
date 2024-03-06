@@ -588,7 +588,8 @@ var projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/the-chime-hours/preview.png"
+                "screenshot": "/assets/projects/the-chime-hours/preview.png",
+                "caption": "Photo by Jemma Micklebrough"
             }
         ],
 
