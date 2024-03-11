@@ -520,6 +520,7 @@ body {
     width: 2rem !important;
     transform:translate(-45px, -3px);
     opacity: .75;
+    padding:0px !important;
 }
 
 #main-content {
