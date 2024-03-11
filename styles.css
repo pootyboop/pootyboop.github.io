@@ -518,9 +518,10 @@ body {
 
 .search-button>img {
     width: 2rem !important;
-    transform:translate(-45px, -3px);
+    /*transform:translate(-45px, -3px);*/
+    transform: translateY(-3px);
     opacity: .75;
-    padding:0px !important;
+    padding-left: -1rem;
 }
 
 #main-content {
@@ -621,5 +622,11 @@ body {
 @media (min-width: 768px) {
     .searchbar>input {
         margin-left: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 810px) {
+    .nav-link {
+        font-size: 2.6rem !important;
     }
 }
