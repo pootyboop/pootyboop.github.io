@@ -178,6 +178,10 @@ var projectsData = [
             "Logic Pro ♫"
         ],
 
+        "libraryTags": [
+            "game jam"
+        ],
+
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2535087?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
 
         "similarProjects": [
@@ -191,7 +195,7 @@ var projectsData = [
         "name": "SpeedStocks",
         "category": "games",
         "year": "2024",
-        "platform": "Android",
+        "platform": "Android, Card Game",
         "desc": "Casual stock-trading card/Android game",
 
         "skills": [
@@ -199,6 +203,10 @@ var projectsData = [
             "Kotlin ⌨",
             "Github ⌨",
             "Illustrator 🖍"
+        ],
+
+        "libraryTags": [
+            "tabletop"
         ],
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2487900?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
@@ -305,7 +313,8 @@ var projectsData = [
 
         "libraryTags": [
             "hierre",
-            "wip"
+            "wip",
+            "tabletop"
         ],
 
         "skills": [
@@ -381,7 +390,8 @@ var projectsData = [
         "desc": "Tile-based procedural dungeon strategy",
 
         "libraryTags": [
-            "soundtrack"
+            "soundtrack",
+            "game jam"
         ],
 
         "skills": [
@@ -609,7 +619,8 @@ var projectsData = [
         "desc": "VR kicking and stomping game",
 
         "libraryTags": [
-            "work"
+            "work",
+            "game jam"
         ],
 
         "skills": [
@@ -1234,6 +1245,15 @@ function makeSearchLibrary(searchTerm) {
     var library = "";
     var results = [];
 
+    switch (searchTerm.toLowerCase()) {
+        default:
+            break;
+        case "cv":
+            window.open("/cv","_self")
+            return;
+            
+    }
+
     for (var i = 0; i < projectsData.length; i++) {
         if (isSearchResult(projectsData[i], searchTerm)) {
             results.push(projectsData[i]);
@@ -1274,6 +1294,46 @@ function isSearchResult(project, searchTerm) {
     }
 
     else if (hasCategoryContains(project, searchTerm)) {
+        return true;
+    }
+
+    else if (isPlatform(project, searchTerm)) {
+        return true;
+    }
+
+    else if (isYear(project, searchTerm)) {
+        return true;
+    }
+
+    else if (hasTagFromSearch(project, searchTerm)) {
+        return true;
+    }
+
+    return false;
+}
+
+
+
+function isYear(project, searchTerm) {
+    if (!project.year) {
+        return false;
+    }
+
+    if (project.year.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return true;
+    }
+
+    return false;
+}
+
+
+
+function isPlatform(project, searchTerm) {
+    if (!project.platform) {
+        return false;
+    }
+
+    if (project.platform.toLowerCase().includes(searchTerm.toLowerCase())) {
         return true;
     }
 
@@ -1350,6 +1410,21 @@ function projectExtraInfo(project) {
 function doesProjectHaveTag(project, tag) {
     if (project.libraryTags) {
         return (project.libraryTags.includes(tag))
+    }
+
+    return false;
+}
+
+
+function hasTagFromSearch(project, searchTerm) {
+    if (!project.libraryTags) {
+        return false;
+    }
+
+    for (var i = 0; i < project.libraryTags.length; i++) {
+        if (project.libraryTags[i].toLowerCase().includes(searchTerm.toLowerCase())) {
+            return true;
+        }
     }
 
     return false;
