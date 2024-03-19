@@ -21,6 +21,9 @@ let scale;              //visual scale of tiles
 
 let titleFont;              //title screen font
 let showIntroScreen = true; //whether or not to show the title screen
+
+let maxCanvasPercentageWidth = 1.0;
+let maxCanvasPercentageHeight = .8;
 //==================================================\\
 
 //same as processing
@@ -170,7 +173,7 @@ function windowResized() {
 //justLoaded should be false in all cases EXCEPT when called from setup()
 function resizeGame(justLoaded) {
   //figure out what the smaller dimension is
-  let smallerDimension = getSmaller(windowWidth, windowHeight);
+  let smallerDimension = getSmaller(windowWidth * maxCanvasPercentageWidth, windowHeight * maxCanvasPercentageHeight);
 
   //create the canvas if necessary
   //should only do this when called from setup
