@@ -4,25 +4,27 @@ should not be used anywhere else
 */
 
 .game-wrapper {
-  display: flex;
-  /*centre the sidebar-game-sidebar sandwich*/
-  flex-direction: row;
-  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80vw;
 }
 
 /*the bars to the left and right of the game viewport*/
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
 
   margin: 2%;
   max-height: 100%;
+  max-width: 8rem;
 
   background-color: #343434;
   /*round corners*/
-  border-radius: 15px;
+  border-radius: 10px;
 
   /*allows me to use <ul> without those icky bullet points*/
   list-style: none;
@@ -34,16 +36,21 @@ should not be used anywhere else
 .inv-item {
   /*prevent pixel art compression*/
   image-rendering: pixelated;
-  margin: 1%;
   /*items are greyed out by default - this is managed by inv.js*/
   filter: grayscale(100%);
   width: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*links to info tabs*/
 .sidebar-link  {
   text-align: center;
   font-size: 1.5rem;
+}
+
+.sidebar>li {
+  position: relative;
 }
 
 /*add a matching background to item sprites and info tabs
@@ -55,17 +62,16 @@ this helps the right sidebar look a little less ugly*/
 
 /*the item count displayed beneath each item*/
 .inv-item-ct {
+  position: absolute !important;
+
   font-size: 2rem;
-  text-align: center;
 
   /*prevent big gross gaps between items*/
   margin: 0;
+  padding: 0;
   /*make the item count overlap the item sprite*/
   margin-top: -40px;
-
-  /*necessary for z-index to work*/
-  position: relative;
-
+  margin-left: 50%;
   z-index: 10;
 }
 
@@ -73,4 +79,8 @@ this helps the right sidebar look a little less ugly*/
 .li-justify {
   display: flex;
   justify-content: center;
+}
+
+#canvas {
+  border-radius: 10px;
 }
