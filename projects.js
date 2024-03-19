@@ -89,6 +89,7 @@ var projectsData = [
             "Logic Pro ♫",
             "Massive ♫",
             "Photoshop 🖍",
+            "GIMP 🖍",
             "Illustrator 🖍"
         ],
         
@@ -655,7 +656,7 @@ var projectsData = [
         "name": "Head in the Clouds",
         "category": "games",
         "year": "2023",
-        "platform": "Windows",
+        "platform": "Windows, Web",
         "desc": "Chill airborne book delivery",
 
         "libraryTags": [

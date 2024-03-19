@@ -587,7 +587,7 @@ body {
         text-align: center;
     }
 
-    .project-embed, .web-playable, .project-embed-col, .game-wrapper {
+    .project-embed, .web-playable, .project-embed-col, .game-wrapper, .hide-playable {
         display: none !important;
     }
 

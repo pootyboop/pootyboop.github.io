@@ -83,8 +83,4 @@ this helps the right sidebar look a little less ugly*/
 
 #canvas {
   border-radius: 10px;
-  align-self: center;
-  justify-self: center;
-  padding: 0;
-  margin: auto;
 }
