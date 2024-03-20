@@ -1053,7 +1053,8 @@ var projectsData = [
 
         "similarProjects": [
             "Mind of Glass",
-            "Onion Ecdysis"
+            "Onion Ecdysis",
+            "Lazarus"
         ]
     },
 
