@@ -83,16 +83,18 @@ if (searchTitle) {
 }
 
 function getSearchTerm() {
-    return document.location.href
-    .split('=')[1]
-    .replaceAll("+", " ");
+    var searchTerm = document.location.href.split('=')[1];
+
+    if (searchTerm) {
+        return searchTerm.replaceAll("+", " ");
+    }
+
+    return "";
 }
 
 function search() {
 
 }
-
-
 
 
 

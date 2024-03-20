@@ -1,44 +1,5 @@
 var projectsData = [
     {
-        "name": "Hierre",
-        "category": "projects",
-        "year": "2019-24",
-        "desc": "Sci-fi universe shared across many projects",
-
-        "libraryTags": [
-            "misc"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Unity ⌨",
-            "Blender 🖍",
-            "Photoshop 🖍",
-            "GIMP 🖍",
-            "Illustrator 🖍",
-            "Aseprite 🖍",
-            "Logic Pro ♫"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/hierre/preview.png"
-            },
-            {
-                "screenshot": "/assets/projects/hierre/ronetto.png"
-            },
-            {
-                "screenshot": "/assets/projects/hierre/voenn.png"
-            },
-            {
-                "screenshot": "/assets/projects/revolver/preview.png"
-            }
-        ]
-    },
-
-    {
         "name": "CAUTERIZER",
         "category": "games",
         "platform": "In Development",
@@ -95,7 +56,10 @@ var projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/lazarus/preview.png"
+                "screenshot": "/assets/projects/lazarus/cover.png"
+            },
+            {
+                "screenshot": "/assets/projects/lazarus/altcover.png"
             }
         ],
 
@@ -103,6 +67,81 @@ var projectsData = [
             "CAUTERIZER",
             "Mind of Glass",
             "Saliva"
+        ]
+    },
+
+    {
+        "name": "PlayOn! Digital Campus 2024",
+        "category": "projects",
+        "year": "2024",
+        "credit": "PlayOn!, Teatro O Bando",
+        "desc": "Digital theater hackathon",
+
+        "libraryTags": [
+            "misc"
+        ],
+
+        "skills": [
+            "Photoshop 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/bandomap.png"
+            },
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/prototyping.jpg"
+            },
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/tunas-team.jpg"
+            },
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/group.jpg"
+            },
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/tech.jpg"
+            }
+        ],
+
+        "similarProjects": [
+            "XR Hackathon 2023",
+            "Imminent-XR",
+            "DOBIO"
+        ]
+    },
+
+    {
+        "name": "Portfolio Website",
+        "category": "projects",
+        "year": "2024",
+        "platform": "Web",
+        "desc": "This website (elliotgmann.com)",
+
+        "libraryTags": [
+            "misc"
+        ],
+
+        "skills": [
+            "Javascript ⌨",
+            "HTML ⌨",
+            "CSS ⌨",
+            "Bootstrap ⌨",
+            "Github ⌨",
+            "Photoshop 🖍",
+            "Illustrator 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Mutablus"
         ]
     },
 
@@ -180,7 +219,8 @@ var projectsData = [
         ],
 
         "libraryTags": [
-            "game jam"
+            "game jam",
+            "play in browser"
         ],
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2535087?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
@@ -258,7 +298,8 @@ var projectsData = [
 
         "similarProjects": [
             "Saliva",
-            "Onion Ecdysis"
+            "Onion Ecdysis",
+            "Lazarus"
         ]
     },
     
@@ -378,7 +419,7 @@ var projectsData = [
         "similarProjects": [
             "Imminent-XR",
             "The Chime Hours",
-            "XR Stories Internship"
+            "XR Stories"
         ]
     },
     
@@ -450,7 +491,7 @@ var projectsData = [
         "similarProjects": [
             "The Chime Hours",
             "216 Below",
-            "XR Stories Internship"
+            "XR Stories"
         ]
     },
 
@@ -466,6 +507,7 @@ var projectsData = [
             "Unity ⌨",
             "C# ⌨",
             "Github ⌨",
+            "Project Management 🗣",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -538,6 +580,10 @@ var projectsData = [
         "platform": "Web",
         "desc": "Procedurally-generated 2D exploration",
 
+        "libraryTags": [
+            "play in browser"
+        ],
+
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/Zy7v1fg1OZ0?si=HafN4nujdtrBDBlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         
         "skills": [
@@ -608,7 +654,7 @@ var projectsData = [
         "similarProjects": [
             "Imminent-XR",
             "216 Below",
-            "XR Stories Internship"
+            "XR Stories"
         ]
     },
 
@@ -646,7 +692,7 @@ var projectsData = [
 
 
         "similarProjects": [
-            "The Chime Hours",
+            "PlayOn! Digital Campus 2024",
             "Imminent-XR",
             "216 Below"
         ]
@@ -661,7 +707,8 @@ var projectsData = [
 
         "libraryTags": [
             "featured",
-            "soundtrack"
+            "soundtrack",
+            "play in browser"
         ],
 
         "skills": [
@@ -750,12 +797,12 @@ var projectsData = [
         "similarProjects": [
             "Imminent-XR",
             "The Chime Hours",
-            "XR Stories Internship"
+            "XR Stories"
         ]
     },
 
     {
-        "name": "XR Stories Internship",
+        "name": "XR Stories",
         "category": "projects",
         "credit": "XR Stories",
         "year": "2022",
@@ -782,19 +829,19 @@ var projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/xr-stories-internship/preview.png"
+                "screenshot": "/assets/projects/xr-stories/preview.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/arguildhall.png"
+                "screenshot": "/assets/projects/xr-stories/arguildhall.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/proxandreverie.png"
+                "screenshot": "/assets/projects/xr-stories/proxandreverie.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/mocap.png"
+                "screenshot": "/assets/projects/xr-stories/mocap.png"
             },
             {
-                "screenshot": "/assets/projects/xr-stories-internship/destructiblexr.png"
+                "screenshot": "/assets/projects/xr-stories/destructiblexr.png"
             }
         ],
 
@@ -838,10 +885,18 @@ var projectsData = [
                 "screenshot": "/assets/projects/sandboard/tephrenne1.png"
             },
             {
-            "screenshot": "/assets/projects/sandboard/preview.png"
+                "screenshot": "/assets/projects/sandboard/gamayo.jpg",
+                "caption": "Sandboard at GaMaYo"
+            },
+            {
+                "screenshot": "/assets/projects/sandboard/preview.png"
             },
             {
                 "screenshot": "/assets/projects/sandboard/arches4.png"
+            },
+            {
+                "screenshot": "/assets/projects/sandboard/immerseuk2.jpg",
+                "caption": "Sandboard at the ImmerseUK Awards"
             },
             {
                 "screenshot": "/assets/projects/sandboard/arches2.png"
@@ -1064,7 +1119,8 @@ var projectsData = [
 
         "similarProjects": [
             "Mind of Glass",
-            "Saliva"
+            "Saliva",
+            "Lazarus"
         ]
     },
 
@@ -1117,6 +1173,45 @@ var projectsData = [
             "Head in the Clouds",
             "Mutablus"
         ]
+    },
+
+    {
+        "name": "Hierre",
+        "category": "projects",
+        "year": "2019-24",
+        "desc": "Sci-fi universe shared across many projects",
+
+        "libraryTags": [
+            "misc"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Unity ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
+            "Aseprite 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/hierre/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/hierre/ronetto.png"
+            },
+            {
+                "screenshot": "/assets/projects/hierre/voenn.png"
+            },
+            {
+                "screenshot": "/assets/projects/revolver/preview.png"
+            }
+        ]
     }
 ];
 
@@ -1135,6 +1230,11 @@ var featuredProjects = [
 var featuredLibrary = document.getElementById("featured-library");
 if (featuredLibrary) {
     featuredLibrary.innerHTML = makeTagLibrary('featured');
+}
+
+var latestLibrary = document.getElementById("latest-library");
+if (latestLibrary) {
+    latestLibrary.innerHTML = makeLatestLibrary();
 }
 
 var soundtrackLibrary = document.getElementById("soundtrack-library");
@@ -1241,10 +1341,39 @@ function makeSimilarLibrary(project) {
 }
 
 
+function makeLatestLibrary() {
+    var library = `
+    <h2>🗞 Latest Projects</h2>
+    <hr>
+    <div class="container-fluid project-library">
+        <div class="row" id="latest-library">
+    `;
+
+    var count = 0;
+    var i = 0;
+    while (count < 6) {
+        if (!doesProjectHaveTag(projectsData[i], 'wip')) {
+            library += makeCardFromProject(projectsData[i]);
+            count++;
+        }
+        i++;
+    }
+
+    library += `
+        <a href="/search" class="center-link">View All Projects</a>
+        </div>
+    </div>
+    `;
+
+    return library;
+}
+
+
 
 function makeSearchLibrary(searchTerm) {
     var library = "";
     var results = [];
+    var searchH2 = document.getElementById("search-term-h2");
 
     switch (searchTerm.toLowerCase()) {
         default:
@@ -1261,6 +1390,8 @@ function makeSearchLibrary(searchTerm) {
             library += makeCardFromProject(projectsData[i]);
         }
     }
+
+    searchH2.innerHTML += ` (${results.length})`;
 
     if (results.length === 0) {
         library += `
@@ -1542,7 +1673,7 @@ if (projectOverviewGraphics) {
 
 function makeProjectOverviewGraphics(project) {
     return `
-    <div class="row">
+    <div class="row justify-content-center">
         ${project.ytEmbed ? 
             `
             <div class="col-sm-12 col-lg-6 project-graphic">
@@ -1554,11 +1685,7 @@ function makeProjectOverviewGraphics(project) {
         :
         ""}
 
-
-
-        <div class="col-sm-12 col-lg-6 project-graphic">
-        ${makeCarousel(project)}
-        </div>
+        <div class="col-sm-12 col-lg-6 project-graphic">${makeCarousel(project)}</div>
     </div>
     `
 }
