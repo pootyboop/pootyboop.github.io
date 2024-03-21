@@ -146,9 +146,12 @@ function isSelected(link) {
     if (currLoc.includes("?search")) {
         return false;
     }
-    if (currLoc.includes(link.text.toLowerCase())) {
+
+    if (/*currLoc.includes(link.text.toLowerCase())*/getCurrProject().category === link.text.toLowerCase()) {
         return ` id="selected-nav-tab"`;
-    } else {
+    }
+    
+    else {
         return "";
     }
 

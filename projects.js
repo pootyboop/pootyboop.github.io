@@ -87,10 +87,13 @@ var projectsData = [
         
         "carouselScreenshots": [
             {
+                "screenshot": "/assets/projects/playon-digital-campus-2024/prototyping2.png"
+            },
+            {
                 "screenshot": "/assets/projects/playon-digital-campus-2024/preview.png"
             },
             {
-                "screenshot": "/assets/projects/playon-digital-campus-2024/bandomap.png"
+                "screenshot": "/assets/projects/playon-digital-campus-2024/tech2.jpeg"
             },
             {
                 "screenshot": "/assets/projects/playon-digital-campus-2024/prototyping.jpg"
@@ -99,10 +102,10 @@ var projectsData = [
                 "screenshot": "/assets/projects/playon-digital-campus-2024/tunas-team.jpg"
             },
             {
-                "screenshot": "/assets/projects/playon-digital-campus-2024/group.jpg"
+                "screenshot": "/assets/projects/playon-digital-campus-2024/bandomap.png"
             },
             {
-                "screenshot": "/assets/projects/playon-digital-campus-2024/tech.jpg"
+                "screenshot": "/assets/projects/playon-digital-campus-2024/group.jpg"
             }
         ],
 
@@ -1093,6 +1096,65 @@ var projectsData = [
             "Head in the Clouds",
             "Sandboard",
             "Hoop Sports"
+        ]
+    },
+
+    {
+        "name": "Pooty Games",
+        "category": "projects",
+        "year": "2020-23",
+        "platform": "Minecraft Map",
+        "desc": "Multiplayer party games!",
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/kKkGGUQcDNs?si=jhVoVK5Dmbb9WDLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+
+        "libraryTags": [
+            "misc"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/pooty-games/paulheist.png",
+                "caption": "Paul Heist"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/bedwars.png",
+                "caption": "Bedwars"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/games.png",
+                "caption": "Games menu"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/preview.png",
+                "caption": "Main hub"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/warden.png",
+                "caption": "Warden's Dungeon"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/goldrush.png",
+                "caption": "Gold Rush"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/shopping.png",
+                "caption": "Shopping"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/witchhunt.png",
+                "caption": "Witch Hunt"
+            },
+            {
+                "screenshot": "/assets/projects/pooty-games/fps.png",
+                "caption": "FPS"
+            }
+        ],
+
+        "similarProjects": [
+            "PVP Playground",
+            "Hierre Card Game",
+            "SpeedStocks"
         ]
     },
     
