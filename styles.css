@@ -563,6 +563,12 @@ body {
     margin-right: 2%;
 }
 
+.spotify-acct {
+    min-width: 400px;
+    min-height: 200px !important;
+    margin-bottom: 5%;
+}
+
 
 
 
@@ -599,6 +605,12 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .spotify-acct {
+        display: none !important;
+    }
+}
+
 @media (max-width: 424px) {
     h3 {
         font-size: 2.5rem !important;
@@ -619,7 +631,6 @@ body {
 
 
 
-
 @media (min-width: 768px) {
     .searchbar>input {
         margin-left: 2rem;
@@ -629,5 +640,15 @@ body {
 @media (min-width: 768px) and (max-width: 810px) {
     .nav-link {
         font-size: 2.6rem !important;
+    }
+}
+
+@media (min-width: 1334px) {
+    .category-desc {
+        max-width: 50vw;
+    }
+
+    .spotify-acct {
+        margin-bottom: 0%;
     }
 }
