@@ -64,7 +64,7 @@ body {
   background-color: #121212;
 }
 
-li {
+.mutablus-li {
   /*space out <li>s a bit
   looks nicer for stuff like Controls on How to Play
   didn't use line-height here since it affects all lines

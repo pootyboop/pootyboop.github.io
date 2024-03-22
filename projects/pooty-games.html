@@ -27,7 +27,7 @@
 
             <p>
                 Pooty Games is a Minecraft multiplayer minigame map I've been working on here and there over the last few years.
-                It includes my rendition of some pre-existing games (like Bedwars) and a bunch of original games.
+                It includes my rendition of some pre-existing games (e.g. Bedwars, Hide and Seek, Build Comp) and a bunch of original games (e.g. Warden's Dungeon, Gold Rush, Paul Heist).
             </p>
             
             <a class="link-button center-link" href="/assets/projects/pooty-games/Pooty Games 1.20.zip" download="Pooty Games 1.20.zip">Download (Minecraft Java 1.20.2)</a>
@@ -51,28 +51,28 @@
                         <b>Build Comp</b> — Build other players' prompts and vote on the best builds.
                     </li>
                     <li>
-                        <b>FPS</b> — A classic first-person shooter played on a remake of Call of Duty's Nuketown.
+                        <b>FPS</b> — Use your favorite gun on this FFA FPS played on a remake of Call of Duty's Nuketown.
                     </li>
                     <li>
-                        <b>Warden's Dungeon</b> — Hide from the Warden and don't make noise!
+                        <b>Warden's Dungeon</b> — Hide from the Warden, watch out for traps, and don't make noise!
                     </li>
                     <li>
                         <b>Flip Tag</b> — Play tag in two dimensions at once, chasing and dodging players by hopping dimensions.
                     </li>
                     <li>
-                        <b>Ham Soccer</b> — Score goals by hitting the pig into the other team's goal.
+                        <b>Ham Soccer</b> — Score goals by smacking the pig into the other team's goal.
                     </li>
                     <li>
-                        <b>Geokinesis</b> — Use earth-control abilities to fight your opponents and be the last one standing.
+                        <b>Geokinesis</b> — Use earth-control abilities to outplay your opponents in a best-of-5 FFA.
                     </li>
                     <li>
                         <b>Shopping</b> — Race other players to craft items using nearby resources.
                     </li>
                     <li>
-                        <b>Paul Heist</b> — Break into a mansion and steal the legendary Paul, or defend him from the thieves.
+                        <b>Paul Heist</b> — Break into a mansion and steal the legendary Paul, or defend him from the thieves. <em>My personal favorite!</em>
                     </li>
                     <li>
-                        <b>Hide and Seek</b> — Hide as a fake block or hunt down the fakes.
+                        <b>Hide and Seek</b> — Hide as a fake block or hunt down the hiders.
                     </li>
                     <li>
                         <b>Witch Hunt</b> — Disguise as a villager and hide from the witch hunters.
@@ -110,8 +110,44 @@
                 I have used it as a platform for many multiplayer games because it a) provides high-level networked multiplayer out of the box and b) has a huge preexisting player base, meaning I can trick my friends into enjoying playtesting my games!
             </p>
             <p>
-                This map is entirely vanilla using Minecraft's datapacks. I have been working on it across multiple Minecraft updates, changing games to use newer features and creating new games based on new Minecraft features.
+                This map is vanilla, made using Minecraft's datapack system. I have been working on it across multiple Minecraft updates, changing games to use newer features and creating new games based on new Minecraft features.
             </p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                            <p>Some creative solutions I came up with to create the games</p>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    When you hold shift in <b>Hide and Seek</b>, an invisible shulker is spawned beneath you. Shulkers automatically snap to the nearest block position. The shulker then spawns the fake block representing the player relative to its snapped location. This makes the fake block "snap into place" and blend in with the environment.
+                                </li>
+                                <li>
+                                    Right click detection on <b>FPS</b> is done with 1.20's new interaction entities. An interaction entity follows the player's vision around, consuming right click inputs from the player and then firing raycasts from their view.
+                                </li>
+                                <li>
+                                    The <b>Gold Rush</b> map is full of "cave air", a different block than regular "air". When players mine gold ore, they leave behind an air block. After the game is finished, the map repopulates all gold ore by replacing air blocks with gold ore.
+                                </li>
+                                <li>
+                                    Tapping the sneak key in <b>Ham Soccer</b> makes the player leap forward. Minecraft doesn't allow you to modify the player's motion directly, so instead I spawn ~20 invisible slimes right behind/under the player's feet. The number of collisions in that single frame propel the player forward.
+                                </li>
+                                <li>
+                                    The high jumps you can perform in <b>Geokinesis</b> are created by applying a very high amount of the levitation effect to the player and then quickly removing it. When holding sneak to slam back down to the ground, a different levitation value is used which inverts the effect, increasing the player's gravity.
+                                </li>
+                                <li>
+                                    <b>Bedwars</b> uses adventure mode so players can't destroy the map, but every item in the game can break every placeable/modifiable part of the map, so it seems like the game is in survival mode. All placeable blocks are destroyed at the start of each game using a stepped system where an armor stand iterates across the map and deletes all undesired blocks.
+                                </li>
+                                <li>
+                                    In <b>Witch Hunt</b>, <b>Track Racing</b>, and other games where you control/own an entity or games with a voting system, player UUIDs are stored in a scoreboard and assigned to the corresponding entities to keep them synced.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="info-section" id="similar-library"></section>

@@ -70,29 +70,103 @@
             <hr>
             
             <section id="skills"></section>
+            <iframe class="block-vid" width="100%" src="https://www.youtube.com/embed/OKsClkoITlg?si=OWtv86vy6U699MIq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             <p>
                 This was a 1st year university project initially developed over the course of four months in Unreal Engine 4 with a Quest 2 headset. I continued development as a personal project until late 2023, releasing 3 post-release updates including new features, levels, and fixes. I made 3D assets in Blender, textures in GIMP and Photoshop, sound effects and music in Logic Pro (mostly with the Massive synth), and game trailers in Premiere.
             </p>
+            
+
+            
+
+            <div class="accordion" id="accordionMovementSystem">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1MovementSystem">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMovementSystem" aria-controls="collapseMovementSystem">
+                            <p>Movement System</p>
+                        </button>
+                    </h2>
+                    <div id="collapseMovementSystem" class="accordion-collapse collapse" aria-labelledby="h1MovementSystem" data-bs-parent="#accordionMovementSystem">
+                        <div class="accordion-body">
+                            <p>
+                                The game is designed to be immersive and (relatively) nausea free. In real life, the player stands still and aims their hands. In the game, the player character takes these same actions. I was very careful to avoid half-baked locomotion options like running by moving just your arms, not your legs. I also implemented accessibility features like tunnel vision, toggleable UI, and tutorial tips in levels.
+                            </p>
+
+                            <img src="/assets/projects/sandboard/early1.png" class="block-img accordion-img" alt="Early prototype of grappling">
+                
+                            <p>
+                                The surfing system is weighted between the slope you're surfing on and the direction you're looking. This gives the player more control than purely slope-based movement. The grapples are the player's main navigation tool, allowing you to dodge obstacles and clear gaps.
+                                I based the grappling system off of Respawn Entertainment's games, where they are often used as tools of propulsion rather than pulling you directly to the hit location.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <p>
                 Sandboard draws inspiration from sand surfing in games like The Legend of Zelda: Breath of the Wild and Journey and grappling in VR games such as Swarm and Spider-Man: Far From Home Virtual Reality. Other visual influences are Dune (2021), Monster Hunter 4, Shadow of the Colossus, Raised by Wolves, Mad Max, and the Borderlands series.
             </p>
 
-            <iframe class="block-vid" width="100%" src="https://www.youtube.com/embed/OKsClkoITlg?si=OWtv86vy6U699MIq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1Levels">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLevels" aria-controls="collapseLevels">
+                            <p>Level Design</p>
+                        </button>
+                    </h2>
+                    <div id="collapseLevels" class="accordion-collapse collapse" aria-labelledby="h1Levels" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Sandboard currently includes 4 levels: Arches, Sandstream, Tephrenne, and Grapple Course.
+                            </p>
+    
+                            <section>
+                                <h3 class="center-link">Arches</h3>
+                                <img src="/assets/projects/sandboard/arches2.png" class="block-img accordion-img" alt="Arches">
+                    
+                                <p>
+                                    Arches is the first level of the game, designed to act as a smooth entry point for the player. It features a balance of sloped, linear paths with obstacles and open areas where players have more freedom of movement. The scale of the pyramids and dunes on this map make for easy grappling across wide areas while grappling to the stone arches above can get you past obstacles.
+                                </p>
+                                <p>
+                                    The level starts with an empty stretch where the player can get accustomed to the surfing speed, after which they are instructed on how to grapple. They are then presented with stone arches they must navigate around by surfing or grappling. This gradually increases the level's complexity, allowing new players to adapt to the movement mechanics.
+                                </p>
+                            </section>
+                            <section>
+                                <h3 class="center-link">Sandstream</h3>
+                                <img src="/assets/projects/sandboard/sandstream2.png" class="block-img accordion-img" alt="Sandstream">
+                    
+                                <p>
+                                    Added in the 1.1 update, Sandstream is an open, cinematic area featuring giant sandworms and other wildlife. Players learn to aim their grapples, shooting targets to open doors and latching onto fauna for a free ride. At the end of the level, the player rides on a sandworm's back for a cinematic finish.
+                                </p>
+                                <p>
+                                    Like Arches, this level features many intertwined paths, allowing the player to find the optimal route to the end.
+                                </p>
+                            </section>
+                            <section>
+                                <h3 class="center-link">Tephrenne</h3>
+                                <img src="/assets/projects/sandboard/tephrenne1.png" class="block-img accordion-img" alt="Tephrenne">
+                    
+                                <p>
+                                    Tephrenne is the hardest level in Sandboard, testing the player's surfing and grappling skills. Unlike the last two levels, Tephrenne sends players along bridges and through tight spaces, meaning you have to perfect your turning to avoid hitting a wall or falling back down to a previous area.
+                                </p>
+                                <p>
+                                    Tephrenne has a major skip that can be performed by players who are skilled at grappling. See if you can find it!
+                                </p>
+                            </section>
+                            <section>
+                                <h3 class="center-link">Grapple Course</h3>
+                    
+                                <p>
+                                    Grapple Course is a tricky bonus level released with the 1.5 update, testing players' ability to hit as many targets as they can.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
             <p>
-                The game is designed to be immersive and (relatively) nausea free. In real life, the player stands still and aims their hands. In the game, the player character takes these same actions. I was very careful to avoid half-baked locomotion options like running by moving just your arms, not your legs. I also implemented accessibility features like tunnel vision, toggleable UI, and tutorial tips in levels.
-            </p>
-
-            <img src="/assets/projects/sandboard/early1.png" class="block-img" alt="Early prototype of grappling">
-
-            <p>
-                The surfing system is weighted between the slope you're surfing on and the direction you're looking. This gives the player more control than purely slope-based movement. The grapples are the player's main navigation tool, allowing you to dodge obstacles and clear gaps.
-                I based the grappling system off of Respawn Entertainment's games, where they are often used as tools of propulsion rather than pulling you directly to the hit location.
-            </p>
-
-            <p>
-                Development is completed for now as I have moved onto other projects, but I may resume in the future.
+                Development is completed for now as I have moved onto other projects, but I may resume in the future. I have implemented some features that were planned to be used in future levels (like ziplines) and was halfway through creating a new level, Giervenne Ridge, when I halted development.
             </p>
 
             <!--

@@ -80,6 +80,12 @@ if (searchTitle) {
     }
     searchTitle.innerHTML = htmlSearchTerm;
     document.getElementById("search-library").innerHTML = makeSearchLibrary(searchTerm);
+
+    if (searchTerm === "") {
+
+    } else {
+        document.title += ` - "${searchTerm}"`;
+    }
 }
 
 function getSearchTerm() {
