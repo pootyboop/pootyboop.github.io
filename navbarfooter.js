@@ -148,7 +148,19 @@ function isSelected(link) {
         return "";
     }
 
-    if (/*currLoc.includes(link.text.toLowerCase())*/getCurrProject().category === link.text.toLowerCase()) {
+    var currProj = getCurrProject();
+
+    if (currProj) {
+        if (currProj.category === link.text.toLowerCase()) {
+            return selectedHTML;
+        }
+
+        else {
+            return "";
+        }
+    }
+
+    else if (currLoc.includes(link.text.toLowerCase())) {
         return selectedHTML;
     }
 

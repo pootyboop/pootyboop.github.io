@@ -1662,7 +1662,6 @@ function getCurrProject() {
 
     var currLoc = "/" + location.href.split("/").slice(-1).toString();
     currLoc = currLoc.replace('.html', '').replace('/', '');
-    console.log(currLoc);
     return projectsData.find(project => currLoc === slugify(project.name)) || false;
 }
 
