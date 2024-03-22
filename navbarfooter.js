@@ -141,18 +141,19 @@ function makeNavLink(link) {
 
 
 function isSelected(link) {
+    var selectedHTML = ` id="selected-nav-tab"`;
     var currLoc = location.href;
 
     if (currLoc.includes("?search")) {
-        return false;
+        return "";
     }
 
-    if (
-        (/*currLoc.includes(link.text.toLowerCase())*/getCurrProject().category === link.text.toLowerCase())
-        ||
-        (link.text === "CV")
-        ) {
-        return ` id="selected-nav-tab"`;
+    if (/*currLoc.includes(link.text.toLowerCase())*/getCurrProject().category === link.text.toLowerCase()) {
+        return selectedHTML;
+    }
+
+    else if (link.text === "CV" && currLoc.includes("elliotgmann.com/cv")) {
+        return selectedHTML;
     }
     
     else {
