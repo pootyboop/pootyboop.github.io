@@ -50,7 +50,7 @@ document.getElementById("navbar").innerHTML = `
 document.body.innerHTML += `
 
 <footer class="footer">
-    <div class="row footer-row justify-content-between">
+    <div class="row footer-row">
         <div class="col footer-col footer-col-left">
             <!--
             <p class="footer-header">
@@ -60,9 +60,9 @@ document.body.innerHTML += `
             <a class="footer-text" href="mailto:elliotgmann@gmail.com">elliotgmann@gmail.com</a>
         </div>
         <div class="col footer-col footer-col-center">
-            <button onclick="topFunction()" id="backToTopBtn" title="Back to Top">Back to Top</button>
+            <button onclick="topFunction()" id="backToTopBtn" class="footer-col-center" title="Back to Top">Back to Top</button>
         </div>
-            <div class="col footer-col footer-col-right social-links">
+        <div class="col footer-col footer-col-right social-links">
         </div>
     </div>
 </footer>
