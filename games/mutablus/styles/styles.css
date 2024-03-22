@@ -21,17 +21,10 @@ body {
   line-height: 1.5;
 }
 
-li {
-  /*space out <li>s a bit
-  looks nicer for stuff like Controls on How to Play
-  didn't use line-height here since it affects all lines
-  and i just wanted more margin between <li>s*/
-  margin-bottom: 20px;
-}
-
 .mutablus-navbar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
+  background-color: #363636;
 }
 
 .mutablus-header, .mutablus-h1,  .mutablus-h2, .navbar-link {

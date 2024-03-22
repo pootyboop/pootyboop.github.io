@@ -14,6 +14,14 @@ main {
     background-color: #232323;
 }
 
+li {
+  /*space out <li>s a bit
+  looks nicer for stuff like Controls on How to Play
+  didn't use line-height here since it affects all lines
+  and i just wanted more margin between <li>s*/
+  margin-bottom: 20px;
+}
+
 /*big "MUTABLUS" text that takes you back to the game*/
 #home-link {
 font-size: 2.5rem;
