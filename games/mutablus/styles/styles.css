@@ -25,6 +25,7 @@ body {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   background-color: #363636;
+  min-height: 100px;
 }
 
 .mutablus-header, .mutablus-h1,  .mutablus-h2, .navbar-link {
@@ -57,4 +58,31 @@ body {
 .highlight {
   font-weight: bold;
   color: #6bb96f;
+}
+
+.modal-body {
+  background-color: #121212;
+}
+
+li {
+  /*space out <li>s a bit
+  looks nicer for stuff like Controls on How to Play
+  didn't use line-height here since it affects all lines
+  and i just wanted more margin between <li>s*/
+  margin-bottom: 20px;
+}
+
+.tutorial-img {
+  /*images should be front and center to grab attention
+  this also helps break up the text
+  nobody wants to go from playing a game to reading a wall of text*/
+  display: block;
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*keep pixel art nice n crispy*/
+  image-rendering: pixelated;
 }

@@ -80,7 +80,3 @@ this helps the right sidebar look a little less ugly*/
   display: flex;
   justify-content: center;
 }
-
-#canvas {
-  border-radius: 10px;
-}

@@ -364,10 +364,6 @@ button {
     transition: all .05s ease-in-out; 
 }
 
-.fade{
-    opacity: .5;
-}
-
 .card-title {
     font-size: 4rem;
     line-height: 3rem;
@@ -586,6 +582,10 @@ body {
     margin-bottom: 5%;
 }
 
+.game-wrapper {
+    margin: 0 !important;
+}
+
 
 
 
@@ -601,6 +601,10 @@ body {
     .project-embed {
         margin-right: auto;
         margin-bottom: 5%;
+    }
+
+    .mutablus-game {
+        display: none !important;
     }
 }
 

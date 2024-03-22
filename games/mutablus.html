@@ -33,10 +33,10 @@
 
         <div id="project-header"></div>
 
-        <section class="game-wrapper d-flex row justify-content-center">
+        <section class="game-wrapper mutablus-game d-flex justify-content-center">
 
             <!-- INVENTORY -->
-            <ul class="sidebar col-1">
+            <ul class="sidebar">
 
                 <li>
                 <img src="mutablus/images/inv/Log.png" alt="Log" class="inv-item li-justify" id="log">
@@ -79,18 +79,284 @@
 
 
             <!-- PROCESSING CANVAS -->
-            <div id="canvas" class="col-auto"></div>
+            <div id="canvas"></div>
             <!---->
 
+        </section>
+
+        <!-- LINKS -->
+        <section class="row d-flex justify-content-center mb-5 mt-0 mutablus-game">
+
+            <!-- Button trigger modal -->
+            <div class="col">
+                <a type="button" class="link-button center-link" data-bs-toggle="modal" data-bs-target="#exampleModal">ⓘ How to Play</a>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="col">
+                <a type="button" class="link-button center-link" data-bs-toggle="modal" data-bs-target="#exampleModal2">☆ Things to Find</a>
+            </div>
+            
+            
 
 
-            <!-- LINKS -->
-            <ul class="sidebar row d-flex">
-                <a href="mutablus/how-to-play" class="sidebar-link li-justify mutablus-text col-auto">How to Play</a>
-                <a href="mutablus/things-to-find" class="sidebar-link li-justify mutablus-text col-auto">Things to Find</a>
-            </ul>
-            <!---->
 
+
+            <!-- Modal -->
+            <div class="modal modal-xl fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">How to Play</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="mutablus-h1">Things to Find</h1>
+                        <h2 class="mutablus-h2">Structures</h2>
+
+                        <p>
+                            There are a handful of structures to find across Mutablus.
+                            Some are fairly common while others are tougher to find.
+                            Here is a complete list of each structure and where to find it:
+                        </p>
+
+                        <ul class="help-list">
+                            <li>
+                            <span class="highlight">House</span> - usually found near mountains.
+                            Houses are fairly common and can appear by themselves or in rare mountain cities.
+                            They only crop up in grassy areas and contain workbenches (needed to craft shovels).
+                            </li>
+
+                            <li>
+                            
+                            <img class="tutorial-img" src="mutablus/images/screenshots/caves.png" alt="Caves">
+                            <span class="highlight">Cave</span> - a common small structure.
+                            Caves appear in stoney areas, typically in groups of 3 or more.
+                            Each cave has a small number of picks for you to collect.
+                            </li>
+
+                            <li>
+                            <span class="highlight">Boat</span> - an abandoned ship.
+                            They appear on the water, sometimes docked in a small pool.
+                            Boats are uncommon and always hold a map in the captain's quarters.
+                            </li>
+
+                            <li>
+                            <span class="highlight">Pyramid</span> - home of the pharoah.
+                            Pharoahs offer orbs in exchange for idols and ore.
+                            Pyramids are uncommon and appear exclusively in sandy areas.
+                            </li>
+
+                            <li>
+                            
+                            <img class="tutorial-img" src="mutablus/images/screenshots/towersnowmen.png" alt="Tower surrounded by snowmen">
+                            <span class="highlight">Tower</span> - the rarest structure in Mutablus.
+                            Towers offer free orbs, making them a much easier alternative to gathering ore for pharoahs.
+                            Towers are rare, appearing only in snowy areas.
+                            </li>
+                        </ul>
+
+                        <h2 class="mutablus-h2">Biomes</h2>
+
+                        <p>
+                            Mutablus hosts a variety of biomes.
+                            Here are some fun ones to keep an eye out for:
+                        </p>
+
+                        <ul class="help-list">
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/snowmen.png" alt="Snowmen">
+                            <span class="highlight">Field of Snowmen</span> - pay attention!
+                            Some are missing their arms and could use a hand.
+                            </li>
+                            
+                            <li>
+                            <span class="highlight">Mountain Range</span> - like a forest, but wih big, annoying mountains instead of trees.
+                            Good luck getting through.
+                            </li>
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/necropolis.png" alt="Necropolis">
+                            <span class="highlight">Necropolis</span> - a desert dotted with pyramids and dig sites.
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/stoneforest.png" alt="Stone forest">
+                            <span class="highlight">Stone Forest</span> - water has started pooling in the stone here.
+                            Grass grew and caves formed.
+                            </li>
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/ocean.png" alt="Ocean">
+                            <span class="highlight">Ocean</span> - a large body of water, often hosting a boat or two.
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/truedesert.png" alt="True desert">
+                            <span class="highlight">True Desert</span> - a full screen of sand.
+                            That's it.
+                            </li>
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/mountaincity.png" alt="Mountain city">
+                            <span class="highlight">Mountain City</span> - the rarest biome in Mutablus.
+                            Mountain cities are home to loads of houses and mountains.
+                            They are extremely difficult to navigate without picks, so come prepared!
+                            </li>
+                        </ul>
+
+                        <h2 class="mutablus-h2">Points of Interest</h2>
+
+                        <p>
+                            These are some miscellaneous fun things that you can find in the world.
+                            Keep an eye out!
+                        </p>
+
+                        <ul class="help-list">
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/digsite.png" alt="Dig site">
+                            <span class="highlight">Dig Site</span> - found in sandy areas.
+                            Dig sites can be excavated with a shovel to get an idol.
+                            </li>
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/totem.png" alt="Totem">
+                            <span class="highlight">Totem</span> - ancient, headless artifact.
+                            Place an idol atop it to be showered in tools.
+                            </li>
+                            
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/screenshots/fleet.png" alt="Fleet">
+                            <span class="highlight">Fleet</span> - a bunch of boats sailing together. Where are they going?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <!-- Modal -->
+            <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How to Play</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="mutablus-h1">How to Play</h1>
+                        <h2 class="mutablus-h2">Controls</h2>
+
+                        <ul class="help-list">
+                            <li>
+                            <span class="highlight">WASD/Arrow Keys</span> - Move, Interact
+                            </li>
+                            <li>
+                            <span class="highlight">Space</span> - Use Orb
+                            </li>
+                            <li>
+                            <span class="highlight">M</span> - Use Map
+                            </li>
+                        </ul>
+
+                        <h2 class="mutablus-h2">Getting Started</h2>
+                        <p>
+                            Mutablus is a simple exploration game.
+                            You will start in a randomly generated area possibly including trees, rivers, and snowmen.
+                            Walk off-screen in any direction to enter a new area.
+                            You will find houses, boats, pyramids, and other structures in the world.
+                            Walk into things to interact with them.
+                        </p>
+
+                        <h2 class="mutablus-h2">Mutablus Mutates</h2>
+
+                        <p>
+                            When you enter a new area, the previous area will transform.
+                            Forests might become slightly different forests and deserts might become oceans.
+                            Keep this in mind when entering buildings - you won't always walk out to the same area you entered from!
+                        </p>
+
+                        <h2 class="mutablus-h2">Items</h2>
+
+                        <p>
+                            You will notice a handful of icons on the left side of your screen.
+                            These are items you can collect and use.
+                        </p>
+                        <br>
+                        <p>
+                            Here's all you need to know about each item:
+                        </p>
+                        <ul class="help-list">
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/inv/Log.png" alt="Log">
+                            <span class="highlight">Log</span> - collected by breaking a tree (just walk into it).
+                            They can also be found laying near trees.
+                            Logs allow you to cross water and, more importantly, put arms on snowmen.
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/inv/Ore.png" alt="Ore">
+                            <span class="highlight">Ore</span> - found by mining a mountain.
+                            Pharoahs, found in pyramids, like ore and will trade you for orbs.
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/inv/Pick.png" alt="Pick">
+                            <span class="highlight">Pick</span> - breaks cave stalagmites and mountains.
+                            Picks are collected from caves and totems.
+                            Keep in mind that they are consumable and break after a single use!
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/inv/Shovel.png" alt="Shovel">
+                            <span class="highlight">Shovel</span> - excavates dig sites.
+                            These are crafted at workbenches in houses or received from totems.
+                            They are also consumable and break after a single use.
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/inv/Map.png" alt="Map">
+                            <span class="highlight">Map</span> - usually reveals a hidden point of interest nearby.
+                            Maps sometimes appear in caves and houses.
+                            You can always find one on a boat.
+                            Maps don't always reveal something when used - they can be hard to decipher!
+                            </li>
+
+                            <li>
+                            <img class="tutorial-img" src="mutablus/images/inv/Orb.png" alt="Orb">
+                            <span class="highlight">Orb</span> - allows you to teleport to a new area.
+                            These are useful when you get stuck or want to quickly find something.
+                            They are obtained by trading ore to a pharoah or by finding a tower.
+                            If you don't want to collect these, you can "poor man's orb" by walking back and forth off the screen.
+                            </li>
+
+                            <li>
+                            
+                            <img class="tutorial-img" src="mutablus/images/inv/Idol.png" alt="Idol">
+                            <span class="highlight">Idol</span> - found by excavating a dig site.
+                            Pharoahs LOVE idols and will give you 10 orbs in exchange for a single idol.
+                            Alternatively, you can place an idol atop a totem for a bunch of new tools.
+                            </li>
+                        </ul>
+
+                        <h2 class="mutablus-h2">You've Got the Basics!</h2>
+
+                        <p>
+                            That's all you should need to get going.
+                            Once you have made some discoveries in the game for yourself, spy the Things to Find tab for more fun (and spoiler-y) stuff.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
         </section>
 
         <section class="info-section">
@@ -126,6 +392,8 @@
         </section>
 
         <section class="info-section" id="similar-library"></section>
+
+        
         
     </div>
 

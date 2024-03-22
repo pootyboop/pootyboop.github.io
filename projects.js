@@ -1300,6 +1300,11 @@ if (latestLibrary) {
     latestLibrary.innerHTML = makeLatestLibrary();
 }
 
+var playInBrowserLibrary = document.getElementById("play-in-browser-library");
+if (playInBrowserLibrary) {
+    playInBrowserLibrary.innerHTML = makePlayInBrowserLibrary();
+}
+
 var soundtrackLibrary = document.getElementById("soundtrack-library");
 if (soundtrackLibrary) {
     soundtrackLibrary.innerHTML = makeTagLibrary('soundtrack');
@@ -1424,6 +1429,27 @@ function makeLatestLibrary() {
 
     library += `
         <a href="/search" class="center-link">View All Projects</a>
+        </div>
+    </div>
+    `;
+
+    return library;
+}
+
+
+function makePlayInBrowserLibrary() {
+    var library = ``;
+
+    for (var i = 0; i < projectsData.length; i++) {
+        var thisProj = projectsData[i];
+        if (doesProjectHaveTag(thisProj, "play in browser")
+            
+            /*thisProj.category === "games" && isPlatform(thisProj, "web")*/) {
+            library += makeCardFromProject(projectsData[i]);
+        }
+    }
+
+    library += `
         </div>
     </div>
     `;
