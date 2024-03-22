@@ -149,6 +149,23 @@ btn {
     margin-right: auto;
 }
 
+.behind-text-img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    left: 0;
+    max-width: 80vw;
+    opacity: 30%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.text-404 {
+    padding-top: 25vh;
+}
+
 .square {
     aspect-ratio: 1 / 1;
 }
