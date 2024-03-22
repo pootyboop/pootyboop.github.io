@@ -147,7 +147,11 @@ function isSelected(link) {
         return false;
     }
 
-    if (/*currLoc.includes(link.text.toLowerCase())*/getCurrProject().category === link.text.toLowerCase()) {
+    if (
+        (/*currLoc.includes(link.text.toLowerCase())*/getCurrProject().category === link.text.toLowerCase())
+        ||
+        (link.text === "CV")
+        ) {
         return ` id="selected-nav-tab"`;
     }
     
