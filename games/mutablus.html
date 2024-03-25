@@ -383,11 +383,45 @@
             <section id="skills"></section>
 
             <p>
-                Mutablus was a 2nd year university project developed in JavaScript with p5.js. It uses a reverse-engineered wave function collapse algorithm to generate terrain without using Perlin noise. It draws inspiration from old-school exploration games like Adventure and the Ultima series as well as procedural worldgen and its use in Oskar Stålberg’s games like Bad North. Currently, Mutablus plays a bit like a simplified, web-based Dwarf Fortress.
+                Mutablus was a 2nd year university project developed in JavaScript with p5.js.
+                It uses wave function collapse to generate terrain and structures,
+                drawing inspiration from old-school exploration games like Adventure and the Ultima series as well as procedural worldgen and its use in <a href="https://twitter.com/OskSta?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Oskar Stålberg</a>’s games like Bad North.
             </p>
 
+            <div class="accordion" id="accordionWaveFunctionCollapse">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1WaveFunctionCollapse">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWaveFunctionCollapse" aria-controls="collapseWaveFunctionCollapse">
+                            <p>Wave Function Collapse</p>
+                        </button>
+                    </h2>
+                    <div id="collapseWaveFunctionCollapse" class="accordion-collapse collapse" aria-labelledby="h1WaveFunctionCollapse" data-bs-parent="#accordionWaveFunctionCollapse">
+                        <div class="accordion-body">
+                            <p>
+                                When creating Mutablus, I was fascinated with the Wave Function Collapse algorithm used by <a href="https://twitter.com/OskSta?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Oskar Stålberg</a> and other developers to create a procedurally generated world without the use of Perlin noise.
+                                I reverse engineered a simple version of the algorithm in <a href="https://p5js.org/" target="_blank">p5.js</a>.
+                            </p>
+
+                            <img src="/assets/projects/mutablus/wfc.png" class="block-img accordion-img" alt="Mutablus environment" loading="lazy">
+
+                            <p>
+                                After an initial seed-based generation which collapses all tiles to a singular possiblility, two more passes are applied to modify the environment (e.g. add structures, generate certain biomes) before a final quality pass which removes ugly isolated tiles. Seed-based "random" values are used to determine the biome, structures, some world gen factors, and other points of interest.
+                            </p>
+                            <p>
+                                As the JavaScript is hosted here for the game to run, you can <a href="mutablus/js/wavefunctioncollapsemanager.js" target="_blank">read my algorithm for yourself</a> (and by extension, the individual <a href="mutablus/js/tile.js" target="_blank">Tile class</a>).
+                            </p>
+                            <!--
+                            <button class="accordion-closer center-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWaveFunctionCollapse" aria-controls="collapseWaveFunctionCollapse">
+                                <p>Close</p>
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <p>
-                The idea for a mutable world originated from swirlstorms in the <a href="/projects/hierre">Hierre system</a> - massive, mysterious waves that rearrange solid objects while leaving them almost entirely undamaged (much like the eye of a tornado).
+                The idea for a mutable world originated from swirlstorms in the <a href="/projects/hierre">Hierre system</a> - mysterious waves that rearrange solid objects while leaving them almost entirely undamaged (like the eye of a tornado).
             </p>
         </section>
 

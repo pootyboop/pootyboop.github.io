@@ -2,7 +2,11 @@ var projectsData = [
     {
         "name": "CAUTERIZER",
         "category": "games",
-        "platform": "In Development",
+        "platform": [
+            "In Development",
+            "VR",
+            "Quest"
+        ],
         "year": "2024",
         "desc": "Electric VR rhythm game",
 
@@ -38,7 +42,12 @@ var projectsData = [
         "name": "Lazarus",
         "category": "music",
         "year": "2024",
-        "length": "In Production",
+        "platform": [
+            "In Production",
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+        ],
         "desc": "Industrial heaven/hell-themed LP",
 
         "libraryTags": [
@@ -74,6 +83,9 @@ var projectsData = [
         "name": "PlayOn! Digital Campus 2024",
         "category": "projects",
         "year": "2024",
+        "platform": [
+            "Live Event"
+        ],
         "credit": "PlayOn!, Teatro O Bando",
         "desc": "Digital theater hackathon",
 
@@ -120,7 +132,9 @@ var projectsData = [
         "name": "Portfolio Website",
         "category": "projects",
         "year": "2024",
-        "platform": "Web",
+        "platform": [
+            "Web"
+        ],
         "desc": "This website (elliotgmann.com)",
 
         "libraryTags": [
@@ -152,7 +166,9 @@ var projectsData = [
         "name": "Gata Guressi",
         "category": "games",
         "year": "2024",
-        "platform": "Windows",
+        "platform": [
+            "Windows"
+        ],
         "desc": "Sci-fi translation/exploration RPG",
 
         "libraryTags": [
@@ -208,7 +224,10 @@ var projectsData = [
         "name": "The Hitz Hotel",
         "category": "games",
         "year": "2024",
-        "platform": "Web",
+        "platform": [
+            "Windows",
+            "Web"
+        ],
         "credit": "Joe Hutchinson, Elliot Mann",
         "desc": "Hitman-style puzzle/stealth game",
 
@@ -239,7 +258,10 @@ var projectsData = [
         "name": "SpeedStocks",
         "category": "games",
         "year": "2024",
-        "platform": "Android, Card Game",
+        "platform": [
+            "Card Game",
+            "Android"
+        ],
         "desc": "Casual stock-trading card/Android game",
 
         "skills": [
@@ -268,6 +290,11 @@ var projectsData = [
         "credit": "ft. Sebastien Alamo-Selis",
         "year": "2023",
         "length": "29 min",
+        "platform": [
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+        ],
         "desc": "Phobia-themed electronic beats",
 
         "skills": [
@@ -310,7 +337,9 @@ var projectsData = [
         "name": "Revolver",
         "category": "games",
         "year": "2023",
-        "platform": "Unreleased",
+        "platform": [
+            "Unreleased"
+        ],
         "desc": "CS:GO surf-style shooter demo",
 
         "libraryTags": [
@@ -353,7 +382,9 @@ var projectsData = [
         "name": "Hierre Card Game",
         "category": "games",
         "year": "2023-24",
-        "platform": "Card Game",
+        "platform": [
+            "Card Game"
+        ],
         "desc": "Grid-based strategy card game",
 
         "libraryTags": [
@@ -397,6 +428,9 @@ var projectsData = [
         "category": "projects",
         "credit": "Pop Up VR",
         "year": "2023",
+        "platform": [
+            "Fortnite"
+        ],
         "desc": "Virtual York Maze in UEFN",
 
         "libraryTags": [
@@ -430,7 +464,9 @@ var projectsData = [
         "name": "DOBIO",
         "category": "games",
         "year": "2023",
-        "platform": "Windows",
+        "platform": [
+            "Windows"
+        ],
         "credit": "Joshua Tunstall, Elliot Mann, Quinn McMahon, Marco Ng",
         "desc": "Tile-based procedural dungeon strategy",
 
@@ -467,6 +503,10 @@ var projectsData = [
         "category": "projects",
         "credit": "Imminent-XR",
         "year": "2023-24",
+        "platform": [
+            "VR",
+            "Quest"
+        ],
         "desc": "VR meets virtual production and musical theater",
 
         "libraryTags": [
@@ -502,7 +542,9 @@ var projectsData = [
         "name": "Vitrified",
         "category": "games",
         "year": "2023",
-        "platform": "Windows",
+        "platform": [
+            "Windows"
+        ],
         "credit": "Elliot Mann, Nathan Warnes, Taylor Angel, Shijie Hu, Roah Min Hyeon Yaakov Ji",
         "desc": "First person brewer",
 
@@ -536,7 +578,10 @@ var projectsData = [
         "name": "Dynamometer Dash",
         "category": "games",
         "year": "2023",
-        "platform": "PC VR",
+        "platform": [
+            "Windows",
+            "VR"
+        ],
         "desc": "Record-breaking VR train ride",
 
         "skills": [
@@ -580,7 +625,9 @@ var projectsData = [
         "name": "Mutablus",
         "category": "games",
         "year": "2023",
-        "platform": "Web",
+        "platform": [
+            "Web"
+        ],
         "desc": "Procedurally-generated 2D exploration",
 
         "libraryTags": [
@@ -629,6 +676,10 @@ var projectsData = [
         "category": "projects",
         "credit": "Lord Whitney, Reflex Arc",
         "year": "2023",
+        "platform": [
+            "Live Event",
+            "VR"
+        ],
         "desc": "Surreal XR forest experience",
 
         "libraryTags": [
@@ -666,6 +717,11 @@ var projectsData = [
         "category": "projects",
         "credit": "Emi Richardson, Mara Solomon, Ziqi Fang, Elliot Mann",
         "year": "2023",
+        "platform": [
+            "Live Event",
+            "VR",
+            "Quest"
+        ],
         "desc": "VR kicking and stomping game",
 
         "libraryTags": [
@@ -705,7 +761,10 @@ var projectsData = [
         "name": "Head in the Clouds",
         "category": "games",
         "year": "2023",
-        "platform": "Windows, Web",
+        "platform": [
+            "Windows", 
+            "Web"
+        ],
         "desc": "Chill airborne book delivery",
 
         "libraryTags": [
@@ -760,6 +819,11 @@ var projectsData = [
         "category": "projects",
         "credit": "Guy Schofield, David Gochfeld",
         "year": "2022",
+        "platform": [
+            "In Development",
+            "VR",
+            "Quest"
+        ],
         "desc": "VR submarine experience",
 
         "libraryTags": [
@@ -860,7 +924,10 @@ var projectsData = [
         "name": "Sandboard",
         "category": "games",
         "year": "2022-23",
-        "platform": "PC VR",
+        "platform": [
+            "Windows",
+            "VR"
+        ],
         "desc": "High-speed VR sand surfing and grappling",
 
         "libraryTags": [
@@ -926,7 +993,10 @@ var projectsData = [
         "name": "Heat of the Moment",
         "category": "games",
         "year": "2022",
-        "platform": "Windows, Mac",
+        "platform": [
+            "Windows",
+            "Mac"
+        ],
         "desc": "Intense burning house escape",
 
         "skills": [
@@ -966,7 +1036,10 @@ var projectsData = [
         "name": "Hoop Sports",
         "category": "games",
         "year": "2022",
-        "platform": "Windows, Mac",
+        "platform": [
+            "Windows",
+            "Mac"
+        ],
         "desc": "Physics-based sports chaos",
 
         "skills": [
@@ -1010,6 +1083,11 @@ var projectsData = [
         "credit": "ft. Sebastien Alamo-Selis",
         "year": "2021",
         "length": "30 min",
+        "platform": [
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+        ],
         "desc": "Concept album surrounding liquid and heat",
 
         "libraryTags": [
@@ -1065,7 +1143,9 @@ var projectsData = [
         "name": "PVP Playground",
         "category": "games",
         "year": "2020-21",
-        "platform": "Unreleased",
+        "platform": [
+            "Unreleased"
+        ],
         "desc": "Loadout-focused multiplayer movement shooter",
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/-xT6GSS4v3A?si=2M8tMxK-Sq1x63Lu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
 
@@ -1103,7 +1183,9 @@ var projectsData = [
         "name": "Pooty Games",
         "category": "projects",
         "year": "2020-23",
-        "platform": "Minecraft Map",
+        "platform": [
+            "Minecraft Map"
+        ],
         "desc": "Multiplayer party games!",
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/kKkGGUQcDNs?si=jhVoVK5Dmbb9WDLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
@@ -1163,6 +1245,11 @@ var projectsData = [
         "category": "music",
         "year": "2020",
         "length": "24 min",
+        "platform": [
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+        ],
         "desc": "Experimental electronica/beat tape",
 
         "skills": [
@@ -1191,7 +1278,9 @@ var projectsData = [
         "name": "EM",
         "category": "games",
         "year": "2019",
-        "platform": "Unreleased",
+        "platform": [
+            "Unreleased"
+        ],
         "desc": "Conceptual 2D exploration game",
 
         "libraryTags": [
@@ -1586,15 +1675,15 @@ function hasCategoryContains(project, searchTerm) {
 }
 
 
-
+/* ⊞🍎🃏🌐 */
 function makeCardFromProject(project) {
     const name = project.name
     const slug = slugify(project.name)
     return `
     <div class="col-sm-12 col-lg-4">
-        <a href="/${project.category}/${slug}" class="card-link">
+        <a href="/${project.category}/${slug}" class="card-link" aria-label="View the ${name} page">
             <div class="card">
-                <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image">
+                <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image" loading="lazy">
                 <div class="card-body">
                     <h3 class="card-title">${name.toUpperCase()}</h3>
                     <p class="card-date">${projectExtraInfo(project)}</p>
@@ -1610,20 +1699,62 @@ function makeCardFromProject(project) {
 
 function projectExtraInfo(project) {
     var subtitle = project.year;
-    if (project.hasOwnProperty('platform')) {
-        subtitle += " • " + project.platform;
-    }
 
-    else if (project.hasOwnProperty('length')) {
+    if (project.hasOwnProperty('length')) {
         subtitle += " • " + project.length;
     }
 
     
+    if (project.hasOwnProperty('platform')) {
+        subtitle += " • " + projectPlatforms(project.platform);
+    }
+
+    
     if (project.hasOwnProperty('credit')) {
-        subtitle += " • " + project.credit;
+        subtitle += "<br>" + project.credit;
     }
 
     return subtitle;
+}
+
+
+
+function projectPlatforms(platforms) {
+    var ret = "";
+    for (var i = 0; i < platforms.length; i++) {
+        ret += makePlatformRepresentation(platforms[i], i);
+    }
+
+    return ret;
+}
+
+function makePlatformRepresentation(platform, i) {
+    switch (platform) {
+
+        case "Mac":
+        case "Windows":
+        case "Android":
+        case "Web":
+        case "VR":
+        case "Quest":
+        case "Spotify":
+        case "Apple Music":
+        case "YouTube":
+            return makePlatformImg(platform);
+
+        default:
+            ret = "";
+            if (i > 0) {
+                ret = ", ";
+            }
+            return ret + platform;
+    }
+}
+
+function makePlatformImg(platform) {
+    return `
+        <img src="/assets/icons/${platform.toLowerCase(0)}.svg" alt="${platform} support" class="platform">
+    `;
 }
 
 

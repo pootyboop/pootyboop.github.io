@@ -110,17 +110,17 @@ function search() {
 var socialLinks = document.getElementsByClassName("social-links");
 for (var i = 0; i < socialLinks.length; i++){
     socialLinks[i].innerHTML = `
-    <a href="https://www.linkedin.com/in/elliot-mann/" class="social-icon-link" target="_blank">
-        <img src="/assets/icons/linkedin.svg" class="social-icon">
+    <a href="https://www.linkedin.com/in/elliot-mann/" class="social-icon-link" target="_blank" aria-label="Visit my LinkedIn">
+        <img src="/assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn">
     </a>
-    <a href="https://elliotgmann.itch.io" class="social-icon-link" target="_blank">
-        <img src="/assets/icons/itch.svg" class="social-icon">
+    <a href="https://elliotgmann.itch.io" class="social-icon-link" target="_blank" aria-label="Visit my itch.io page">
+        <img src="/assets/icons/itch.svg" class="social-icon" alt="itch.io">
     </a>
-    <a href="https://open.spotify.com/artist/2VMULBbGuXgT0RTJT2yMyi?si=nqbQfGGXTL6Qr_C7HLPzeg&nd=1&dlsi=4493b3734be84645" class="social-icon-link" target="_blank">
-        <img src="/assets/icons/spotify.svg" class="social-icon">
+    <a href="https://open.spotify.com/artist/2VMULBbGuXgT0RTJT2yMyi?si=nqbQfGGXTL6Qr_C7HLPzeg&nd=1&dlsi=4493b3734be84645" class="social-icon-link" target="_blank" aria-label="Visit my Spotify">
+        <img src="/assets/icons/spotify.svg" class="social-icon" alt="Spotify">
     </a>
-    <a href="https://www.youtube.com/@elliotgmann/featured" class="social-icon-link" target="_blank">
-        <img src="/assets/icons/youtube.svg" class="social-icon">
+    <a href="https://www.youtube.com/@elliotgmann/featured" class="social-icon-link" target="_blank" aria-label="Visit my YouTube page">
+        <img src="/assets/icons/youtube.svg" class="social-icon" alt="YouTube">
     </a>
     `
 };
@@ -129,7 +129,7 @@ var searchBars = document.getElementsByClassName("searchbar");
 for (var i = 0; i < searchBars.length; i++) {
     searchBars[i].innerHTML = `
     <input type="text" placeholder="Search..." name="search" ${searchTitle ? autofocus="autofocus" : ""}>
-    <button type="submit" onsubmit="return doSomething();" class="search-button"><img src="/assets/icons/search.svg"></button>
+    <button type="submit" onsubmit="return doSomething();" class="search-button" aria-label="Search for projects"><img src="/assets/icons/search.svg" alt="Search button"></button>
     `
 }
 
