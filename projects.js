@@ -1643,8 +1643,10 @@ function isPlatform(project, searchTerm) {
         return false;
     }
 
-    if (project.platform.toLowerCase().includes(searchTerm.toLowerCase())) {
-        return true;
+    for (var i = 0; i < project.platform.length; i++) {
+        if (project.platform[i].toLowerCase().includes(searchTerm.toLowerCase())) {
+            return true;
+        }
     }
 
     return false;
