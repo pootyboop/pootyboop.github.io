@@ -45,6 +45,7 @@
                 <p>
                     The game also got some coverage from itch.io YouTubers <a href="https://www.youtube.com/@MrDreaming." target="_blank">MrDreaming</a>, <a href="https://www.youtube.com/@Laudplays" target="_blank">Laudplays</a>, and <a href="https://www.youtube.com/c/Levont" target="_blank">Levont</a>.
                 </p>
+                
         </section>
 
         <section class="info-section">
@@ -54,8 +55,39 @@
             <section id="skills"></section>
 
             <p>
-                This was a 1st year university project developed over the course of 3 months in Processing. Scenes were rendered in Blender, pixel art was made in Aseprite, and sound effects were made in Logic Pro (mostly with Massive) . It was primarily inspired by early dungeon crawlers, Ape Out's art style, and narrative in games like Katana ZERO.            </p>
-        </section>
+                This was a 1st year university project developed over the course of 3 months in Processing 4. It was primarily inspired by early dungeon crawlers, Ape Out's art style, and nonlinear narrative in games like Katana ZERO.
+            </p>
+
+            <div class="accordion" id="accordionSceneSystem">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1SceneSystem">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSceneSystem" aria-controls="collapseSceneSystem">
+                            <p>Scenes System</p>
+                        </button>
+                    </h2>
+                    <div id="collapseSceneSystem" class="accordion-collapse collapse" aria-labelledby="h1SceneSystem" data-bs-parent="#accordionSceneSystem">
+                        <div class="accordion-body">
+                            <p>
+                                This game loads scenes from a text file containing info about the background image, options, and when different characters will be in that area.
+                            </p>
+
+                            <img src="/assets/projects/heat-of-the-moment/bathroom floor.png" class="block-img accordion-img" alt="Scene" loading="lazy">
+                
+                            <p>
+                                One goal of this system was to allow players to add more content if they choose to. You can easily add new areas, items, and endings (there's also a README that explains how). Fun fact: you can technically obtain any PNG in the game files as an item!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                I modelled and rendered the scenes in Blender, then downscaled the renders to create pseudo-pixel art. I used Aseprite to create the characters and items and Logic Pro for the sound effects.
+                I used effects like shaking/flashing text, zoom-in on the background and the Assassin, and growing timers to make the game intense and to provoke quick decision making.
+            </p>
+        
+        
+            </section>
 
         <section class="info-section" id="similar-library"></section>
         

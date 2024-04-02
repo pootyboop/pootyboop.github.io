@@ -51,7 +51,6 @@ var projectsData = [
         "desc": "Industrial heaven/hell-themed LP",
 
         "libraryTags": [
-            "hierre",
             "wip"
         ],
 
@@ -1186,7 +1185,7 @@ var projectsData = [
         "platform": [
             "Minecraft Map"
         ],
-        "desc": "Multiplayer party games!",
+        "desc": "Multiplayer Minecraft party games!",
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/kKkGGUQcDNs?si=jhVoVK5Dmbb9WDLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
 
