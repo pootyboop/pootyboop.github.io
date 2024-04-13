@@ -7,7 +7,7 @@
     --colorskillcardtext: #a1a1a1;
 
     --colorbackground: #161616;
-    --colorbackgroundgradient: linear-gradient(#161616, #0b001a);
+    --colorbackgroundgradient: linear-gradient(#161616, #0c0714);
 
     --colorcardbackground: rgb(15, 15, 15);
 
@@ -458,6 +458,9 @@ body {
 
 body:not(.no-body-gradient) {
     background-image: var(--colorbackgroundgradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #navbar {
