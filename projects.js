@@ -244,7 +244,7 @@ var projectsData = [
             "play in browser"
         ],
 
-        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2535087?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/10012492?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
 
         "similarProjects": [
             "Heat of the Moment",
