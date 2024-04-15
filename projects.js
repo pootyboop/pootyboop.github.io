@@ -1570,7 +1570,7 @@ function makeSearchLibrary(searchTerm) {
     for (var i = 0; i < projectsData.length; i++) {
         if (isSearchResult(projectsData[i], searchTerm)) {
             results.push(projectsData[i]);
-            library += makeCardFromProject(projectsData[i]);
+            library += makeCardFromProject(projectsData[i], searchTerm);
         }
     }
 
@@ -1683,7 +1683,9 @@ function hasCategoryContains(project, searchTerm) {
 
 
 /* ⊞🍎🃏🌐 */
-function makeCardFromProject(project) {
+function makeCardFromProject(project) {return makeCardFromProject(project, "")}
+
+function makeCardFromProject(project, searchTerm) {
     const name = project.name
     const slug = slugify(project.name)
     return `
@@ -1695,7 +1697,7 @@ function makeCardFromProject(project) {
                     <h3 class="card-title">${name.toUpperCase()}</h3>
                     <p class="card-date">${projectExtraInfo(project)}</p>
                     <p class="card-text">${project.desc}</p>
-                    <section class="mb-2">${makeSkills(project)}</section>
+                    <section class="mb-2">${makeSkills(project, searchTerm)}</section>
                 </div>
             </div>
         </a>
@@ -2021,9 +2023,10 @@ if (projectSkills) {
     `
 }
 
-function makeSkills(project) {
+function makeSkills(project) {return makeSkills(project, "")}
+
+function makeSkills(project, searchTerm) {
     var isProject = getCurrProject();
-    var originalProject = isProject;
 
     if (isProject) {
         isProject = (project === isProject);
@@ -2033,7 +2036,7 @@ function makeSkills(project) {
         var str = "";
 
         for (var i = 0; i < project.skills.length; i++) {
-            str += makeSkill(project.skills[i], isProject, originalProject);
+            str += makeSkill(project.skills[i], isProject, searchTerm);
         }
 
         return str;
@@ -2044,15 +2047,14 @@ function makeSkills(project) {
 
 
 
-function makeSkill(skill, isProject, originalProject) {
+function makeSkill(skill, isProject, searchTerm) {
     var highlight = false;
-    /*
-    if (originalProject) {
-        if (originalProject.skills.includes(skill)) {
+    
+    if (searchTerm != "") {
+        if (skill.toLowerCase().includes(searchTerm)) {
             highlight = true;
         }
     }
-    */
 
 
     return `<p class="badge ${isProject ? 'skill' : 'skillcard'}${highlight ? ` skillcard-highlight` : ""}">${skill}</p>`;
