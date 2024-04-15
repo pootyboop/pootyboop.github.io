@@ -1,6 +1,6 @@
 :root {
     --color1:#ffc400; /*a76dff*/
-    --color1hov:#ffd856;
+    --color1hov:#ffe58f;
     --color2:#6600FF;
 
     --colorskillcard: #1b1b1b;
@@ -267,6 +267,7 @@ p, a, ul, li, button {
     font-family: 'Oswald', sans-serif;;
     font-size: 1.8rem;
     font-weight: 100;
+    transition: color .05s ease-in-out;
 }
 
 #skills {
