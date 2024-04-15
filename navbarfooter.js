@@ -137,7 +137,7 @@ for (var i = 0; i < searchBars.length; i++) {
 function makeNavLink(link) {
     return `
     <li class="nav-item">
-        <a class="nav-link"${isSelected(link)} href="${shouldDirectOpenCV(link.text) ? "/assets/CV%20Elliot%20George%20Mann.pdf" : link.link}">
+        <a class="nav-link"${isSelected(link)} href="${shouldDirectOpenCV(link.text) ? `/assets/CV%20Elliot%20George%20Mann.pdf" target="_blank` : link.link}">
             ${link.text}
         </a>
     </li>
