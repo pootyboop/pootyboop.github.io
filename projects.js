@@ -544,6 +544,47 @@ var projectsData = [
     },
 
     {
+        "name": "Interactive Media Showcase 2023",
+        "category": "projects",
+        "credit": "University of York",
+        "year": "2022-23",
+        "platform": [
+            "Live Event"
+        ],
+        
+        "desc": "Student work showcase",
+
+        "libraryTags": [
+            "misc"
+        ],
+
+        "skills": [
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Illustrator 🖍",
+            "Logic Pro ♫"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/0zUiVO9qUkc?si=ARydOINBazmNbpnY" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/interactive-media-showcase-2023/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/interactive-media-showcase-2023/showcase.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "Vitrified",
+            "XR Stories"
+        ]
+    },
+
+    {
         "name": "Vitrified",
         "category": "games",
         "year": "2023",
