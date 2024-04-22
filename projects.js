@@ -163,7 +163,8 @@ var projectsData = [
         ],
 
         "similarProjects": [
-            "Mutablus"
+            "Mutablus",
+            "IM Showcase 2023"
         ]
     },
 
@@ -544,7 +545,7 @@ var projectsData = [
     },
 
     {
-        "name": "Interactive Media Showcase 2023",
+        "name": "IM Showcase 2023",
         "category": "projects",
         "credit": "University of York",
         "year": "2022-23",
@@ -552,27 +553,32 @@ var projectsData = [
             "Live Event"
         ],
         
-        "desc": "Student work showcase",
+        "desc": "BSc Interactive Media student work showcase",
 
         "libraryTags": [
             "misc"
         ],
 
         "skills": [
+            "Management 🗣",
             "Blender 🖍",
             "Photoshop 🖍",
             "Illustrator 🖍",
-            "Logic Pro ♫"
+            "Logic Pro ♫",
+            "Premiere ▷"
         ],
 
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/0zUiVO9qUkc?si=ARydOINBazmNbpnY" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/raGFr1SYArU?si=He_xc-LV6304wu8r" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/interactive-media-showcase-2023/preview.png"
+                "screenshot": "/assets/projects/im-showcase-2023/showcase.png"
             },
             {
-                "screenshot": "/assets/projects/interactive-media-showcase-2023/showcase.png"
+                "screenshot": "/assets/projects/im-showcase-2023/committee.png"
+            },
+            {
+                "screenshot": "/assets/projects/im-showcase-2023/preview.png"
             }
         ],
 
@@ -598,7 +604,7 @@ var projectsData = [
             "Unity ⌨",
             "C# ⌨",
             "Github ⌨",
-            "Project Management 🗣",
+            "Management 🗣",
             "Blender 🖍",
             "Photoshop 🖍"
         ],
@@ -616,7 +622,7 @@ var projectsData = [
         "similarProjects": [
             "DOBIO",
             "The Hitz Hotel",
-            "Heat of the Moment"
+            "IM Showcase 2023"
         ]
     },
 
@@ -1595,11 +1601,12 @@ function makePlayInBrowserLibrary() {
 
 
 function makeSearchLibrary(searchTerm) {
+    searchTerm = searchTerm.toLowerCase();
     var library = "";
     var results = [];
     var searchH2 = document.getElementById("search-term-h2");
 
-    switch (searchTerm.toLowerCase()) {
+    switch (searchTerm) {
         default:
             break;
         case "cv":
@@ -2098,5 +2105,8 @@ function makeSkill(skill, isProject, searchTerm) {
     }
 
 
-    return `<p class="badge ${isProject ? 'skill' : 'skillcard'}${highlight ? ` skillcard-highlight` : ""}">${skill}</p>`;
+    return `
+    ${isProject ? `<a href="/search?search=${skill.slice(0, -2)}">` : ""}
+    <p class="badge ${isProject ? 'skill' : 'skillcard'}${highlight ? ` skillcard-highlight` : ""}">${skill}</p>${isProject ? '</a>' : ""}
+    `;
 }
