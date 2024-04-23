@@ -121,6 +121,10 @@ btn {
     max-height: 500px;
 }
 
+.block-img-tiny {
+    max-height: 300px;
+}
+
 .carousel-item > img, .carousel-item > iframe, #yt-video, .standalone-carousel-image {
     border-radius: 10px;
     max-width: 100%;
@@ -611,7 +615,6 @@ body:not(.no-body-gradient) {
 }
 
 .info-section-img {
-    max-width: 40vw;
     display: block;
     margin-left: auto;
     margin-right: auto;

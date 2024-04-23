@@ -1,3 +1,13 @@
+var topSkills = [
+    "Unreal Engine ⌨",
+    "Unity ⌨",
+    "Meta Quest 2 ⌨",
+    "Blender 🖍",
+    "Photoshop 🖍"
+]
+
+
+
 var projectsData = [
     {
         "name": "CAUTERIZER",
@@ -81,6 +91,47 @@ var projectsData = [
             "CAUTERIZER",
             "Mind of Glass",
             "Saliva"
+        ]
+    },
+
+    {
+        "name": "IM Showcase 2024",
+        "category": "projects",
+        "credit": "University of York",
+        "year": "2023-24",
+        "platform": [
+            "Live Event"
+        ],
+        
+        "desc": "BSc Interactive Media student work showcase",
+
+        "libraryTags": [
+            "misc",
+            "wip"
+        ],
+
+        "skills": [
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "Premiere ▷"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/sxUtFXiQHNs?si=ZeXjoF6nYMxf35KF" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/im-showcase-2024/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/im-showcase-2024/logo.png"
+            },
+        ],
+
+
+        "similarProjects": [
+            "IM Showcase 2023",
+            "The Chime Hours",
+            "Vitrified"
         ]
     },
 
@@ -454,7 +505,7 @@ var projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/imminent-xr/preview.png"
+                "screenshot": "/assets/projects/york-maze/preview.png"
             }
         ],
 
@@ -525,6 +576,7 @@ var projectsData = [
             "FrameVR ⌨",
             "Github ⌨",
             "Perforce ⌨",
+            "Management 🗣",
             "Blender 🖍"
         ],
 
@@ -584,9 +636,9 @@ var projectsData = [
 
 
         "similarProjects": [
+            "IM Showcase 2024",
             "The Chime Hours",
-            "Vitrified",
-            "XR Stories"
+            "Vitrified"
         ]
     },
 
@@ -1486,6 +1538,11 @@ if (similarLibrary) {
     similarLibrary.innerHTML = makeSimilarLibrary(getCurrProject());
 }
 
+var topSkillsID = document.getElementById("top-skills");
+if (topSkillsID) {
+    topSkillsID.innerHTML = makeTopSkills();
+}
+
 
 
 function makeFullLibrary(category) {
@@ -2091,6 +2148,18 @@ function makeSkills(project, searchTerm) {
     }
     
     return "";
+}
+
+
+
+function makeTopSkills() {
+    var str = "";
+
+    for (var i = 0; i < topSkills.length; i++) {
+        str += makeSkill(topSkills[i], true, "");
+    }
+
+    return str;
 }
 
 
