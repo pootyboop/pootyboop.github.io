@@ -1279,7 +1279,7 @@ var projectsData = [
         "similarProjects": [
             "Head in the Clouds",
             "Sandboard",
-            "Hoop Sports"
+            "Pooty Games"
         ]
     },
 

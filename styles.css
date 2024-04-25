@@ -727,6 +727,12 @@ body:not(.no-body-gradient) {
     }
 }
 
+@media (min-width: 992px) {
+    .block-img-sidebyside {
+        max-width: 39vw !important;
+    }
+}
+
 @media (min-width: 1334px) {
     .category-desc {
         max-width: 50vw;
