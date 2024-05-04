@@ -10,7 +10,7 @@ var topSkills = [
 
 var projectsData = [
     {
-        "name": "CAUTERIZER",
+        "name": "CONDUCTOR",
         "category": "games",
         "platform": [
             "In Development",
@@ -37,7 +37,7 @@ var projectsData = [
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/cauterizer/preview.png"
+                "screenshot": "/assets/projects/conductor/preview.png"
             }
         ],
 
@@ -88,7 +88,7 @@ var projectsData = [
         ],
 
         "similarProjects": [
-            "CAUTERIZER",
+            "CONDUCTOR",
             "Mind of Glass",
             "Saliva"
         ]
