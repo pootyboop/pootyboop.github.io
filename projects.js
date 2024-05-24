@@ -136,6 +136,47 @@ var projectsData = [
     },
 
     {
+        "name": "Sky's the Limit",
+        "category": "games",
+        "year": "2024",
+        "platform": [
+            "Windows",
+            "VR"
+        ],
+        
+        "desc": "Create and explore a VR solar system",
+
+        "libraryTags": [
+            "wip"
+        ],
+
+        "skills": [
+            "Unity ⌨",
+            "C# ⌨",
+            "Meta Quest 2 ⌨",
+            "Github ⌨",
+            "Blender 🖍",
+            "Illustrator 🖍",
+            "Premiere ▷"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/07Gaq_mZSgE?si=T__eIql_aMyGv8OK" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/skys-the-limit/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "Head in the Clouds",
+            "The Chime Hours",
+            "Mutablus"
+        ]
+    },
+
+    {
         "name": "PlayOn! Digital Campus 2024",
         "category": "projects",
         "year": "2024",
@@ -1481,6 +1522,13 @@ var featuredProjects = [
 
 
 
+/*
+if (doesProjectHaveTag(getCurrProject(), "hidden")) {
+    window.open("/");
+}
+*/
+
+
 
 
 var featuredLibrary = document.getElementById("featured-library");
@@ -1674,8 +1722,12 @@ function makeSearchLibrary(searchTerm) {
 
     for (var i = 0; i < projectsData.length; i++) {
         if (isSearchResult(projectsData[i], searchTerm)) {
-            results.push(projectsData[i]);
-            library += makeCardFromProject(projectsData[i], searchTerm);
+            var newCard = makeCardFromProject(projectsData[i], searchTerm)
+            library += newCard;
+
+            if (newCard != "") {
+                results.push(projectsData[i]);
+            }
         }
     }
 
@@ -1791,6 +1843,11 @@ function hasCategoryContains(project, searchTerm) {
 function makeCardFromProject(project) {return makeCardFromProject(project, "")}
 
 function makeCardFromProject(project, searchTerm) {
+
+    if (doesProjectHaveTag(project, "hidden")) {
+        return ""
+    }
+
     const name = project.name
     const slug = slugify(project.name)
     return `
