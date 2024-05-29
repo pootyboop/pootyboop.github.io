@@ -310,6 +310,26 @@ p, a, ul, li, button {
     background-color: var(--colorskillcard);
 }
 
+.platform-highlight {
+    filter: invert(0)
+    /*drop-shadow(1px 1px 0 var(--color1))
+    drop-shadow(-1px -1px 0 var(--color1))*/ !important;
+
+    /*min-width: 25px;*/
+
+    /*
+    outline-color: var(--color1);
+    outline-style: solid;
+    outline-width: 1px;
+    border-style: solid;
+    border-width: 4px;
+    margin: 2px;
+    border-radius: 5px;
+    border-color: #00000000;
+    background-color: var(--colorskillcard);
+    */
+}
+
 a {
     color: var(--color1) !important;
 }

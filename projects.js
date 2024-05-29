@@ -13,7 +13,7 @@ var projectsData = [
         "name": "CONDUCTOR",
         "category": "games",
         "platform": [
-            "In Development",
+            "Releasing Soon",
             "VR",
             "Quest"
         ],
@@ -22,6 +22,7 @@ var projectsData = [
 
         "libraryTags": [
             "hierre",
+            "soundtrack",
             "wip"
         ],
 
@@ -61,7 +62,8 @@ var projectsData = [
         "desc": "Industrial heaven/hell-themed LP",
 
         "libraryTags": [
-            "wip"
+            "wip",
+            "wip-music"
         ],
 
         "skills": [
@@ -1513,6 +1515,17 @@ if (wipLibrary) {
     wipLibrary.innerHTML = makeTagLibrary('wip');
 }
 
+var wipMusicLibrary = document.getElementById("wip-music-library");
+if (wipMusicLibrary) {
+    wipMusicLibrary.innerHTML = makeTagLibrary(
+        'wip-music',
+        `
+        <h2>⌨ In Production</h2>
+        <hr>
+        `
+);
+}
+
 var miscLibrary = document.getElementById("misc-library");
 if (miscLibrary) {
     miscLibrary.innerHTML = makeTagLibrary('misc');
@@ -1543,6 +1556,11 @@ if (topSkillsID) {
     topSkillsID.innerHTML = makeTopSkills();
 }
 
+var randomProject = document.getElementById("open-random-project");
+if (randomProject) {
+    openRandomProject();
+}
+
 
 
 function makeFullLibrary(category) {
@@ -1558,6 +1576,10 @@ function makeFullLibrary(category) {
 }
 
 function makeTagLibrary(tag) {
+    makeTagLibrary(tag, "")
+}
+
+function makeTagLibrary(tag, title) {
     var library = "";
 
     if (tag === 'featured') {
@@ -1577,6 +1599,16 @@ function makeTagLibrary(tag) {
                 library += makeCardFromProject(projectsData[i]);
             }
         }
+    }
+
+    if (library != "" && title != null) {
+        library = `
+            <div class="container-fluid project-library">
+                <div class="row">
+                    ${title + library}
+                </div>
+            </div>
+        `
     }
 
     return library;
@@ -1684,7 +1716,7 @@ function makeSearchLibrary(searchTerm) {
     if (results.length === 0) {
         library += `
         <p>
-            No results found 😿 want a <a href="${getRandomProjectHREF()}">random project</a> instead?
+            No results found 😿 want a <a href="/random-project">random project</a> instead?
         </p>
         `;
     }
@@ -1800,7 +1832,7 @@ function makeCardFromProject(project, searchTerm) {
                 <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image" loading="lazy">
                 <div class="card-body">
                     <h3 class="card-title">${name.toUpperCase()}</h3>
-                    <p class="card-date">${projectExtraInfo(project)}</p>
+                    <p class="card-date">${projectExtraInfo(project, searchTerm)}</p>
                     <p class="card-text">${project.desc}</p>
                     <section class="mb-2">${makeSkills(project, searchTerm)}</section>
                 </div>
@@ -1811,7 +1843,7 @@ function makeCardFromProject(project, searchTerm) {
 }
 
 
-function projectExtraInfo(project) {
+function projectExtraInfo(project, searchTerm) {
     var subtitle = project.year;
 
     if (project.hasOwnProperty('length')) {
@@ -1820,7 +1852,7 @@ function projectExtraInfo(project) {
 
     
     if (project.hasOwnProperty('platform')) {
-        subtitle += " • " + projectPlatforms(project.platform);
+        subtitle += " • " + projectPlatforms(project.platform, searchTerm);
     }
 
     
@@ -1833,16 +1865,25 @@ function projectExtraInfo(project) {
 
 
 
-function projectPlatforms(platforms) {
+function projectPlatforms(platforms, searchTerm) {
     var ret = "";
     for (var i = 0; i < platforms.length; i++) {
-        ret += makePlatformRepresentation(platforms[i], i);
+        ret += makePlatformRepresentation(platforms[i], i, searchTerm);
     }
 
     return ret;
 }
 
-function makePlatformRepresentation(platform, i) {
+function makePlatformRepresentation(platform, i, searchTerm) {
+    var ret = "";
+    var highlight = false;
+    
+    if (searchTerm != "") {
+        if (platform.toLowerCase().includes(searchTerm)) {
+            highlight = true;
+        }
+    }
+
     switch (platform) {
 
         case "Mac":
@@ -1854,20 +1895,23 @@ function makePlatformRepresentation(platform, i) {
         case "Spotify":
         case "Apple Music":
         case "YouTube":
-            return makePlatformImg(platform);
+            ret = makePlatformImg(platform, highlight);
+            break;
 
         default:
-            ret = "";
             if (i > 0) {
                 ret = ", ";
             }
-            return ret + platform;
+
+            ret += platform;
     }
+
+    return ret;
 }
 
-function makePlatformImg(platform) {
+function makePlatformImg(platform, highlight) {
     return `
-        <img src="/assets/icons/${platform.toLowerCase(0)}.svg" alt="${platform} support" class="platform">
+        <img src="/assets/icons/${platform.toLowerCase(0)}.svg" alt="${platform} support" class="platform${highlight ? ` platform-highlight` : ""}">
     `;
 }
 
@@ -1946,9 +1990,9 @@ function getProjectByName(name) {
       return "";
 }
 
-function getRandomProjectHREF() {
+function openRandomProject() {
     var randomProject = projectsData[Math.floor(Math.random()*projectsData.length)];
-    return `/${randomProject.category}/${slugify(randomProject.name)}`;
+    window.open(`/${randomProject.category}/${slugify(randomProject.name)}`,"_self");
 }
 
 

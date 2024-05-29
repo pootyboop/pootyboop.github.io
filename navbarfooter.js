@@ -92,7 +92,7 @@ function getSearchTerm() {
     var searchTerm = document.location.href.split('=')[1];
 
     if (searchTerm) {
-        return searchTerm.replaceAll("+", " ");
+        return searchTerm.replaceAll("+", " ").replaceAll("%20", " ");
     }
 
     return "";
