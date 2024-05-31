@@ -251,6 +251,7 @@ var projectsData = [
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
         "carouselScreenshots": [
             {
                 "screenshot": "/assets/projects/gata-guressi/window.png"
@@ -328,6 +329,13 @@ var projectsData = [
             "Kotlin ⌨",
             "Github ⌨",
             "Illustrator 🖍"
+        ],
+
+        "report": "/assets/projects/speedstocks/SpeedStocks Report.pdf",
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/speedstocks/preview.png"
+            }
         ],
 
         "libraryTags": [
@@ -700,7 +708,7 @@ var projectsData = [
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2030080?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/pFGeY7rbKKs?si=cCrI0Bh_73xM6upf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
+        "report": "/assets/projects/dynamometer-dash/Dynamometer Dash Report.pdf",
         "carouselScreenshots": [
             {
                 "screenshot": "/assets/projects/dynamometer-dash/start.png"
@@ -741,7 +749,8 @@ var projectsData = [
         ],
 
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/Zy7v1fg1OZ0?si=HafN4nujdtrBDBlP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
+        "report": "/assets/projects/mutablus/Mutablus Report.pdf",
+
         "skills": [
             "Javascript ⌨",
             "p5.js ⌨",
@@ -893,7 +902,7 @@ var projectsData = [
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1891265?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/SSglkIJXO0A?si=ydBGM-hVEYmilC6F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
+        "report": "/assets/projects/head-in-the-clouds/Head in the Clouds Report.pdf",
         "carouselScreenshots": [
             {
                 "screenshot": "/assets/projects/head-in-the-clouds/glider.png"
@@ -1056,6 +1065,7 @@ var projectsData = [
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573118?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/sandboard">Sandboard by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/n4X4D63GAXI?si=0ShOzcLuyZ_Xg3e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "report": "/assets/projects/sandboard/Sandboard Report.pdf",
         "carouselScreenshots": [
             {
                 "screenshot": "/assets/projects/sandboard/tephrenne1.png"
@@ -1114,7 +1124,7 @@ var projectsData = [
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573232?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/JQpjnCniBnM?si=H9q86RxnPbV8mJGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
+        "report": "/assets/projects/heat-of-the-moment/Heat of the Moment Report.pdf",
         "carouselScreenshots": [
             {
                 "screenshot": "/assets/projects/heat-of-the-moment/assassin encounter.png"
@@ -1156,7 +1166,7 @@ var projectsData = [
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/1573017?bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/head-in-the-clouds">Head in the Clouds by Elliot George Mann</a></iframe>`,
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/DB8v37nHLkw?si=bYrGDzC6Xk6UId6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
+        "report": "/assets/projects/hoop-sports/Hoop Sports Report.pdf",
         "carouselScreenshots": [
             {
                 "screenshot": "/assets/projects/hoop-sports/256 players.png"
@@ -1559,6 +1569,26 @@ if (topSkillsID) {
 var randomProject = document.getElementById("open-random-project");
 if (randomProject) {
     openRandomProject();
+}
+
+var report = document.getElementById("report");
+if (report) {
+    report.innerHTML = MakeReportLink();
+}
+
+
+
+
+
+function MakeReportLink() {
+    var report = getCurrProject().report
+    if (!report) {
+        return ""
+    }
+
+    return `
+    <a class="link-button center-link" href="${report}" target="_blank">Full University Report</a>
+    `;
 }
 
 
