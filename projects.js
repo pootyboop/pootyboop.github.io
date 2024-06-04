@@ -10,46 +10,6 @@ var topSkills = [
 
 var projectsData = [
     {
-        "name": "CONDUCTOR",
-        "category": "games",
-        "platform": [
-            "Releasing Soon",
-            "VR",
-            "Quest"
-        ],
-        "year": "2024",
-        "desc": "Electric VR rhythm game",
-
-        "libraryTags": [
-            "hierre",
-            "soundtrack",
-            "wip"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Meta Quest 2 ⌨",
-            "Blender 🖍",
-            "Photoshop 🖍",
-            "GIMP 🖍",
-            "Illustrator 🖍",
-            "Logic Pro ♫",
-        ],
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/conductor/preview.png"
-            }
-        ],
-
-        "similarProjects": [
-            "Lazarus",
-            "Sandboard",
-            "Gata Guressi"
-        ]
-    },
-
-    {
         "name": "Lazarus",
         "category": "music",
         "year": "2024",
@@ -93,6 +53,83 @@ var projectsData = [
             "CONDUCTOR",
             "Mind of Glass",
             "Saliva"
+        ]
+    },
+    
+    {
+        "name": "CONDUCTOR",
+        "category": "games",
+        "platform": [
+            "Releasing Soon",
+            "VR",
+            "Quest"
+        ],
+        "year": "2024",
+        "desc": "Electric VR rhythm game",
+
+        "libraryTags": [
+            "hierre",
+            "soundtrack",
+            "wip"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
+            "Logic Pro ♫",
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/conductor/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Lazarus",
+            "Sandboard",
+            "Gata Guressi"
+        ]
+    },
+    
+    {
+        "name": "Soundtracks 2021-24",
+        "category": "music",
+        "year": "2024",
+        "platform": [
+            "In Production",
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+        ],
+        "desc": "Compilation of university project soundtracks",
+
+        "libraryTags": [
+            "soundtrack",
+            "wip",
+            "wip-music"
+        ],
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Photoshop 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/soundtracks-2021-24/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Sandboard",
+            "Head in the Clouds",
+            "Gata Guressi"
         ]
     },
 
@@ -327,6 +364,7 @@ var projectsData = [
         "skills": [
             "Android Studio ⌨",
             "Kotlin ⌨",
+            "Augmented Reality (AR) ⌨",
             "Github ⌨",
             "Illustrator 🖍"
         ],
@@ -999,7 +1037,7 @@ var projectsData = [
             "Unity ⌨",
             "C# ⌨",
             "Meta Quest 2 ⌨",
-            "AR ⌨",
+            "Augmented Reality (AR) ⌨",
             "Blender 🖍",
             "Substance Painter 🖍",
             "Photoshop 🖍",
