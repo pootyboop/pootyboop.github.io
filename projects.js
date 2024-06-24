@@ -57,6 +57,43 @@ var projectsData = [
     },
     
     {
+        "name": "Soundtracks 2021-24",
+        "category": "music",
+        "year": "2024",
+        "platform": [
+            "In Production",
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+        ],
+        "desc": "Compilation of university project soundtracks",
+
+        "libraryTags": [
+            "soundtrack",
+            "wip",
+            "wip-music"
+        ],
+
+        "skills": [
+            "Logic Pro ♫",
+            "Massive ♫",
+            "Photoshop 🖍"
+        ],
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/soundtracks-2021-24/preview.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Sandboard",
+            "Head in the Clouds",
+            "Gata Guressi"
+        ]
+    },
+    
+    {
         "name": "CONDUCTOR",
         "category": "games",
         "platform": [
@@ -92,43 +129,6 @@ var projectsData = [
         "similarProjects": [
             "Lazarus",
             "Sandboard",
-            "Gata Guressi"
-        ]
-    },
-    
-    {
-        "name": "Soundtracks 2021-24",
-        "category": "music",
-        "year": "2024",
-        "platform": [
-            "In Production",
-            "Spotify",
-            "Apple Music",
-            "YouTube"
-        ],
-        "desc": "Compilation of university project soundtracks",
-
-        "libraryTags": [
-            "soundtrack",
-            "wip",
-            "wip-music"
-        ],
-
-        "skills": [
-            "Logic Pro ♫",
-            "Massive ♫",
-            "Photoshop 🖍"
-        ],
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/soundtracks-2021-24/preview.png"
-            }
-        ],
-
-        "similarProjects": [
-            "Sandboard",
-            "Head in the Clouds",
             "Gata Guressi"
         ]
     },
@@ -631,6 +631,12 @@ var projectsData = [
         "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/VCAOUixtBes?si=Beijs9j8takfkcKE" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         
         "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/imminent-xr/greenscreen.png"
+            },
+            {
+                "screenshot": "/assets/projects/imminent-xr/xrnetwork.png"
+            },
             {
                 "screenshot": "/assets/projects/imminent-xr/preview.png"
             }
