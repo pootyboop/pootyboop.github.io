@@ -132,6 +132,53 @@ var projectsData = [
             "Gata Guressi"
         ]
     },
+    
+    {
+        "name": "Sky's the Limit",
+        "category": "games",
+        "platform": [
+            "Windows",
+            "VR"
+        ],
+        "year": "2024",
+        "desc": "Create and explore VR planets",
+
+        "libraryTags": [
+        ],
+
+        "skills": [
+            "Unity ⌨",
+            "C# ⌨",
+            "SteamVR ⌨",
+            "Github ⌨",
+            "Blender 🖍",
+            "Illustrator 🖍",
+        ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2755194?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/skys-the-limit">Sky's the Limit by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/07Gaq_mZSgE?si=ihGyc-W_hen6penR" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "report": "/assets/projects/skys-the-limit/Sky's the Limit Report.pdf",
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/skys-the-limit/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/skys-the-limit/planets2.png"
+            },
+            {
+                "screenshot": "/assets/projects/skys-the-limit/controls.png"
+            },
+            {
+                "screenshot": "/assets/projects/skys-the-limit/planets.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Head in the Clouds",
+            "The Chime Hours",
+            "Dynamometer Dash"
+        ]
+    },
 
     {
         "name": "IM Showcase 2024",

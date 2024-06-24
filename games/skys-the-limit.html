@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elliot George Mann - Portfolio, games and music">
+    <title>Sky's the Limit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="/styles.css" type="text/css" rel="stylesheet">
+
+    <link rel="icon" href="/EGM.png">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" id="navbar"></nav>
+
+    <div id="main-content">
+        <!--
+            <img src="/assets/games/sandboard/logo.png" class="project-logo">
+        -->
+        <div id="project-header"></div>
+        <br>
+        <section class="info-section">
+            <h2>ⓘ OVERVIEW</h2>
+            <hr>
+            <div class="container-fluid" id="project-overview-graphics"></div>
+
+            <p>
+                Sky's the Limit is a tech demo of a 3D gravity system I made in Unity for HTC Vive. You can throw new planets into the sky, then use a jetpack to enter their gravitational field and explore.
+            </p>
+        </section>
+
+        <section class="info-section">
+            <h2>👁 RECEPTION</h2>
+            <hr>
+                <p>
+                    This project received a 1st mark for its gravity system and nausea prevention measures (BSc Interactive Media).
+                </p>
+        </section>
+
+        <section class="info-section">
+            <h2>⌨ DEVELOPMENT</h2>
+            <hr>
+            
+            <section id="skills"></section>
+
+            <p>
+                This was a 3rd year university project developed in Unity with the SteamVR plugin. This plugin was horrible to work with and I hope I never have to use it again.
+            </p>
+
+            <div class="accordion" id="accordionGravitySystem">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1GravitySystem">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGravitySystem" aria-controls="collapseGravitySystem">
+                            <p>Gravity and Nausea Prevention</p>
+                        </button>
+                    </h2>
+                    <div id="collapseGravitySystem" class="accordion-collapse collapse" aria-labelledby="h1GravitySystem" data-bs-parent="#accordionGravitySystem">
+                        <div class="accordion-body">
+                            <img src="/assets/projects/skys-the-limit/gravity.png" class="block-img accordion-img square" alt="Gravity system graphic" loading="lazy">
+                            <p>
+                                The gravity system works around planets with local gravitational fields. These fields attract physics objects inside the field. Physics objects remain tethered to their last occupied field, which prevents things from floating away into space and makes it easier to throw objects into orbit.
+                            </p>
+                            <p>
+                                Some objects like the player rotate to stand upright against the planet. They slowly rotate to their upright position when entering a field for a smooth transition. When objects land on the planet, they parent to it so they cleanly follow their parent planet. I also implemented snappy rotation and a limit on physics forces on the player to prevent nausea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Further development would see this project developed into a full Zelda-style puzzle game built around gravity/physics mechanics with improved aesthetics similar to <a href="/games/head-in-the-clouds">Head in the Clouds</a>. The game was initially meant to be set in the <a href="/projects/hierre">Hierre system</a> on Dorbis but I scrapped this to allow more "biome" planets.
+            </p>
+
+            <div id="report"></div>
+        </section>
+
+        <section class="info-section" id="similar-library"></section>
+        
+    </div>
+
+    <script src="/projects.js"></script>
+    <script src="/navbarfooter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
