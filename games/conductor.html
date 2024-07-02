@@ -26,10 +26,22 @@
             <div class="container-fluid" id="project-overview-graphics"></div>
 
             <p>
-                CONDUCTOR is my final year university project. I can't publicly divulge any details yet in case I get flagged for self-plagiarism, but I'm more than happy to discuss it if you're interested!
+                CONDUCTOR is a cyberpunk-horror VR combat rhythm game where you use liquid and electricity to defeat waves of human and robot enemies.
+                This was my major final year university project at the University of York, designed to explore more suitable ways of using rhythm elements in VR games.
             </p>
             <p>
                 <a href="/music/lazarus">Lazarus</a> is this game's sister project.
+            </p>
+        </section>
+
+        <section class="info-section">
+            <h2>👁 RECEPTION</h2>
+            <hr>
+            <p>
+                CONDUCTOR earned a 1st mark for its enemy AI, beat and soundtrack system, and production quality, achieving a 91/100 mark for the standalone game (BSc Interactive Media, University of York).
+            </p>
+            <p>
+                It was also awarded the Best Sound Design award at the 2024 University of York <a href="https://imshowcase.co.uk/" target="_blank">Interactive Media Showcase</a>.
             </p>
         </section>
 
@@ -40,7 +52,117 @@
             <section id="skills"></section>
 
             <p>
-                This is a 3rd year university project developed in Unreal Engine with a Quest 2.
+                CONDUCTOR is my final year university project (equivalent to a dissertation) developed in Unreal Engine for standalone Quest 2.
+                Development was very iterative, with lots of features and content being scrapped for a more cohesive final product.
+                I was visually inspired by Inscryption, comic books, ULTRAKILL and other low-poly DOOM-inspired shooters, religious imagery (especially in Dark Souls), and Bioshock's Rapture.
+            </p>
+
+            <div class="accordion" id="accordionBackground">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1Background">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBackground" aria-controls="collapseBackground">
+                            <p>Background</p>
+                        </button>
+                    </h2>
+                    <div id="collapseBackground" class="accordion-collapse collapse" aria-labelledby="h1Background" data-bs-parent="#accordionBackground">
+                        <div class="accordion-body">
+
+                            <img src="/assets/projects/conductor/preview2.png" class="block-img accordion-img" alt="Hammer enemy" loading="lazy">
+
+                            <p>
+                                The primary purpose of this project was to create a VR rhythm game that avoids the use of note highways, as they restrict gameplay to a single linear lane and (in my opinion) are not suitable for VR.
+                                Beat Saber, Pistol Whip, and other popular VR rhythm games use note highways to make gameplay readable and accessible, but disregard the full range of motion that VR is known for by limiting the player's movement and rotation options.
+                                CONDUCTOR responds to this issue by taking gameplay and aesthetic lessons from the rhythm shooter genre and using them to enhance environmental combat, allowing for a fully 360° VR rhythm game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                While the game was initially intended to be more linear and narrative, I switched to an arena-centric, wave-based approach to fully focus on gameplay.
+                Accessibility, difficulty, and player attention were all carefully considered throughout development, informing design choices like the switch to standalone Quest 2 and scrapping narrative elements and gameplay features.
+            </p>
+
+            <img src="/assets/projects/conductor/post.png" class="block-img" alt="Post processing comparison" loading="lazy">
+
+            <p>
+                This was my first time building a game for standalone Quest 2, requiring me to scrap beat-synced post processing and shader effects for a more performant game. Post processing is still available on the Windows version, but I scrapped distance field and refraction effects entirely.
+                I used other visual effects to build on the theme, like an upside down in-game sunlight for a campfire-horror-story look, beat-synced flashing LED lights, and high color contrast to both create a noir theme and to keep the player's attention on the bright, flashing enemies.
+            </p>
+
+            <div class="accordion" id="accordionEnemyAI">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1EnemyAI">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnemyAI" aria-controls="collapseEnemyAI">
+                            <p>Enemy AI</p>
+                        </button>
+                    </h2>
+                    <div id="collapseEnemyAI" class="accordion-collapse collapse" aria-labelledby="h1EnemyAI" data-bs-parent="#accordionEnemyAI">
+                        <div class="accordion-body">
+
+                            <img src="/assets/projects/conductor/enemyai.png" class="block-img accordion-img square" alt="Enemy AI graphic" loading="lazy">
+
+                            <p>
+                                Enemies are split into three parts: the enemy itself, which performs attacks and moves; the enemy's brain, which decides what actions to take; and the enemy hivemind, which approves and denies action requests from enemies.
+                                This structure uses weighted actions and action cooldowns to decide what actions will be performed each beat.
+                            </p>
+
+                            <img src="/assets/projects/conductor/hammer2.png" class="block-img accordion-img" alt="Hammer enemy" loading="lazy">
+
+                            <p>
+                                Each enemy has different weights for their attacks, movements when out of range vs. in range, and special abilities. These weights, in combination with unique attack patterns and target distance, differentiate enemies and decide who takes priority in different situations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <img src="/assets/projects/conductor/butcherbishop.png" class="block-img block-img-sidebyside" alt="Butcher and Bishop enemies" loading="lazy">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <img src="/assets/projects/conductor/hammer.png" class="block-img block-img-sidebyside" alt="Hammer enemy" loading="lazy">
+                </div>
+            </div>
+
+            <p>
+                As the game is set <a href="/projects/hierre">Hierre</a>'s eccentric capital city Guenador, I designed enemies with a gothic, robotic, industrial theme.
+                Culturally, Guenadori are obsessed with holding themselves above other people and even their own humanity, so I wanted to represent that through extreme body modifications and fashion inspired by punk/goth and religious subgroups.
+            </p>
+            
+            <div class="accordion" id="accordionBeatSystem">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1BeatSystem">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBeatSystem" aria-controls="collapseBeatSystem">
+                            <p>Rhythm and Music Systems</p>
+                        </button>
+                    </h2>
+                    <div id="collapseBeatSystem" class="accordion-collapse collapse" aria-labelledby="h1BeatSystem" data-bs-parent="#accordionBeatSystem">
+                        <div class="accordion-body">
+
+                            <p>
+                                Accurate BPM syncing is handled with Unreal Engine's Quartz system, which I used with event dispatchers to allow any in-game object to subscribe to any rhythm. Shaders and post processing effects can access this too via a material parameter collection that stores up-to-date information like alternating colors and the intensity of the current beat (see this in the LED lights or liquid ripples).
+                            </p>
+
+                            <img src="/assets/projects/conductor/squid.png" class="block-img accordion-img" alt="Enemy in a level" loading="lazy">
+                            
+                            <p>
+                                Since most actions in-game (e.g. player and enemy moves/attacks) occur on the beat, I also implemented my own logic for "physics" to allow more performant interactions like throwing and gravity while still restricting movement to occur only on beats.
+                                Beats are considered to be occurring from 1/32nd before until 1/32nd after the actual beat. During this window (the "Error Margin"), the player can perform actions and be considered on-beat.
+                            </p>
+                            <p>
+                                Each level's soundtrack consists of a collection of audio files that play conditionally and loop in sync. These include enemy motifs/themes, drums that play on-beat with Quartz, infomative sounds like attack warnings and damage/death sounds, and background sounds to build tension based on the current situation.
+                                With experience, you can understand what enemies are around you based on their themes and predict incoming attacks and waves by hearing the associated sounds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                As my most technical project yet, I'm very proud of CONDUCTOR. Future development could see more content in the form of new levels, enemies, soundtracks, and combat abilities, as well as the narrative focus I had originally intended to build on the world and give the player purpose.
             </p>
 
             <div id="report"></div>

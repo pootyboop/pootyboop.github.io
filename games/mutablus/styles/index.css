@@ -9,6 +9,8 @@ should not be used anywhere else
   margin-left: auto;
   margin-right: auto;
   max-width: 80vw;
+  
+  image-rendering: pixelated !important;
 }
 
 /*the bars to the left and right of the game viewport*/

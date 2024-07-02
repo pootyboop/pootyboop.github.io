@@ -97,7 +97,7 @@ var projectsData = [
         "name": "CONDUCTOR",
         "category": "games",
         "platform": [
-            "Releasing Soon",
+            "Windows",
             "VR",
             "Quest"
         ],
@@ -105,9 +105,9 @@ var projectsData = [
         "desc": "Electric VR rhythm game",
 
         "libraryTags": [
+            "featured",
             "hierre",
-            "soundtrack",
-            "wip"
+            "soundtrack"
         ],
 
         "skills": [
@@ -119,17 +119,21 @@ var projectsData = [
             "Illustrator 🖍",
             "Logic Pro ♫",
         ],
+
+        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2755080?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/skys-the-limit">Sky's the Limit by Elliot George Mann</a></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/6LwY_3OsYDY?si=9ns47pDJgGuLTkh3" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "report": "/assets/projects/conductor/CONDUCTOR Report.pdf",
         
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/conductor/preview.png"
+                "screenshot": "/assets/projects/conductor/preview2.png"
             }
         ],
 
         "similarProjects": [
             "Lazarus",
             "Sandboard",
-            "Gata Guressi"
+            "Heat of the Moment"
         ]
     },
     
@@ -525,8 +529,8 @@ var projectsData = [
 
         "similarProjects": [
             "Sandboard",
-            "Hierre",
-            "PVP Playground"
+            "PVP Playground",
+            "CONDUCTOR"
         ]
     },
     
@@ -821,8 +825,8 @@ var projectsData = [
 
         "similarProjects": [
             "Sandboard",
-            "The Chime Hours",
-            "Imminent-XR"
+            "CONDUCTOR",
+            "The Chime Hours"
         ]
     },
 
@@ -974,7 +978,6 @@ var projectsData = [
         "desc": "Chill airborne book delivery",
 
         "libraryTags": [
-            "featured",
             "soundtrack",
             "play in browser"
         ],
@@ -1015,7 +1018,7 @@ var projectsData = [
 
         "similarProjects": [
             "Gata Guressi",
-            "Mutablus",
+            "Sky's the Limit",
             "PVP Playground"
         ]
     },
@@ -1190,9 +1193,9 @@ var projectsData = [
         ],
 
         "similarProjects": [
+            "CONDUCTOR",
             "Dynamometer Dash",
-            "The Chime Hours",
-            "Gata Guressi"
+            "Revolver"
         ]
     },
 
@@ -1381,7 +1384,7 @@ var projectsData = [
 
         "similarProjects": [
             "Head in the Clouds",
-            "Sandboard",
+            "Hierre Card Game",
             "Pooty Games"
         ]
     },
@@ -1579,7 +1582,7 @@ var projectsData = [
 var featuredProjects = [
     "Sandboard",
     "Gata Guressi",
-    "Head in the Clouds"
+    "CONDUCTOR"
 ]
 
 
