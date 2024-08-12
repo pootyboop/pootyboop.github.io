@@ -42,43 +42,55 @@
                         <b>Bedwars</b> — Classic Bedwars for 2+ players. Break other players' beds and protect your own! Follows Hypixel rules.
                     </li>
                     <li>
-                        <b>Track Racing</b> — Place and destroy rails to get your minecart to the finish first!
-                    </li>
-                    <li>
-                        <b>King of the Hill</b> — Use your elytra and knockback stick to stay on top of the hill the longest.
-                    </li>
-                    <li>
                         <b>Build Comp</b> — Build other players' prompts and vote on the best builds.
                     </li>
                     <li>
-                        <b>FPS</b> — Use your favorite gun on this FFA FPS played on a remake of Call of Duty's Nuketown.
-                    </li>
-                    <li>
-                        <b>Warden's Dungeon</b> — Hide from the Warden, watch out for traps, and don't make noise!
+                        <b>Dance of the Block</b> — Stand on the right color before the rest of the floor disappears.
                     </li>
                     <li>
                         <b>Flip Tag</b> — Play tag in two dimensions at once, chasing and dodging players by hopping dimensions.
                     </li>
                     <li>
-                        <b>Ham Soccer</b> — Score goals by smacking the pig into the other team's goal.
+                        <b>FPS</b> — Use your favorite gun on this FFA FPS played on a remake of Call of Duty's Nuketown.
                     </li>
                     <li>
                         <b>Geokinesis</b> — Use earth-control abilities to outplay your opponents in a best-of-5 FFA.
                     </li>
                     <li>
-                        <b>Shopping</b> — Race other players to craft items using nearby resources.
+                        <b>Gold Rush</b> — Grab as much gold as you can while looking out for the murderer.
                     </li>
                     <li>
-                        <b>Paul Heist</b> — Break into a mansion and steal the legendary Paul, or defend him from the thieves. <em>My personal favorite!</em>
+                        <b>Ham Soccer</b> — Score goals by smacking the pig into the other team's goal.
                     </li>
                     <li>
                         <b>Hide and Seek</b> — Hide as a fake block or hunt down the hiders.
                     </li>
                     <li>
-                        <b>Witch Hunt</b> — Disguise as a villager and hide from the witch hunters.
+                        <b>King of the Hill</b> — Use your elytra and knockback stick to stay on top of the hill the longest.
                     </li>
                     <li>
-                        <b>Gold Rush</b> — Grab as much gold as you can while looking out for the murderer.
+                        <b>Paul Heist</b> — Break into a guarded location and steal the legendary Paul, or defend him from the thieves. <em>My personal favorite!</em>
+                    </li>
+                    <li>
+                        <b>Prosperous Pillars</b> — Use random items to outmaneuver other players and avoid getting hit into the void.
+                    </li>
+                    <li>
+                        <b>Shopping</b> — Race other players to craft items using nearby resources.
+                    </li>
+                    <li>
+                        <b>Slideout</b> — Power slide and shoot your machine bowgun to collect points before other players.
+                    </li>
+                    <li>
+                        <b>Track Racing</b> — Place and destroy rails to get your minecart to the finish first!
+                    </li>
+                    <li>
+                        <b>Trials</b> — Take turns completing trials while other players use traps to stop you.
+                    </li>
+                    <li>
+                        <b>Warden's Dungeon</b> — Hide from the Warden, watch out for traps, and don't make noise!
+                    </li>
+                    <li>
+                        <b>Witch Hunt</b> — Disguise as a villager and hide from the witch hunters.
                     </li>
                 </ul>
             <br>
@@ -107,10 +119,10 @@
 
             <p>
                 From a game design perspective, Minecraft is great for quickly prototyping 3D multiplayer game concepts.
-                I have used it as a platform for many multiplayer games because it a) provides high-level networked multiplayer out of the box and b) has a huge preexisting player base, meaning I can trick my friends into enjoying playtesting my games!
+                I have used it as a platform for many multiplayer games because it a) provides high-level networked multiplayer out of the box and b) has a huge preexisting player base, meaning I can trick my friends into playtesting my games!
             </p>
             <p>
-                This map is vanilla, made using Minecraft's datapack system. I have been working on it across multiple Minecraft updates, changing games to use newer features and creating new games based on new Minecraft features.
+                This map is vanilla, made using Minecraft's datapack system. I have been working on it across multiple Minecraft updates (since 1.16), changing games to use newer features and creating new games based on new Minecraft features like interaction entities and function macros.
             </p>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -123,7 +135,7 @@
                         <div class="accordion-body">
                             <ul>
                                 <li>
-                                    When you hold shift in <b>Hide and Seek</b>, an invisible shulker is spawned beneath you. Shulkers automatically snap to the nearest block position. The shulker then spawns the fake block representing the player relative to its snapped location. This makes the fake block "snap into place" and blend in with the environment.
+                                    When you hold shift in <b>Hide and Seek</b>, an invisible leash knot is spawned beneath you. Leash knots (normally attached to fences) automatically snap to the nearest block position. The knot then spawns the fake block representing the player relative to its snapped location. This makes the fake block "snap into place" and blend in with the environment.
                                 </li>
                                 <li>
                                     Right click detection on <b>FPS</b> is done with 1.20's new interaction entities. An interaction entity follows the player's vision around, consuming right click inputs from the player and then firing raycasts from their view.
@@ -142,6 +154,9 @@
                                 </li>
                                 <li>
                                     In <b>Witch Hunt</b>, <b>Track Racing</b>, and other games where you control/own an entity or games with a voting system, player UUIDs are stored in a scoreboard and assigned to the corresponding entities to keep them synced.
+                                </li>
+                                <li>
+                                    <b>Dance of the Block</b> and <b>Trials</b> both revolve around cloning (the dancefloor or the trial). To select a random entry to clone, each entry is a uniform distance apart in-game, then a random value is used with a function macro to select a random coordinate position to clone from.
                                 </li>
                             </ul>
                         </div>
