@@ -101,6 +101,7 @@ var projectsData = [
             "VR",
             "Quest"
         ],
+        "highlight":"Award-Winning",
         "year": "2024",
         "desc": "Electric VR rhythm game",
 
@@ -196,8 +197,7 @@ var projectsData = [
         "desc": "BSc Interactive Media student work showcase",
 
         "libraryTags": [
-            "misc",
-            "wip"
+            "misc"
         ],
 
         "skills": [
@@ -316,6 +316,7 @@ var projectsData = [
         "platform": [
             "Windows"
         ],
+        "highlight":"Award-Winning",
         "desc": "Sci-fi translation/exploration RPG",
 
         "libraryTags": [
@@ -1137,6 +1138,7 @@ var projectsData = [
             "Windows",
             "VR"
         ],
+        "highlight":"Award-Winning",
         "desc": "High-speed VR sand surfing and grappling",
 
         "libraryTags": [
@@ -1207,6 +1209,7 @@ var projectsData = [
             "Windows",
             "Mac"
         ],
+        "highlight":"Award-Winning",
         "desc": "Intense burning house escape",
 
         "skills": [
@@ -1968,7 +1971,14 @@ function makeCardFromProject(project, searchTerm) {
 
 
 function projectExtraInfo(project, searchTerm) {
-    var subtitle = project.year;
+    var subtitle = "";
+
+    if (project.hasOwnProperty('highlight')) {
+        subtitle += 
+        `<span class="card-highlight">☆ ${project.highlight}</span> • `
+    }
+    
+    subtitle += project.year;
 
     if (project.hasOwnProperty('length')) {
         subtitle += " • " + project.length;
@@ -2051,12 +2061,21 @@ function doesProjectHaveTag(project, tag) {
 
 
 function hasTagFromSearch(project, searchTerm) {
-    if (!project.libraryTags) {
+    /*if (!project.libraryTags) {
         return false;
     }
+    */
 
-    for (var i = 0; i < project.libraryTags.length; i++) {
-        if (project.libraryTags[i].toLowerCase().includes(searchTerm.toLowerCase())) {
+    if (project.hasOwnProperty('libraryTags')) {
+        for (var i = 0; i < project.libraryTags.length; i++) {
+            if (project.libraryTags[i].toLowerCase().includes(searchTerm.toLowerCase())) {
+                return true;
+            }
+        }
+    }
+
+    if (project.hasOwnProperty('highlight')) {
+        if (project.highlight.toLowerCase().includes(searchTerm.toLowerCase())) {
             return true;
         }
     }
