@@ -339,7 +339,7 @@ var projectsData = [
         ],
 
         "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/hOg4MtOmip4?si=grhSfJ1SB-lCPBZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/c6R0FHIGgW0?si=aN0_R9aW36z0kALs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
         "carouselScreenshots": [
             {
