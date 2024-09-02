@@ -1088,6 +1088,7 @@ var projectsData = [
         "libraryTags": [
             "work"
         ],
+        "highlight":"Award-Winning",
 
         "skills": [
             "Unreal Engine ⌨",
@@ -1633,6 +1634,11 @@ if (wipMusicLibrary) {
 );
 }
 
+var highlightLibrary = document.getElementById("highlight-library");
+if (highlightLibrary) {
+    highlightLibrary.innerHTML = makeHighlightLibrary();
+}
+
 var miscLibrary = document.getElementById("misc-library");
 if (miscLibrary) {
     miscLibrary.innerHTML = makeTagLibrary('misc');
@@ -1802,6 +1808,25 @@ function makePlayInBrowserLibrary() {
         if (doesProjectHaveTag(thisProj, "play in browser")
             
             /*thisProj.category === "games" && isPlatform(thisProj, "web")*/) {
+            library += makeCardFromProject(projectsData[i]);
+        }
+    }
+
+    library += `
+        </div>
+    </div>
+    `;
+
+    return library;
+}
+
+
+function makeHighlightLibrary() {
+    var library = ``;
+
+    for (var i = 0; i < projectsData.length; i++) {
+        var thisProj = projectsData[i];
+        if (thisProj.hasOwnProperty('highlight')) {
             library += makeCardFromProject(projectsData[i]);
         }
     }
