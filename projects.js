@@ -61,7 +61,6 @@ var projectsData = [
         "category": "music",
         "year": "2024",
         "platform": [
-            "In Production",
             "Spotify",
             "Apple Music",
             "YouTube"
@@ -69,9 +68,7 @@ var projectsData = [
         "desc": "Compilation of university project soundtracks",
 
         "libraryTags": [
-            "soundtrack",
-            "wip",
-            "wip-music"
+            "soundtrack"
         ],
 
         "skills": [
@@ -79,6 +76,11 @@ var projectsData = [
             "Massive ♫",
             "Photoshop 🖍"
         ],
+
+        "ytEmbed": `
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/09hRSc24WP9MVSWXXfqOcW?utm_source=generator&theme=0"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,    
+        
         
         "carouselScreenshots": [
             {
