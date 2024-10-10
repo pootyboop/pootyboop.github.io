@@ -319,7 +319,7 @@ var projectsData = [
             "Windows"
         ],
         "highlight":"Award-Winning",
-        "desc": "Sci-fi translation/exploration RPG",
+        "desc": "Sci-fi translation & exploration RPG",
 
         "libraryTags": [
             "featured",
@@ -1592,6 +1592,9 @@ var featuredProjects = [
 ]
 
 
+var maxSkills = 3;
+
+
 
 
 
@@ -1692,7 +1695,7 @@ function MakeReportLink() {
     }
 
     return `
-    <a class="link-button center-link" href="${report}" target="_blank">Full University Report</a>
+    <a class="link-button external-link center-link" href="${report}" target="_blank">Full University Report</a>
     `;
 }
 
@@ -1980,15 +1983,15 @@ function makeCardFromProject(project, searchTerm) {
     const name = project.name
     const slug = slugify(project.name)
     return `
-    <div class="col-sm-12 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4">
         <a href="/${project.category}/${slug}" class="card-link" aria-label="View the ${name} page">
             <div class="card">
                 <img class="card-img-top" src="/assets/projects/${slug}/preview.png" alt="${name} preview image" loading="lazy">
                 <div class="card-body">
-                    <h3 class="card-title">${name.toUpperCase()}</h3>
-                    <p class="card-date">${projectExtraInfo(project, searchTerm)}</p>
-                    <p class="card-text">${project.desc}</p>
-                    <section class="mb-2">${makeSkills(project, searchTerm)}</section>
+                    <h3 class="card-title card-info">${name.toUpperCase()}</h3>
+                    <p class="card-date card-info">${projectExtraInfo(project, searchTerm)}</p>
+                    <p class="card-text card-info">${project.desc}</p>
+                    <section class="card-skills card-info">${makeSkills(project, searchTerm)}</section>
                 </div>
             </div>
         </a>
@@ -2342,7 +2345,7 @@ if (projectSkills) {
     `
 }
 
-function makeSkills(project) {return makeSkills(project, "")}
+function makeSkills(project) {return makeSkills(project, null)}
 
 function makeSkills(project, searchTerm) {
     var isProject = getCurrProject();
@@ -2356,6 +2359,12 @@ function makeSkills(project, searchTerm) {
 
         for (var i = 0; i < project.skills.length; i++) {
             str += makeSkill(project.skills[i], isProject, searchTerm);
+            if (i >= maxSkills - 1 && !isProject && (searchTerm == null || searchTerm === false)) {
+
+                var ct = project.skills.length - i;
+
+                return str + makeSkill("+" + ct + " More", isProject, "");
+            }
         }
 
         return str;

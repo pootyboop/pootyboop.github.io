@@ -23,7 +23,7 @@ const navLinks = [
 
 
 document.getElementById("navbar").innerHTML = `
-<div class="container-xxl">
+<div class="container-xxl" id="navbar-content">
 
     <!-- logo -->
     <a href="/" id="navbar-logo">
@@ -108,11 +108,8 @@ function search() {
 
 
 var socialLinks = document.getElementsByClassName("social-links");
-for (var i = 0; i < socialLinks.length; i++){
+for (var i = 0; i < socialLinks.length; i++) {
     socialLinks[i].innerHTML = `
-    <a href="https://www.linkedin.com/in/elliot-mann/" class="social-icon-link" target="_blank" aria-label="Visit my LinkedIn">
-        <img src="/assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn">
-    </a>
     <a href="https://elliotgmann.itch.io" class="social-icon-link" target="_blank" aria-label="Visit my itch.io page">
         <img src="/assets/icons/itch.svg" class="social-icon" alt="itch.io">
     </a>
@@ -122,8 +119,21 @@ for (var i = 0; i < socialLinks.length; i++){
     <a href="https://www.youtube.com/@elliotgmann/featured" class="social-icon-link" target="_blank" aria-label="Visit my YouTube page">
         <img src="/assets/icons/youtube.svg" class="social-icon" alt="YouTube">
     </a>
+    <a href="https://www.linkedin.com/in/elliot-mann/" class="social-icon-link" target="_blank" aria-label="Visit my LinkedIn">
+        <img src="/assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/pootyboop" class="social-icon-link" target="_blank" aria-label="Visit my LinkedIn">
+        <img src="/assets/icons/github.svg" class="social-icon" alt="GitHub">
+    </a>
     `
-};
+}
+
+var linkButtons = document.getElementsByClassName("external-link");
+for (var i = 0; i < linkButtons.length; i++) {
+    linkButtons[i].innerHTML += `
+    <img src="/assets/icons/link.svg" class="link-icon" alt="Link icon">
+    `
+}
 
 var searchBars = document.getElementsByClassName("searchbar");
 for (var i = 0; i < searchBars.length; i++) {
@@ -132,7 +142,6 @@ for (var i = 0; i < searchBars.length; i++) {
     <button type="submit" onsubmit="return doSomething();" class="search-button" aria-label="Search for projects"><img src="/assets/icons/search.svg" alt="Search button"></button>
     `
 }
-
 
 function makeNavLink(link) {
     return `
