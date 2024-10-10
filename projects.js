@@ -1389,9 +1389,9 @@ var projectsData = [
 
 
         "similarProjects": [
+            "Pooty Games",
             "Head in the Clouds",
-            "Hierre Card Game",
-            "Pooty Games"
+            "Hierre Card Game"
         ]
     },
 

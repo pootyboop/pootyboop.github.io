@@ -26,7 +26,7 @@
             <div class="container-fluid" id="project-overview-graphics"></div>
 
             <p>
-                Pooty Games is a Minecraft multiplayer minigame map I've been working on here and there over the last few years.
+                Pooty Games is my game design testing chamber and a Minecraft multiplayer minigame map I've been working on here and there over the last few years.
                 It includes my rendition of some pre-existing games (e.g. Bedwars, Hide and Seek, Build Comp) and a bunch of original games (e.g. Warden's Dungeon, Gold Rush, Paul Heist).
             </p>
 
@@ -104,16 +104,13 @@
                         <b>Beeb Quest</b> — Help Stavie Beeb find a great treasure, or secretly sabotage his adventure.
                     </li>
                     <li>
-                        <b>Dwarves' Domain</b> — Hunt down the intruders before they escape a randomly-generated dungeon.
+                        <b>Delve</b> — Roguelike dungeon crawler with progressively-tougher procedurally-generated dungeons.
                     </li>
                     <li>
                         <b>PvP Playground</b> — Third iteration of my loadout-focused multiplayer movement shooter. <a href="/games/pvp-playground">Check out my second iteration here</a>, built in Unreal Engine in 2020.
                     </li>
                     <li>
                         <b>Surface Tension</b> — Race other players through floating blobs of water using an elytra and riptide trident.
-                    </li>
-                    <li>
-                        <b>Room Race</b> — Create parkour, escape rooms, and puzzles to challenge other players.
                     </li>
                 </ul>
         </section>
@@ -126,7 +123,7 @@
 
             <p>
                 From a game design perspective, Minecraft is great for quickly prototyping 3D multiplayer game concepts.
-                I have used it as a platform for many multiplayer games because it a) provides high-level networked multiplayer out of the box and b) has a huge preexisting player base, meaning I can trick my friends into playtesting my games!
+                I have used it as a platform for many multiplayer games because it a) provides high-level networked multiplayer out of the box and b) has a huge preexisting player base, meaning I can trick my friends and siblings into playtesting my games!
                 This has been super valuable for me to test out everything from movement systems to hidden role party games.
             </p>
             <p>
@@ -146,7 +143,7 @@
                                     When you hold shift in <b>Hide and Seek</b>, an invisible leash knot is spawned beneath you. Leash knots (normally attached to fences) automatically snap to the nearest block position. The knot then spawns the fake block representing the player relative to its snapped location. This makes the fake block "snap into place" and blend in with the environment.
                                 </li>
                                 <li>
-                                    Right click detection on <b>FPS</b> is done with 1.20's new interaction entities. An interaction entity follows the player's vision around, consuming right click inputs from the player and then firing raycasts from their view.
+                                    Right click detection on <b>FPS</b> is done with 1.20's interaction entities. An interaction entity follows the player's vision around, consuming left and right click inputs from the player and then firing raycasts from their view. This allows you to fire with left click like most shooters, and aim down sights with right click (achieved by giving the player slowness to zoom in their FOV).
                                 </li>
                                 <li>
                                     The <b>Gold Rush</b> map is full of "cave air", a different block than regular "air". When players mine gold ore, they leave behind an air block. After the game is finished, the map repopulates all gold ore by replacing air blocks (<em>NOT cave air</em>) with gold ore.
@@ -165,6 +162,15 @@
                                 </li>
                                 <li>
                                     <b>Dance of the Block</b> and <b>Trials</b> both revolve around cloning (the dancefloor or the trial). To select a random entry to clone, each entry is a uniform distance apart in-game, then a random value is used with a function macro to select a random coordinate position to clone from.
+                                </li>
+                                <li>
+                                    <b>PvP Playground</b>'s Thermal Caves map has a hot and cold state. They're switched between with an invisible marker that sweeps across the map, cloning in blocks in waves and using particles to make it look like the map is freezing over or burning up. Players also hear a sweeping noise (the elytra equip sound) as the wave passes over them.
+                                </li>
+                                <li>
+                                    Rather than using player selectors like @a or @p, <b>PvP Playground</b> treats all entities marked as "fighters" as players. This means you can have NPCs on your team or fight the training dummy in the lobby and they're treated just like any other player. While not implemented right now, this also means mobs could have loadouts and use weapon abilities too!
+                                </li>
+                                <li>
+                                    The dungeon merchants in <b>Delve</b> are represented by armor stands at 90% scale with an invisible wandering trader on top of them. This prevents enemies in the dungeon from killing the wandering trader while still allowing you to right click for the nice wandering trader trading UI.
                                 </li>
                             </ul>
                         </div>
