@@ -14,17 +14,11 @@ var projectsData = [
         "category": "music",
         "year": "2024",
         "platform": [
-            "In Production",
             "Spotify",
             "Apple Music",
             "YouTube"
         ],
         "desc": "Industrial heaven/hell-themed LP",
-
-        "libraryTags": [
-            "wip",
-            "wip-music"
-        ],
 
         "skills": [
             "Logic Pro ♫",
@@ -33,6 +27,10 @@ var projectsData = [
             "GIMP 🖍",
             "Illustrator 🖍"
         ],
+
+        "ytEmbed": `
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/wlql1NCs8n4?si=tTBzsF7tV-Xc2Skf"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,   
         
         "carouselScreenshots": [
             {
