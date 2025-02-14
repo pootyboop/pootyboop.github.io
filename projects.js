@@ -12,7 +12,7 @@ var projectsData = [
     {
         "name": "Lazarus",
         "category": "music",
-        "year": "2024",
+        "year": "2025",
         "platform": [
             "Spotify",
             "Apple Music",
