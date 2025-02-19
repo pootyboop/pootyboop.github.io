@@ -29,8 +29,8 @@ var projectsData = [
         ],
 
         "ytEmbed": `
-            <iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/wlql1NCs8n4?si=tTBzsF7tV-Xc2Skf"
-            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,   
+            <iframe id="yt-video" class="d-block embed-responsive" src="https://open.spotify.com/embed/album/25XZz50IpCt5ghs7RrIInc?utm_source=generator&theme=0"
+            width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
         
         "carouselScreenshots": [
             {
