@@ -312,7 +312,7 @@ var projectsData = [
     {
         "name": "Gata Guressi",
         "category": "games",
-        "year": "2024",
+        "year": "2024-25",
         "platform": [
             "Windows"
         ],
@@ -1396,7 +1396,7 @@ var projectsData = [
     {
         "name": "Pooty Games",
         "category": "projects",
-        "year": "2020-24",
+        "year": "2020-25",
         "platform": [
             "Minecraft Map"
         ],
