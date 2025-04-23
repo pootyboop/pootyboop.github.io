@@ -26,12 +26,12 @@
             <div class="container-fluid" id="project-overview-graphics"></div>
 
             <p>
-                Pooty Games is my game design testing chamber and a Minecraft multiplayer minigame map I've been working on here and there over the last few years.
+                Pooty Games is my game design testing chamber and a Minecraft multiplayer minigame map I've been working on here and there since 2020.
                 It includes my rendition of some pre-existing games (e.g. Bedwars, Hide and Seek, Build Comp) and a bunch of original games (e.g. Warden's Dungeon, Gold Rush, Paul Heist).
             </p>
 
             <p>
-                <b>Please note</b>: the version below requires cheats/commands to be enabled. This allows players to click commands in chat, which is necessary for some games like Build Comp and Gold Rush.
+                <b>Please note</b>: the version below requires cheats/commands to be enabled. This allows players to click commands in chat, which is necessary for some games.
             </p>
             
             <a class="link-button external-link center-link" href="https://github.com/pootyboop/Pooty-Games" target="_blank">Download on GitHub (Minecraft Java Edition)</a>
@@ -40,7 +40,7 @@
         <section class="info-section">
             <h2>🎮 MINIGAMES</h2>
             <hr>
-            <h3>Finished Games:</h3>
+            <h3>Games:</h3>
                 <ul>
                     <li>
                         <b>Bedwars</b> — Classic Bedwars for 2+ players. Break other players' beds and protect your own! Follows Hypixel rules.
@@ -70,28 +70,19 @@
                         <b>Hide and Seek</b> — Hide as a fake block or hunt down the hiders.
                     </li>
                     <li>
-                        <b>King of the Hill</b> — Use your elytra and knockback stick to stay on top of the hill the longest.
-                    </li>
-                    <li>
                         <b>Paul Heist</b> — Break into a guarded location and steal the legendary Paul, or defend him from the thieves. <em>Personal favorite!</em>
                     </li>
                     <li>
                         <b>Prosperous Pillars</b> — Use random items to outmaneuver other players and avoid getting hit into the void.
                     </li>
                     <li>
-                        <b>PvP Playground</b> — Third iteration of my loadout-focused multiplayer movement shooter, and practically an entire game itself. <a href="/games/pvp-playground">Check out my second iteration here</a>, built in Unreal Engine in 2020.
+                        <b>PvP Playground</b> — 3rd iteration of my loadout-focused PvP game (practically an entire map itself). <a href="/games/pvp-playground">Check out the 2nd iteration</a>, built in Unreal Engine.
                     </li>
                     <li>
                         <b>Shopping</b> — Race other players to craft items using nearby resources.
                     </li>
                     <li>
-                        <b>Slideout</b> — Power slide and shoot your machine bowgun to collect points before other players.
-                    </li>
-                    <li>
                         <b>Surface Tension</b> — Race other players through floating blobs of water using an elytra and riptide trident.
-                    </li>
-                    <li>
-                        <b>Track Racing</b> — Place and destroy rails to get your minecart to the finish first!
                     </li>
                     <li>
                         <b>Trials</b> — Take turns completing trials while other players use traps to stop you.
@@ -104,7 +95,7 @@
                     </li>
                 </ul>
             <br>
-            <h3>WIP Games:</h3>
+            <h3>WIP:</h3>
                 <ul>
                     <li>
                         <b>Amuse Me</b> — Complete rapid-fire tasks to amuse the King.
@@ -117,10 +108,19 @@
                     </li>
                 </ul>
             <br>
-            <h3>Scrapped Games:</h3>
+            <h3>Scrapped/Hidden:</h3>
                 <ul>
                     <li>
-                        <b>Beeb Quest</b> — Help Stavie Beeb find a great treasure, or secretly sabotage his adventure.
+                        <b>Beeb Quest [UNFINISHED]</b> — Help Stavie Beeb find a great treasure, or secretly sabotage his adventure.
+                    </li>
+                    <li>
+                        <b>King of the Hill</b> — Use your elytra and knockback stick to stay on top of the hill the longest.
+                    </li>
+                    <li>
+                        <b>Slideout</b> — Power slide and shoot your machine bowgun to collect points before other players.
+                    </li>
+                    <li>
+                        <b>Track Racing</b> — Place and destroy rails to get your minecart to the finish first!
                     </li>
                 </ul>
             <br>
@@ -134,12 +134,41 @@
 
             <p>
                 From a game design perspective, Minecraft is great for quickly prototyping 3D multiplayer game concepts.
-                I have used it as a platform for many multiplayer games because it a) provides high-level networked multiplayer out of the box and b) has a huge preexisting player base, meaning I can trick my friends and siblings into playtesting my games!
+                I have used it as a platform for many multiplayer games because it 1) provides high-level networked multiplayer out of the box and 2) has a huge preexisting player base, meaning I can trick my friends and siblings into playtesting my games!
                 This has been super valuable for me to test out everything from movement systems to hidden role party games.
             </p>
+
+            <div class="accordion" id="accordionPvPPlayground">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="h1PvPPlayground">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePvPPlayground" aria-controls="collapsePvPPlayground">
+                            <p>PvP Playground</p>
+                        </button>
+                    </h2>
+                    <div id="collapsePvPPlayground" class="accordion-collapse collapse" aria-labelledby="h1PvPPlayground" data-bs-parent="#accordionPvPPlayground">
+                        <div class="accordion-body">
+
+                            <img src="/assets/projects/pooty-games/pvp.gif" class="block-img accordion-img" alt="PvP Playground Gameplay" loading="lazy">
+                            <p>
+                                PvP Playground's weapons, items, and armor sets are all Components: individual pieces you can equip to change your stats and what you can do in-game. The real fun comes from Loadouts: collections of Components you can make yourself. Loadouts let players design their own playstyles around the Components they like, as well as their combos/interactions.
+                            </p>
+                            <img src="/assets/projects/pooty-games/pvp3.gif" class="block-img accordion-img" alt="PvP Playground Gameplay" loading="lazy">
+                            <p>
+                                My favorite part of developing these kinds of systems is that every time I add a new Component, it enables exponentially more Loadouts, and the entire balance of the game can change around a single Component addition.
+                            </p>
+                            <img src="/assets/projects/pooty-games/pvp2.gif" class="block-img accordion-img" alt="PvP Playground Gameplay" loading="lazy">
+                            <p>
+                                In this rendition of <a href="/games/pvp-playground">PvP Playground</a>, I used NBT to store each player's Loadouts to unique storage locations named after their UUID. The biggest advantage of doing this is abstracting the IDs of each equipped Component. This also means you can change your username or log onto the world from a different computer and all your Loadouts will be intact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <p>
                 This map is vanilla, made using Minecraft's datapack system. I have been working on it across multiple Minecraft updates (since 1.16), changing games to use newer features and creating new games based on new Minecraft features like interaction entities and function macros.
             </p>
+
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -188,6 +217,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <section class="info-section" id="similar-library"></section>

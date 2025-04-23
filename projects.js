@@ -581,6 +581,53 @@ var projectsData = [
     },
 
     {
+        "name": "Imminent-XR",
+        "category": "projects",
+        "credit": "Imminent-XR",
+        "year": "2023-24",
+        "platform": [
+            "VR",
+            "Quest"
+        ],
+        "desc": "VR meets virtual production and musical theater",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Meta Quest 2 ⌨",
+            "FrameVR ⌨",
+            "Github ⌨",
+            "Perforce ⌨",
+            "Management 🗣",
+            "Blender 🖍"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/VCAOUixtBes?si=Beijs9j8takfkcKE" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/imminent-xr/greenscreen.png"
+            },
+            {
+                "screenshot": "/assets/projects/imminent-xr/xrnetwork.png"
+            },
+            {
+                "screenshot": "/assets/projects/imminent-xr/preview.png"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "216 Below",
+            "XR Stories"
+        ]
+    },
+
+    {
         "name": "York Maze",
         "category": "projects",
         "credit": "Pop Up VR",
@@ -652,53 +699,6 @@ var projectsData = [
             "The Hitz Hotel",
             "Heat of the Moment",
             "Mutablus"
-        ]
-    },
-
-    {
-        "name": "Imminent-XR",
-        "category": "projects",
-        "credit": "Imminent-XR",
-        "year": "2023-24",
-        "platform": [
-            "VR",
-            "Quest"
-        ],
-        "desc": "VR meets virtual production and musical theater",
-
-        "libraryTags": [
-            "work"
-        ],
-
-        "skills": [
-            "Unreal Engine ⌨",
-            "Meta Quest 2 ⌨",
-            "FrameVR ⌨",
-            "Github ⌨",
-            "Perforce ⌨",
-            "Management 🗣",
-            "Blender 🖍"
-        ],
-
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/VCAOUixtBes?si=Beijs9j8takfkcKE" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/imminent-xr/greenscreen.png"
-            },
-            {
-                "screenshot": "/assets/projects/imminent-xr/xrnetwork.png"
-            },
-            {
-                "screenshot": "/assets/projects/imminent-xr/preview.png"
-            }
-        ],
-
-
-        "similarProjects": [
-            "The Chime Hours",
-            "216 Below",
-            "XR Stories"
         ]
     },
 
@@ -1398,7 +1398,7 @@ var projectsData = [
         "category": "projects",
         "year": "2020-25",
         "platform": [
-            "Minecraft Map"
+            "Minecraft JE Map"
         ],
         "desc": "Multiplayer Minecraft party games!",
 
@@ -1544,7 +1544,7 @@ var projectsData = [
     {
         "name": "Hierre",
         "category": "projects",
-        "year": "2019-24",
+        "year": "2019-25",
         "desc": "Sci-fi universe shared across many projects",
 
         "libraryTags": [
