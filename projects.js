@@ -92,6 +92,52 @@ var projectsData = [
             "Gata Guressi"
         ]
     },
+
+    {
+        "name": "Reflex Arc",
+        "category": "projects",
+        "credit": "Reflex Arc",
+        "year": "2024-25",
+        "platform": [
+            "XR",
+            "AR",
+            "VR"
+        ],
+        "desc": "XR apps and demos",
+
+        "libraryTags": [
+            "work"
+        ],
+
+        "skills": [
+            "Unreal Engine ⌨",
+            "Unity ⌨",
+            "C# ⌨",
+            "Meta Quest 2 ⌨",
+            "Perforce ⌨",
+            "Github ⌨"
+        ],
+
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://player.vimeo.com/video/848647182?h=133b1d29cd" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/reflex-arc/the-chime-hours.png",
+                "caption": "The Chime Hours - Lord Whitney"
+            },
+            {
+                "screenshot": "/assets/projects/reflex-arc/microbial-puppet-masters-phages.png",
+                "caption": "Microbial Puppet Masters - The University of Salford"
+            }
+        ],
+
+
+        "similarProjects": [
+            "The Chime Hours",
+            "Imminent-XR",
+            "XR Stories"
+        ]
+    },
     
     {
         "name": "CONDUCTOR",
