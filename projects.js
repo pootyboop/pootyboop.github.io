@@ -9,6 +9,66 @@ var topSkills = [
 
 
 var projectsData = [
+
+    {
+        "name": "Gata Guressi",
+        "category": "games",
+        "year": "2026 (Upcoming)",
+        "platform": [
+            "Windows"
+        ],
+        "highlight":"Award-Winning",
+        "desc": "Sci-fi language translation RPG",
+
+        "libraryTags": [
+            "featured",
+            "soundtrack",
+            "hierre"
+        ],
+
+        "skills": [
+            "Unity ⌨",
+            "C# ⌨",
+            "Github ⌨",
+            "Blender 🖍",
+            "Photoshop 🖍",
+            "GIMP 🖍",
+            "Illustrator 🖍",
+            "Aseprite 🖍",
+            "Logic Pro ♫",
+            "Premiere ▷"
+        ],
+
+        "projectEmbed": `<iframe src="https://store.steampowered.com/widget/3962430/" frameborder="0" width="646" height="190"></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/c6R0FHIGgW0?si=aN0_R9aW36z0kALs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
+        "carouselScreenshots": [
+            {
+                "screenshot": "/assets/projects/gata-guressi/window.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/preview.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/painting.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/F0bar.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/our-future-is-bright.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/janowin.png"
+            }
+        ],
+
+        "similarProjects": [
+            "Hierre",
+            "Head in the Clouds",
+            "EM"
+        ]
+    },
     {
         "name": "Lazarus",
         "category": "music",
@@ -352,66 +412,6 @@ var projectsData = [
         "similarProjects": [
             "Mutablus",
             "IM Showcase 2023"
-        ]
-    },
-
-    {
-        "name": "Gata Guressi",
-        "category": "games",
-        "year": "2024-25",
-        "platform": [
-            "Windows"
-        ],
-        "highlight":"Award-Winning",
-        "desc": "Sci-fi translation & exploration RPG",
-
-        "libraryTags": [
-            "featured",
-            "soundtrack",
-            "hierre"
-        ],
-
-        "skills": [
-            "Unity ⌨",
-            "C# ⌨",
-            "Github ⌨",
-            "Blender 🖍",
-            "Photoshop 🖍",
-            "GIMP 🖍",
-            "Illustrator 🖍",
-            "Aseprite 🖍",
-            "Logic Pro ♫",
-            "Premiere ▷"
-        ],
-
-        "projectEmbed": `<iframe class="project-embed" frameborder="0" src="https://itch.io/embed/2484673?linkback=true&amp;bg_color=161616&amp;fg_color=f9f9f9&amp;link_color=ffc400" width="552" height="167"><a href="https://elliotgmann.itch.io/gata-guressi">Gata Guressi by Elliot George Mann</a></iframe>`,
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/c6R0FHIGgW0?si=aN0_R9aW36z0kALs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-        "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
-        "carouselScreenshots": [
-            {
-                "screenshot": "/assets/projects/gata-guressi/window.png"
-            },
-            {
-                "screenshot": "/assets/projects/gata-guressi/preview.png"
-            },
-            {
-                "screenshot": "/assets/projects/gata-guressi/painting.png"
-            },
-            {
-                "screenshot": "/assets/projects/gata-guressi/F0bar.png"
-            },
-            {
-                "screenshot": "/assets/projects/gata-guressi/our-future-is-bright.png"
-            },
-            {
-                "screenshot": "/assets/projects/gata-guressi/janowin.png"
-            }
-        ],
-
-        "similarProjects": [
-            "Hierre",
-            "Head in the Clouds",
-            "EM"
         ]
     },
 
