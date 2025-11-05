@@ -963,7 +963,7 @@ var projectsData = [
 
 
         "similarProjects": [
-            "Imminent-XR",
+            "Reflex Arc",
             "216 Below",
             "XR Stories"
         ]
