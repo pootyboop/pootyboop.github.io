@@ -160,6 +160,19 @@ btn {
     margin-right: auto;
 }
 
+.qr-image {
+    max-width: 80vw;
+    overflow: hidden;
+    border-radius: 10px;
+
+    display: block;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
 .accordion-img {
     max-width: 90%;
 }
@@ -214,17 +227,10 @@ btn {
     margin-bottom: 2%;
 }
 
-/*
-ol {
-    list-style-type: none;
-}
-*/
-
 h1, h2, h3, h4, h5, h6, .card-title {
     color:rgb(255, 255, 255);
     font-family: 'Smooch Sans', sans-serif;
     font-weight: 300;
-    /*text-align: center;*/
 }
 
 hr {
@@ -249,7 +255,6 @@ h1 {
 h2 {
     font-size: 3.5rem;
     line-height: 3rem;
-    /*text-align: center;*/
 }
 
 h3 {
@@ -346,6 +351,20 @@ a {
 
 .accordion-button, .link-button {
     background-color: var(--color1);
+}
+
+.qr-link {
+    position: fixed;
+    bottom: 10vh;
+    left: 30vw;
+    right: 30vw;
+}
+.qr-floating {
+    position: fixed;
+    top: 30vh;
+    bottom: 30vh;
+    left: 10vw;
+    right: 10vw;
 }
 
 .accordion-button > p, .accordion-closer > p, .link-button {
@@ -662,11 +681,11 @@ body:not(.no-body-gradient) {
     padding-left: -1rem;
 }
 
-#main-content {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+#main-content, #main-content-qr {
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 .project-library {
@@ -806,7 +825,7 @@ body:not(.no-body-gradient) {
 }
 
 @media (min-width: 992px) {
-    .block-img-sidebyside {
+    .block-img-sidebyside, .qr-image {
         max-width: 39vw !important;
     }
 }

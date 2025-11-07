@@ -47,7 +47,10 @@ document.getElementById("navbar").innerHTML = `
 `
 
 
-document.body.innerHTML += `
+var mainContent = document.getElementById("main-content");
+
+if (mainContent) {
+    document.body.innerHTML += `
 
 <footer class="footer">
     <div class="row footer-row">
@@ -68,6 +71,7 @@ document.body.innerHTML += `
 </footer>
 
 `
+}
 
 
 var searchTitle = document.getElementById("search-term");
@@ -138,7 +142,7 @@ for (var i = 0; i < linkButtons.length; i++) {
 var searchBars = document.getElementsByClassName("searchbar");
 for (var i = 0; i < searchBars.length; i++) {
     searchBars[i].innerHTML = `
-    <input type="text" placeholder="Search..." name="search" ${searchTitle ? autofocus="autofocus" : ""}>
+    <input type="text" placeholder="Search..." name="search" ${searchTitle ? autofocus = "autofocus" : ""}>
     <button type="submit" onsubmit="return doSomething();" class="search-button" aria-label="Search for projects"><img src="/assets/icons/search.svg" alt="Search button"></button>
     `
 }
@@ -188,7 +192,7 @@ function isSelected(link) {
     else if (link.text === "CV" && currLoc.includes("elliotgmann.com/cv")) {
         return selectedHTML;
     }
-    
+
     else {
         return "";
     }
