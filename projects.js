@@ -44,22 +44,25 @@ var projectsData = [
         "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/gata-guressi/window.png"
-            },
-            {
                 "screenshot": "/assets/projects/gata-guressi/preview.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/painting.png"
+                "screenshot": "/assets/projects/gata-guressi/voennsca.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/preview2.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/guard.png"
             },
             {
                 "screenshot": "/assets/projects/gata-guressi/F0bar.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/our-future-is-bright.png"
+                "screenshot": "/assets/projects/gata-guressi/janowin.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/janowin.png"
+                "screenshot": "/assets/projects/gata-guressi/branch.png"
             }
         ],
 
@@ -1630,8 +1633,8 @@ var projectsData = [
 
 
 var featuredProjects = [
-    "Sandboard",
     "Gata Guressi",
+    "Sandboard",
     "CONDUCTOR"
 ]
 
