@@ -394,6 +394,19 @@ button {
     font-weight: 300;
 }
 
+.popup-info {
+    background-color: var(--colorcardbackground);
+    border-radius: 5px;
+    border: var(--colortext);
+    /*border: rgb(25, 25, 25);*/
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 12px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .center-link {
     text-align: center;
     display: block;
@@ -678,7 +691,7 @@ body:not(.no-body-gradient) {
 .search-button > img {
     width: 2rem !important;
     /*transform:translate(-45px, -3px);*/
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     opacity: .75;
     padding-left: -1rem;
 }
@@ -802,6 +815,10 @@ body:not(.no-body-gradient) {
 
     p {
         line-height: 2rem !important;
+    }
+
+    p, a {
+        font-size: 1.6rem;
     }
 
     .skill, .skillcard {
