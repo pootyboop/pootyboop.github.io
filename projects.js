@@ -40,29 +40,29 @@ var projectsData = [
         ],
 
         "projectEmbed": `<iframe src="https://store.steampowered.com/widget/3962430/" frameborder="0" width="646" height="190"></iframe>`,
-        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/c6R0FHIGgW0?si=aN0_R9aW36z0kALs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "ytEmbed": `<iframe id="yt-video" class="d-block embed-responsive" src="https://www.youtube.com/embed/CGy9_pnSxMU?si=Zc0iQh25H7aMgu-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
         "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
         "carouselScreenshots": [
             {
-                "screenshot": "/assets/projects/gata-guressi/preview.png"
+                "screenshot": "/assets/projects/gata-guressi/hiesorsca.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/voennsca.png"
+                "screenshot": "/assets/projects/gata-guressi/upstairsbar.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/preview2.png"
+                "screenshot": "/assets/projects/gata-guressi/comiccon.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/guard.png"
+                "screenshot": "/assets/projects/gata-guressi/traders.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/F0bar.png"
+                "screenshot": "/assets/projects/gata-guressi/voennsca2.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/janowin.png"
+                "screenshot": "/assets/projects/gata-guressi/wideshot.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/branch.png"
+                "screenshot": "/assets/projects/gata-guressi/text.png"
             }
         ],
 
