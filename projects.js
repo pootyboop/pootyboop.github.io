@@ -18,7 +18,7 @@ var projectsData = [
             "Windows"
         ],
         "highlight":"Award-Winning",
-        "desc": "Sci-fi language translation RPG",
+        "desc": "Sci-fi language translation adventure",
 
         "libraryTags": [
             "featured",
@@ -44,16 +44,25 @@ var projectsData = [
         "report": "/assets/projects/gata-guressi/Gata Guressi Report.pdf",
         "carouselScreenshots": [
             {
+                "screenshot": "/assets/projects/gata-guressi/kit orel.png"
+            },
+            {
                 "screenshot": "/assets/projects/gata-guressi/hiesorsca.png"
             },
             {
                 "screenshot": "/assets/projects/gata-guressi/upstairsbar.png"
             },
             {
+                "screenshot": "/assets/projects/gata-guressi/sibling.png"
+            },
+            {
                 "screenshot": "/assets/projects/gata-guressi/comiccon.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/traders.png"
+                "screenshot": "/assets/projects/gata-guressi/document.png"
+            },
+            {
+                "screenshot": "/assets/projects/gata-guressi/irsca menu.png"
             },
             {
                 "screenshot": "/assets/projects/gata-guressi/voennsca2.png"
@@ -62,7 +71,7 @@ var projectsData = [
                 "screenshot": "/assets/projects/gata-guressi/wideshot.png"
             },
             {
-                "screenshot": "/assets/projects/gata-guressi/text.png"
+                "screenshot": "/assets/projects/gata-guressi/op wessi sign.png"
             }
         ],
 
