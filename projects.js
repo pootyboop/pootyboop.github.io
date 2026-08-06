@@ -13,7 +13,7 @@ var projectsData = [
     {
         "name": "Gata Guressi",
         "category": "games",
-        "year": "2026 (Upcoming)",
+        "year": "2027 (Upcoming)",
         "platform": [
             "Windows"
         ],
