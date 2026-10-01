@@ -169,7 +169,7 @@ var projectsData = [
         "name": "Reflex Arc",
         "category": "projects",
         "credit": "Reflex Arc",
-        "year": "2024-25",
+        "year": "2024-26",
         "platform": [
             "XR",
             "AR",
@@ -1602,7 +1602,7 @@ var projectsData = [
     {
         "name": "Hierre",
         "category": "projects",
-        "year": "2019-25",
+        "year": "2019-26",
         "desc": "Sci-fi universe shared across many projects",
 
         "libraryTags": [

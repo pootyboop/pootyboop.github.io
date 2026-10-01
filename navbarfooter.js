@@ -23,11 +23,11 @@ const navLinks = [
 
 
 document.getElementById("navbar").innerHTML = `
-<div class="container-xxl" id="navbar-content">
+<div class="container-fluid" id="navbar-content">
 
     <!-- logo -->
     <a href="/" id="navbar-logo">
-        <img src="/assets/icons/EGMlogo.png" alt="Stylized logo of the letters E G M" height="65">
+        <img src="/assets/icons/EGMlogo.png" alt="EGM Logo" height="65">
     </a>
 
     <!-- toggle button for mobile nav -->

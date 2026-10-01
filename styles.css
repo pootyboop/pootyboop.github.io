@@ -743,6 +743,11 @@ body:not(.no-body-gradient) {
     margin: 0 !important;
 }
 
+#navbar-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 
 
 
